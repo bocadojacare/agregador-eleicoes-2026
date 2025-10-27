@@ -19,6 +19,54 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem('darkMode', isNow);
     toggleBtn.textContent = isNow ? '☀️' : '🌙';
   });
+  
+  // Changelog Modal
+  const changelogBtn = document.getElementById('btn-version');
+  const changelogModal = document.getElementById('changelog-modal');
+  const modalClose = document.querySelector('.modal-close');
+  
+  changelogBtn.addEventListener('click', async function() {
+    try {
+      const response = await fetch('changelog.json');
+      const changelog = await response.json();
+      
+      const changelogBody = document.getElementById('changelog-body');
+      changelogBody.innerHTML = '';
+      
+      changelog.versoes.forEach(versao => {
+        const versionDiv = document.createElement('div');
+        versionDiv.className = 'changelog-version';
+        
+        let notasHtml = '';
+        versao.notas.forEach(nota => {
+          notasHtml += `<li>${nota}</li>`;
+        });
+        
+        versionDiv.innerHTML = `
+          <h3>v${versao.versao}</h3>
+          <div class="changelog-date">${new Date(versao.data).toLocaleDateString('pt-BR')}</div>
+          <ul class="changelog-notes">
+            ${notasHtml}
+          </ul>
+        `;
+        changelogBody.appendChild(versionDiv);
+      });
+      
+      changelogModal.classList.add('show');
+    } catch (error) {
+      console.error('Erro ao carregar changelog:', error);
+    }
+  });
+  
+  modalClose.addEventListener('click', function() {
+    changelogModal.classList.remove('show');
+  });
+  
+  changelogModal.addEventListener('click', function(e) {
+    if (e.target === changelogModal) {
+      changelogModal.classList.remove('show');
+    }
+  });
 });
 
 async function montarGrafico() {

@@ -1,0 +1,19 @@
+{
+  "versao_atual": "1.0.0",
+  "versoes": [
+    {
+      "versao": "1.0.0",
+      "data": "2025-10-27",
+      "notas": [
+        "Bem vindo à esse pequeno projeto, espero que seja útil!",
+        "Tentarei adicionar mais funcionalidades com o tempo.",
+        "Lançamento inicial do agregador de pesquisas eleitorais",
+        "Visualização de 5 candidatos principais",
+        "Gráfico com médias móveis de 31 dias",
+        "Timeline interativa para filtrar períodos",
+        "Modo escuro/claro",
+        "Tooltips com informações detalhadas"
+      ]
+    }
+  ]
+}

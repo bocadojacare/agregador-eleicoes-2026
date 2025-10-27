@@ -11,7 +11,10 @@
         <div class="header-content">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Bandeira do Brasil" class="flag-brasil">
             <h1>Agregador de Pesquisas Eleitorais 2026</h1>
-            <button id="toggle-dark" class="toggle-btn">🌙</button>
+            <div class="header-buttons">
+                <button id="btn-version" class="version-btn" title="Changelog">v1.0.0</button>
+                <button id="toggle-dark" class="toggle-btn">🌙</button>
+            </div>
         </div>
     </header>
     <main>
@@ -35,6 +38,20 @@
                 </div>
             </section>
     </main>
+    
+    <!-- Modal Changelog -->
+    <div id="changelog-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Changelog</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div id="changelog-body" class="modal-body">
+                <!-- Conteúdo do changelog será carregado aqui -->
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
