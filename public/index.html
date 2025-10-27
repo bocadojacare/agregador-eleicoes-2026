@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregador de Pesquisas Eleitorais 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Bandeira do Brasil" class="flag-brasil">
+            <h1>Agregador de Pesquisas Eleitorais 2026</h1>
+            <button id="toggle-dark" class="toggle-btn">🌙</button>
+        </div>
+    </header>
+    <main>
+            <section id="grafico">
+                <h2>Evolução das Intenções de Voto</h2>
+                <div id="grafico-wrapper">
+                    <canvas id="graficoVotos" width="1200" height="600"></canvas>
+                    <div id="media-final-box">
+                        <h3>Média Atual</h3>
+                        <div id="media-final-items"></div>
+                    </div>
+                </div>
+                <div id="timeline-container">
+                    <label>Período:</label>
+                    <div id="timeline-wrapper">
+                        <input type="range" id="timeline-start" class="timeline-input" min="0" max="100" value="0">
+                        <input type="range" id="timeline-end" class="timeline-input" min="0" max="100" value="100">
+                        <div id="timeline-track"></div>
+                    </div>
+                    <span id="timeline-label"></span>
+                </div>
+            </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

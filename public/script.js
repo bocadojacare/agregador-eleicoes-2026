@@ -1,0 +1,494 @@
+// Agregador de Pesquisas Eleitorais 2026
+
+// Dark Mode Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('toggle-dark');
+  const body = document.body;
+  
+  // Verificar preferência salva
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+  }
+  
+  // Toggle ao clicar
+  toggleBtn.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    const isNow = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isNow);
+    toggleBtn.textContent = isNow ? '☀️' : '🌙';
+  });
+});
+
+async function montarGrafico() {
+  console.log('Iniciando montarGrafico...');
+  try {
+    const resposta = await fetch('pesquisas_2026_normalizado.json');
+    const pesquisas = await resposta.json();
+    console.log('✓ Pesquisas carregadas:', pesquisas.length);
+    
+    // Carregar médias móveis pré-calculadas
+    const respostaMM = await fetch('media_movel_precalculada.json');
+    const mediaMovelData = await respostaMM.json();
+    console.log('✓ Médias móveis carregadas:', Object.keys(mediaMovelData.candidatos));
+  
+  const ctx = document.getElementById('graficoVotos').getContext('2d');
+  const registros = pesquisas.slice().reverse();
+
+  function parseDate(str) {
+    if (!str) return null;
+    let m = str.match(/(\d{1,2})[-](\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    if (m) return new Date(`${m[3]} ${m[2]}, ${m[4]}`);
+    m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s*[-]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    if (m) return new Date(`${m[4]} ${m[3]}, ${m[5]}`);
+    m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    if (m) return new Date(`${m[2]} ${m[1]}, ${m[3]}`);
+    return null;
+  }
+
+  const datas = registros.map(r => parseDate(r.data));
+  
+  const registrosFiltrados = registros;
+  const datasFiltradas = datas;
+  const series = {
+    Lula: registrosFiltrados.map(r => r.candidatos?.Lula ?? null),
+    Tarcísio: registrosFiltrados.map(r => r.candidatos?.Freitas ?? null),
+    Ciro: registrosFiltrados.map(r => r.candidatos?.Gomes ?? null),
+    Caiado: registrosFiltrados.map(r => r.candidatos?.Caiado ?? null),
+    Zema: registrosFiltrados.map(r => r.candidatos?.Zema ?? null),
+    Ratinho: registrosFiltrados.map(r => r.candidatos?.Ratinho ?? null)
+  };
+
+  function movingAverageByDate(values, dates, windowDays = 31) {
+    const out = [];
+    const msWindow = windowDays * 24 * 60 * 60 * 1000;
+    
+    // First pass: calculate moving averages ONLY for this candidate's data
+    for (let i = 0; i < values.length; i++) {
+      const base = dates[i];
+      if (!base || values[i] == null) { 
+        out.push(null); 
+        continue; 
+      }
+      let sum = 0, cnt = 0;
+      for (let j = 0; j < values.length; j++) {
+        if (values[j] == null) continue; // Skip if no data for this candidate
+        const d = dates[j];
+        if (!d) continue;
+        if (Math.abs(d - base) <= msWindow) { 
+          sum += values[j]; 
+          cnt++; 
+        }
+      }
+      out.push(cnt ? sum / cnt : null);
+    }
+    
+    // Second pass: interpolate nulls linearly
+    for (let i = 0; i < out.length; i++) {
+      if (out[i] === null) {
+        let prevIdx = -1, nextIdx = -1;
+        
+        // Find previous non-null value
+        for (let j = i - 1; j >= 0; j--) {
+          if (out[j] !== null) { prevIdx = j; break; }
+        }
+        
+        // Find next non-null value
+        for (let j = i + 1; j < out.length; j++) {
+          if (out[j] !== null) { nextIdx = j; break; }
+        }
+        
+        // Linear interpolation
+        if (prevIdx !== -1 && nextIdx !== -1) {
+          const ratio = (i - prevIdx) / (nextIdx - prevIdx);
+          out[i] = out[prevIdx] + (out[nextIdx] - out[prevIdx]) * ratio;
+        } else if (prevIdx !== -1) {
+          out[i] = out[prevIdx];
+        } else if (nextIdx !== -1) {
+          out[i] = out[nextIdx];
+        }
+      }
+    }
+    
+    return out;
+  }
+
+  const labels = registrosFiltrados.map((_, i) => i + 1);
+  const datasets = [];
+  const colors = {
+    Lula: '#e53935',
+    Tarcísio: '#43a047',
+    Ciro: '#8e24aa',
+    Caiado: '#1565c0',
+    Zema: '#ff9800',
+    Ratinho: '#64b5f6'
+  };
+  
+  // Mapa de nomes: chave do series -> chave do JSON pré-calculado
+  const candidatoMap = {
+    Lula: 'Lula',
+    Tarcísio: 'Freitas',
+    Ciro: 'Gomes',
+    Caiado: 'Caiado',
+    Zema: 'Zema',
+    Ratinho: 'Ratinho'
+  };
+
+  // Mapa de índice para data para cálculo de posição relativa
+  const todasAsDatas = mediaMovelData.datas.map(d => new Date(d).getTime());
+  const minDateMs = Math.min(...todasAsDatas);
+  const maxDateMs = Math.max(...todasAsDatas);
+  const totalMs = maxDateMs - minDateMs;
+
+  for (const displayName of Object.keys(series)) {
+    // Converter nome para a chave correta no JSON pré-calculado
+    const jsonKey = candidatoMap[displayName];
+    const mmData = mediaMovelData.candidatos[jsonKey];
+    if (!mmData) continue;
+    
+    // Smooth line dataset - usa média móvel pré-calculada
+    const lineData = mmData.media_movel.map((avg, i) => {
+      if (avg === null) return null;
+      return {
+        x: i / (registros.length - 1) * (registros.length - 1),
+        y: avg,
+        instituto: 'Média móvel',
+        data: registros[i].data
+      };
+    }).filter(d => d !== null);
+    
+    datasets.push({
+      label: displayName,
+      data: lineData,
+      borderColor: colors[displayName] || '#666',
+      backgroundColor: 'transparent',
+      tension: 0.4,
+      fill: false,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      borderWidth: 2,
+      parsing: {
+        xAxisKey: 'x',
+        yAxisKey: 'y'
+      }
+    });
+    
+    // Raw points dataset - posicionados pela data real
+    const pointsData = [];
+    for (let i = 0; i < mmData.pesquisas_brutos.length; i++) {
+      const val = mmData.pesquisas_brutos[i];
+      if (val !== null) {
+        // Posição relativa baseada na data
+        const posicaoRelativa = (todasAsDatas[i] - minDateMs) / totalMs * (registros.length - 1);
+        pointsData.push({
+          x: posicaoRelativa,
+          y: val,
+          instituto: registrosFiltrados[i].instituto,
+          data: registrosFiltrados[i].data
+        });
+      }
+    }
+    
+    datasets.push({
+      label: `${displayName} (pesquisas)`,
+      data: pointsData,
+      borderColor: colors[displayName] || '#666',
+      backgroundColor: colors[displayName] || '#666',
+      showLine: false,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      parsing: {
+        xAxisKey: 'x',
+        yAxisKey: 'y'
+      }
+    });
+  }
+
+  const chart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      clip: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            filter: (item) => !item.text.includes('(pesquisas)'),
+            usePointStyle: true,
+            padding: 15,
+            font: { size: 12 }
+          },
+          onClick: (e, item, legend) => {
+            const candidateName = item.text;
+            // Toggle visibility for both line and points
+            const chart = legend.chart;
+            chart.data.datasets.forEach((dataset) => {
+              if (dataset.label === candidateName || dataset.label === `${candidateName} (pesquisas)`) {
+                dataset.hidden = !dataset.hidden;
+              }
+            });
+            chart.update();
+          }
+        },
+        title: { display: false },
+        tooltip: {
+          mode: 'nearest',
+          intersect: false,
+          callbacks: {
+            title: function(context) {
+              if (!context || context.length === 0) return '';
+              const raw = context[0].raw;
+              if (raw && raw.instituto && raw.data) {
+                // Traduz mês abreviado (inglês e português) para português completo
+                const mesesTraducao = {
+                  'Jan': 'Janeiro', 'January': 'Janeiro',
+                  'Feb': 'Fevereiro', 'February': 'Fevereiro',
+                  'Mar': 'Março', 'March': 'Março',
+                  'Apr': 'Abril', 'April': 'Abril',
+                  'May': 'Maio',
+                  'Jun': 'Junho', 'June': 'Junho',
+                  'Jul': 'Julho', 'July': 'Julho',
+                  'Aug': 'Agosto', 'August': 'Agosto',
+                  'Sep': 'Setembro', 'September': 'Setembro', 
+                  'Oct': 'Outubro', 'October': 'Outubro', 
+                  'Nov': 'Novembro', 'November': 'Novembro',
+                  'Dec': 'Dezembro', 'December': 'Dezembro'
+                };
+                
+                let dataFormatada = raw.data;
+                // Substitui mês abreviado ou em inglês por completo em português
+                for (const [abrev, completo] of Object.entries(mesesTraducao)) {
+                  const regex = new RegExp(abrev, 'gi');
+                  dataFormatada = dataFormatada.replace(regex, completo);
+                }
+                
+                return `${raw.instituto} - ${dataFormatada}`;
+              }
+              return '';
+            },
+            label: function(context) {
+              let label = context.dataset.label || '';
+              label = label.replace(' (pesquisas)', '');
+              const value = context.parsed.y;
+              
+              if (value !== null) {
+                return `${label}: ${value.toFixed(1)}%`;
+              }
+              return label;
+            }
+          }
+        }
+      },
+      scales: {
+        x: { 
+          display: false,
+          type: 'linear',
+          max: registros.length - 1,
+          grid: {
+            display: false
+          }
+        },
+        y: {
+          beginAtZero: true,
+          min: 0,
+          max: 60,
+          title: { display: true, text: 'Votos (%)' },
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
+
+  // Event listener removed - filtering is now done via legend click
+
+  // Timeline filtering with dual range
+  const timelineStart = document.getElementById('timeline-start');
+  const timelineEnd = document.getElementById('timeline-end');
+  const timelineLabel = document.getElementById('timeline-label');
+  const timelineTrack = document.getElementById('timeline-track');
+  
+  // Get date range - filter out nulls
+  const validDates = datasFiltradas.filter(d => d !== null && d !== undefined);
+  
+  if (validDates.length === 0) {
+    console.error('No valid dates found');
+    return;
+  }
+  
+  const minDate = new Date(Math.min(...validDates.map(d => d.getTime())));
+  const maxDate = new Date(Math.max(...validDates.map(d => d.getTime())));
+  
+  function formatDate(date) {
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+  }
+  
+  function updateTimeline() {
+    const startPercentage = parseInt(timelineStart.value);
+    const endPercentage = parseInt(timelineEnd.value);
+    
+    // Ensure start is not greater than end
+    if (startPercentage > endPercentage) {
+      if (event.target === timelineStart) {
+        timelineEnd.value = startPercentage;
+      } else {
+        timelineStart.value = endPercentage;
+      }
+    }
+    
+    const actualStart = Math.min(startPercentage, endPercentage);
+    const actualEnd = Math.max(startPercentage, endPercentage);
+    
+    // Update track background
+    timelineTrack.style.background = `linear-gradient(to right, #ddd ${actualStart}%, #1565c0 ${actualStart}%, #1565c0 ${actualEnd}%, #ddd ${actualEnd}%)`;
+    
+    // Calculate dates
+    const timeRange = maxDate - minDate;
+    const startTime = minDate.getTime() + (timeRange * actualStart / 100);
+    const endTime = minDate.getTime() + (timeRange * actualEnd / 100);
+    const startDate = new Date(startTime);
+    const endDate = new Date(endTime);
+    
+    // Filter data points by timeline
+    const filteredDataIndices = datasFiltradas.map((d, i) => d >= startDate && d <= endDate ? i : -1).filter(i => i !== -1);
+    
+    // Update datasets with filtered data
+    for (let datasetIdx = 0; datasetIdx < chart.data.datasets.length; datasetIdx++) {
+      const dataset = chart.data.datasets[datasetIdx];
+      const isSmoothLine = !dataset.label.includes('(pesquisas)');
+      const displayName = isSmoothLine ? dataset.label : dataset.label.replace(' (pesquisas)', '');
+      const jsonKey = candidatoMap[displayName];
+      
+      if (isSmoothLine) {
+        // Smooth line: filtrar dados pré-calculados
+        const mmData = mediaMovelData.candidatos[jsonKey];
+        if (!mmData) continue;
+        
+        const filteredLine = filteredDataIndices
+          .map((origIdx, idx) => {
+            const avg = mmData.media_movel[origIdx];
+            if (avg === null) return null;
+            return {
+              x: idx / (filteredDataIndices.length - 1 || 1) * (filteredDataIndices.length - 1),
+              y: avg,
+              instituto: 'Média móvel',
+              data: registrosFiltrados[origIdx].data
+            };
+          })
+          .filter(d => d !== null);
+        
+        dataset.data = filteredLine;
+      } else {
+        // Raw points: filtrar e reposicionar
+        const mmData = mediaMovelData.candidatos[jsonKey];
+        if (!mmData) continue;
+        
+        const filteredPoints = [];
+        for (let i = 0; i < filteredDataIndices.length; i++) {
+          const origIdx = filteredDataIndices[i];
+          const val = mmData.pesquisas_brutos[origIdx];
+          if (val !== null) {
+            // Posição relativa dentro do período filtrado
+            const posicaoRelativa = (filteredDataIndices.length > 1)
+              ? i / (filteredDataIndices.length - 1) * (filteredDataIndices.length - 1)
+              : 0;
+            filteredPoints.push({
+              x: posicaoRelativa,
+              y: val,
+              instituto: registrosFiltrados[origIdx].instituto,
+              data: registrosFiltrados[origIdx].data
+            });
+          }
+        }
+        
+        dataset.data = filteredPoints;
+      }
+    }
+    
+    // Update timeline label
+    timelineLabel.textContent = `${formatDate(startDate)} a ${formatDate(endDate)}`;
+    
+    // Update X-axis scale to fill the chart width
+    const numFilteredPoints = filteredDataIndices.length;
+    chart.options.scales.x.max = numFilteredPoints > 0 ? numFilteredPoints - 1 : 10;
+    
+    chart.resize();
+    chart.update();
+    
+    // Update média final box
+    updateMediaFinalBox(filteredDataIndices);
+  }
+  
+  function updateMediaFinalBox(filteredIndices) {
+    const mediaFinalItems = document.getElementById('media-final-items');
+    mediaFinalItems.innerHTML = '';
+    
+    const candidatos = ['Lula', 'Tarcísio (Freitas)', 'Ciro (Gomes)', 'Caiado', 'Zema', 'Ratinho'];
+    const cores = ['#e53935', '#43a047', '#8e24aa', '#1565c0', '#ff9800', '#64b5f6'];
+    const nomesAbreviados = ['Lula', 'Tarcísio', 'Ciro', 'Caiado', 'Zema', 'Ratinho'];
+    
+    // Usa sempre o último índice do período geral (não do filtrado)
+    const lastIdx = registros.length - 1;
+    
+    // Coleta dados de todos os candidatos
+    const dados = [];
+    candidatos.forEach((cand, idx) => {
+      const jsonKey = cand.replace('Tarcísio (Freitas)', 'Freitas').replace('Ciro (Gomes)', 'Ciro');
+      const mmData = mediaMovelData.candidatos[jsonKey];
+      
+      if (mmData) {
+        const lastValue = mmData.media_movel[lastIdx];
+        
+        if (lastValue !== null) {
+          dados.push({
+            nome: nomesAbreviados[idx],
+            valor: lastValue,
+            cor: cores[idx]
+          });
+        }
+      }
+    });
+    
+    // Ordena por valor (decrescente)
+    dados.sort((a, b) => b.valor - a.valor);
+    
+    // Insere os itens ordenados
+    dados.forEach((d) => {
+      const item = document.createElement('div');
+      item.className = 'media-item';
+      item.innerHTML = `
+        <span style="color: ${d.cor}; font-size: 1.2rem;">●</span>
+        <span class="media-item-name">${d.nome}</span>
+        <span class="media-item-valor">${d.valor.toFixed(1)}%</span>
+      `;
+      mediaFinalItems.appendChild(item);
+    });
+  }
+  
+  timelineStart.addEventListener('input', updateTimeline);
+  timelineEnd.addEventListener('input', updateTimeline);
+  
+  // Initialize timeline with first render
+  updateTimeline();
+  
+  // Force chart resize on window resize
+  window.addEventListener('resize', () => {
+    chart.resize();
+  });
+  
+  // Initialize timeline label and média final box
+  timelineLabel.textContent = `${formatDate(minDate)} a ${formatDate(maxDate)}`;
+  updateMediaFinalBox(registros.map((_, i) => i));
+  } catch (error) {
+    console.error('❌ Erro ao montar gráfico:', error);
+    document.getElementById('graficoVotos').innerHTML = `<p style="color: red; padding: 20px;">Erro: ${error.message}</p>`;
+  }
+}
+
+window.addEventListener('load', () => {
+  montarGrafico();
+});
