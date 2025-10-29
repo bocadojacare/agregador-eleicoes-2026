@@ -113,6 +113,9 @@ df = pd.concat([df.drop('candidatos', axis=1), candidatos_df], axis=1)
 df['data_parsed'] = df['data'].apply(parseDate)
 df = df.sort_values('data_parsed').reset_index(drop=True)
 
+# Filtrar linhas com datas nulas
+df = df[df['data_parsed'].notna()].reset_index(drop=True)
+
 print(f"\nDados carregados: {df.shape[0]} pesquisas")
 print(f"Per├¡odo: {df['data'].iloc[-1]} a {df['data'].iloc[0]}")
 
