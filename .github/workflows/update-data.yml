@@ -27,16 +27,13 @@ jobs:
           pip install pandas numpy scipy requests beautifulsoup4
       
       - name: Run scraper
-        run: python scrape_pesquisas_wiki.py
-        working-directory: ./scripts
+        run: python ./scripts/scrape_pesquisas_wiki.py
       
       - name: Normalize data
-        run: python normalize_candidatos.py
-        working-directory: ./scripts
+        run: python ./scripts/normalize_candidatos.py
       
       - name: Calculate moving average
-        run: python calcular_media_movel.py
-        working-directory: ./scripts
+        run: python ./scripts/calcular_media_movel.py
       
       - name: Check if data changed
         id: changed
