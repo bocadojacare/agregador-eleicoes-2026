@@ -1,15 +1,15 @@
 """
 Normaliza nomes dos candidatos no JSON de pesquisas extraído da Wikipedia (inglês).
-- Lê public/pesquisas_2026.json
+- Lê pesquisas_2026.json
 - Usa heurística por ordem/frequência para mapear cand_X para nomes reais (Lula, Tarcísio, etc.)
-- Salva public/pesquisas_2026_normalizado.json
+- Salva pesquisas_2026_normalizado.json
 """
 import json
 from pathlib import Path
 from collections import Counter
 
-IN_FILE = Path("public/pesquisas_2026.json")
-OUT_FILE = Path("public/pesquisas_2026_normalizado.json")
+IN_FILE = Path("pesquisas_2026.json")
+OUT_FILE = Path("pesquisas_2026_normalizado.json")
 
 # Mapeamento manual por ordem (ajustar conforme necessário)
 CANDIDATE_ORDER = [

@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 WIKI_URL = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election"
-OUT_FILE = Path("public/pesquisas_2026.json")
+OUT_FILE = Path("pesquisas_2026.json")
 
 # Função utilitária para limpar nomes de candidatos
 import re
