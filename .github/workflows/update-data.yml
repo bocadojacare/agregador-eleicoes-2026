@@ -1,0 +1,57 @@
+name: Update Polling Data
+
+on:
+  schedule:
+    # Executa todo dia às 12:00 UTC (9:00 AM Brasília)
+    - cron: '0 12 * * *'
+  
+  # Permite executar manualmente pelo GitHub
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy scipy requests beautifulsoup4
+      
+      - name: Run scraper
+        run: python scrape_pesquisas_wiki.py
+        working-directory: ./
+      
+      - name: Normalize data
+        run: python normalize_candidatos.py
+        working-directory: ./
+      
+      - name: Calculate moving average
+        run: python calcular_media_movel.py
+        working-directory: ./
+      
+      - name: Check if data changed
+        id: changed
+        run: |
+          git diff --exit-code public/pesquisas_2026_normalizado.json public/media_movel_precalculada.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/pesquisas_2026_normalizado.json public/media_movel_precalculada.json
+          git commit -m "Update polling data - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+      
+      - name: No changes
+        if: steps.changed.outputs.changed != 'true'
+        run: echo "Sem mudanças nos dados"
