@@ -301,6 +301,10 @@ main {
     #graficoVotos {
         max-height: 400px;
     }
+    
+    #media-final-box {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
