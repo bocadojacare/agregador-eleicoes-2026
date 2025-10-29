@@ -9,17 +9,20 @@ def parseDate(str_data):
     if not str_data:
         return None
     
-    # Formato: "15ÔÇô19 Oct 2025"
-    m = re.match(r'(\d{1,2})[ÔÇô-](\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
+    # Normalizar caracteres de travessão para hífen
+    str_data = str_data.replace('–', '-').replace('−', '-').replace('–', '-')
+    
+    # Formato: "15-19 Oct 2025" (range de dias)
+    m = re.match(r'(\d{1,2})\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
         return pd.to_datetime(f"{m.group(3)} {m.group(2)}, {m.group(4)}")
     
-    # Formato: "29 Sep ÔÇô 6 Oct 2025"
-    m = re.match(r'(\d{1,2})\s+([A-Za-z]+)\s*[ÔÇô-]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
+    # Formato: "29 Sep - 6 Oct 2025" (range entre meses)
+    m = re.match(r'(\d{1,2})\s+([A-Za-z]+)\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
         return pd.to_datetime(f"{m.group(4)} {m.group(3)}, {m.group(5)}")
     
-    # Formato: "28 Aug 2025"
+    # Formato: "28 Aug 2025" (data simples)
     m = re.match(r'(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
         return pd.to_datetime(f"{m.group(2)} {m.group(1)}, {m.group(3)}")
@@ -117,7 +120,11 @@ df = df.sort_values('data_parsed').reset_index(drop=True)
 df = df[df['data_parsed'].notna()].reset_index(drop=True)
 
 print(f"\nDados carregados: {df.shape[0]} pesquisas")
-print(f"Per├¡odo: {df['data'].iloc[-1]} a {df['data'].iloc[0]}")
+if df.shape[0] > 0:
+    print(f"Periodo: {df['data'].iloc[-1]} a {df['data'].iloc[0]}")
+else:
+    print("ERRO: Nenhuma data foi parseada com sucesso!")
+    exit(1)
 
 # Candidatos principais
 candidatos_principais = ['Lula', 'Freitas', 'Gomes', 'Caiado', 'Zema', 'Ratinho']
