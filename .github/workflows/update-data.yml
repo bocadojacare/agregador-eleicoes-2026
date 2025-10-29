@@ -8,6 +8,9 @@ on:
   # Permite executar manualmente pelo GitHub
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -47,7 +50,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add pesquisas_2026_normalizado.json pesquisas_2026.json media_movel_precalculada.json
           git commit -m "Update polling data - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
       
       - name: No changes
         if: steps.changed.outputs.changed != 'true'
