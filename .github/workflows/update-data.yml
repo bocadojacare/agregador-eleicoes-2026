@@ -28,15 +28,15 @@ jobs:
       
       - name: Run scraper
         run: python scrape_pesquisas_wiki.py
-        working-directory: ./public
+        working-directory: ./scripts
       
       - name: Normalize data
         run: python normalize_candidatos.py
-        working-directory: ./public
+        working-directory: ./scripts
       
       - name: Calculate moving average
         run: python calcular_media_movel.py
-        working-directory: ./public
+        working-directory: ./scripts
       
       - name: Check if data changed
         id: changed
