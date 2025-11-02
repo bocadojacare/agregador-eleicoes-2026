@@ -1,10 +1,5 @@
 // Agregador de Pesquisas Eleitorais 2026
 
-// Detectar ambiente e configurar caminho base
-const isGitHubPages = window.location.hostname.includes('github.io');
-const basePath = isGitHubPages ? '/site---agregador' : '';
-const getDataPath = (filename) => `${basePath}/data/${filename}`;
-
 // Dark Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn = document.getElementById('toggle-dark');
@@ -32,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   changelogBtn.addEventListener('click', async function() {
     try {
-      const response = await fetch(getDataPath('changelog.json'));
+      const response = await fetch('./data/changelog.json');
       const changelog = await response.json();
       
       const changelogBody = document.getElementById('changelog-body');
@@ -77,12 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
 async function montarGrafico() {
   console.log('Iniciando montarGrafico...');
   try {
-    const resposta = await fetch(getDataPath('pesquisas_2026_normalizado.json'));
+    const resposta = await fetch('./data/pesquisas_2026_normalizado.json');
     const pesquisas = await resposta.json();
     console.log('✓ Pesquisas carregadas:', pesquisas.length);
     
     // Carregar médias móveis pré-calculadas
-    const respostaMM = await fetch(getDataPath('media_movel_precalculada.json'));
+    const respostaMM = await fetch('./data/media_movel_precalculada.json');
     const mediaMovelData = await respostaMM.json();
     console.log('✓ Médias móveis carregadas:', Object.keys(mediaMovelData.candidatos));
   
