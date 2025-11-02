@@ -2,7 +2,7 @@
 Scraper para pesquisas eleitorais de 2026 no Brasil a partir da Wikipedia (EN):
 https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election
 
-Gera: public/pesquisas_2026.json
+Gera: data/pesquisas_2026.json
 """
 import requests
 from bs4 import BeautifulSoup
@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 WIKI_URL = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election"
-OUT_FILE = Path("pesquisas_2026.json")
+OUT_FILE = Path("data/pesquisas_2026.json")
 
 # Função utilitária para limpar nomes de candidatos
 import re

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   changelogBtn.addEventListener('click', async function() {
     try {
-      const response = await fetch('changelog.json');
+      const response = await fetch('data/changelog.json');
       const changelog = await response.json();
       
       const changelogBody = document.getElementById('changelog-body');
@@ -72,12 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
 async function montarGrafico() {
   console.log('Iniciando montarGrafico...');
   try {
-    const resposta = await fetch('pesquisas_2026_normalizado.json');
+    const resposta = await fetch('data/pesquisas_2026_normalizado.json');
     const pesquisas = await resposta.json();
     console.log('✓ Pesquisas carregadas:', pesquisas.length);
     
     // Carregar médias móveis pré-calculadas
-    const respostaMM = await fetch('media_movel_precalculada.json');
+    const respostaMM = await fetch('data/media_movel_precalculada.json');
     const mediaMovelData = await respostaMM.json();
     console.log('✓ Médias móveis carregadas:', Object.keys(mediaMovelData.candidatos));
   

@@ -100,10 +100,10 @@ class NaNEncoder(json.JSONEncoder):
 
 # Carregar dados
 print("=" * 80)
-print("CALCULANDO M├ëDIAS M├ôVEIS PR├ë-CALCULADAS")
+print("CALCULANDO MÉDIAS MÓVEIS PRÉ-CALCULADAS")
 print("=" * 80)
 
-with open('pesquisas_2026_normalizado.json', 'r', encoding='utf-8') as f:
+with open('data/pesquisas_2026_normalizado.json', 'r', encoding='utf-8') as f:
     dados = json.load(f)
 
 df = pd.DataFrame(dados)
@@ -164,7 +164,7 @@ for candidato in candidatos_principais:
         print(f"  {candidato}: {num_pesquisas} pesquisas")
 
 # Salvar como JSON
-output_path = 'media_movel_precalculada.json'
+output_path = 'data/media_movel_precalculada.json'
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(resultado, f, ensure_ascii=False, indent=2)
 
