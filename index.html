@@ -12,13 +12,21 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Bandeira do Brasil" class="flag-brasil">
             <h1>Agregador de Pesquisas Eleitorais 2026</h1>
             <div class="header-buttons">
-                <button id="btn-version" class="version-btn" title="Changelog">v1.0.0</button>
+                <button id="btn-version" class="version-btn" title="Changelog">v1.1.0</button>
                 <button id="toggle-dark" class="toggle-btn">🌙</button>
             </div>
         </div>
     </header>
     <main>
             <section id="grafico">
+                <nav class="turno-nav-inline">
+                    <button id="btn-turno-1" class="turno-btn ativo">1º Turno</button>
+                    <button id="btn-turno-2" class="turno-btn">2º Turno</button>
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggle-pontos" class="toggle-checkbox" checked>
+                        <span>Mostrar Pesquisas</span>
+                    </label>
+                </nav>
                 <h2>Evolução das Intenções de Voto</h2>
                 <div id="grafico-wrapper">
                     <canvas id="graficoVotos" width="1200" height="600"></canvas>
@@ -37,6 +45,33 @@
                     <span id="timeline-label"></span>
                 </div>
             </section>
+        <section id="grafico-segundo" class="hidden">
+            <nav class="turno-nav-inline">
+                <button id="btn-turno-1" class="turno-btn ativo">1º Turno</button>
+                <button id="btn-turno-2" class="turno-btn">2º Turno</button>
+                <label class="toggle-label">
+                    <input type="checkbox" id="toggle-pontos-segundo" class="toggle-checkbox" checked>
+                    <span>Mostrar Pesquisas</span>
+                </label>
+            </nav>
+            <h2>Evolução das Intenções de Voto - 2º Turno</h2>
+            <div id="grafico-wrapper-segundo">
+                <canvas id="graficoVotosSegundo" width="1200" height="600"></canvas>
+                <div id="media-final-box-segundo">
+                    <h3>Média Atual</h3>
+                    <div id="media-final-items-segundo"></div>
+                </div>
+            </div>
+            <div id="timeline-container-segundo">
+                <label>Período:</label>
+                <div id="timeline-wrapper-segundo">
+                    <input type="range" id="timeline-start-segundo" class="timeline-input" min="0" max="100" value="0">
+                    <input type="range" id="timeline-end-segundo" class="timeline-input" min="0" max="100" value="100">
+                    <div id="timeline-track-segundo"></div>
+                </div>
+                <span id="timeline-label-segundo"></span>
+            </div>
+        </section>
     </main>
     
     <!-- Modal Changelog -->
