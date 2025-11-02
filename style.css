@@ -570,6 +570,10 @@ main {
     #media-final-box {
         display: none;
     }
+    
+    #media-final-box-segundo {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -925,6 +929,10 @@ body.dark-mode .media-item {
 }
 
 body.dark-mode .media-item-name {
+    color: #e0e0e0;
+}
+
+body.dark-mode #media-final-items-segundo .media-item-name {
     color: #e0e0e0;
 }
 
