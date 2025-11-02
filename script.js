@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   changelogBtn.addEventListener('click', async function() {
     try {
-      const response = await fetch('./data/primeiro_turno/changelog.json');
+      const response = await fetch('./data/changelog.json');
       const changelog = await response.json();
       
       const changelogBody = document.getElementById('changelog-body');
