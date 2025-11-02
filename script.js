@@ -485,7 +485,7 @@ async function montarGrafico() {
     // Coleta dados de todos os candidatos
     const dados = [];
     candidatos.forEach((cand, idx) => {
-      const jsonKey = cand.replace('Tarcísio (Freitas)', 'Freitas').replace('Ciro (Gomes)', 'Ciro');
+      const jsonKey = cand.replace('Tarcísio (Freitas)', 'Freitas').replace('Ciro (Gomes)', 'Gomes');
       const mmData = mediaMovelData.candidatos[jsonKey];
       
       if (mmData) {
