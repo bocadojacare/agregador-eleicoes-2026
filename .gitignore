@@ -5,3 +5,8 @@ pesquisas_2026.json
 pesquisas_2026_normalizado.json
 media_movel_precalculada.json
 changelog.json
+# JSONs na raiz (devem estar em data/)
+pesquisas_2026.json
+pesquisas_2026_normalizado.json
+media_movel_precalculada.json
+changelog.json
