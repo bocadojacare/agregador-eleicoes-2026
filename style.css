@@ -968,3 +968,70 @@ body.dark-mode .changelog-date {
 body.dark-mode .changelog-notes li {
     color: #c0c0c0;
 }
+
+/* Estilos para Modal de Orientação */
+.orientation-content {
+    max-width: 400px;
+    text-align: center;
+}
+
+.orientation-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.orientation-body p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.orientation-icon {
+    font-size: 4rem;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.orientation-hint {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+}
+
+.close-orientation-btn {
+    padding: 0.75rem 2rem;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.close-orientation-btn:hover {
+    background: #0d1b5e;
+}
+
+body.dark-mode .orientation-body p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .orientation-hint {
+    color: #999;
+}
+
+body.dark-mode .close-orientation-btn {
+    background: #2196F3;
+}
+
+body.dark-mode .close-orientation-btn:hover {
+    background: #1976D2;
+}

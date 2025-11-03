@@ -1,5 +1,50 @@
 // Agregador de Pesquisas Eleitorais 2026
 
+// Detectar Mobile e Orientação
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function isPortraitOrientation() {
+  return window.innerHeight > window.innerWidth;
+}
+
+function showOrientationModal() {
+  const orientationModal = document.getElementById('orientation-modal');
+  const closeOrientationBtn = document.getElementById('close-orientation-modal');
+  
+  if (isMobileDevice() && isPortraitOrientation()) {
+    orientationModal.classList.add('show');
+  }
+  
+  closeOrientationBtn.addEventListener('click', function() {
+    orientationModal.classList.remove('show');
+  });
+}
+
+// Mostrar modal na primeira vez que o usuário entra
+document.addEventListener('DOMContentLoaded', function() {
+  // Verificar se é a primeira vez visitando
+  const hasVisited = localStorage.getItem('orientationModalShown');
+  if (!hasVisited) {
+    showOrientationModal();
+    localStorage.setItem('orientationModalShown', 'true');
+  }
+  
+  // Detectar mudança de orientação
+  window.addEventListener('orientationchange', function() {
+    setTimeout(() => {
+      if (isMobileDevice() && isPortraitOrientation()) {
+        const orientationModal = document.getElementById('orientation-modal');
+        orientationModal.classList.add('show');
+      } else {
+        const orientationModal = document.getElementById('orientation-modal');
+        orientationModal.classList.remove('show');
+      }
+    }, 100);
+  });
+});
+
 // Dark Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn = document.getElementById('toggle-dark');
