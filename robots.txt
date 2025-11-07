@@ -6,6 +6,7 @@ Allow: /
 Disallow: /node_modules/
 
 Sitemap: https://bocadojacare.github.io/agregador-eleicoes-2026/sitemap.xml
+Sitemap: https://bocadojacare.github.io/agregador-eleicoes-2026/sitemap.json
 
 # Google
 User-agent: Googlebot
