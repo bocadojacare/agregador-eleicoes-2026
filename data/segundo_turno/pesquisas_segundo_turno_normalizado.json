@@ -1,5 +1,13 @@
 [
   {
+    "data": "9 Nov 2025",
+    "instituto": "Quaest",
+    "candidatos": {
+      "Lula": 41.0,
+      "Freitas": 36.0
+    }
+  },
+  {
     "data": "24 Oct 2025",
     "instituto": "Paraná Pesquisas",
     "candidatos": {
