@@ -1,5 +1,20 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "22–27 Nov 2025",
+    "candidatos": {
+      "Lula": 48.4,
+      "Freitas": 32.5,
+      "Ratinho": 4.1,
+      "Zema": 2.3,
+      "Caiado": 5.7,
+      "Others": 1.9,
+      "BlankNullUndec.": 5.0,
+      "Sample size": 5.51,
+      "Lead": 15.9
+    }
+  },
+  {
     "instituto": "CNT",
     "data": "19–23 Nov 2025",
     "candidatos": {
@@ -449,6 +464,17 @@
       "BlankNullUndec.": 19.0,
       "Sample size": 4.5,
       "Lead": 17.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "22–27 Nov 2025",
+    "candidatos": {
+      "Lula": 49.0,
+      "Freitas": 47.0,
+      "BlankNullUndec.": 4.0,
+      "Sample size": 5.51,
+      "Lead": 2.0
     }
   },
   {

@@ -1,5 +1,13 @@
 [
   {
+    "data": "27 Nov 2025",
+    "instituto": "AtlasIntel",
+    "candidatos": {
+      "Lula": 49.0,
+      "Freitas": 47.0
+    }
+  },
+  {
     "data": "23 Nov 2025",
     "instituto": "CNT",
     "candidatos": {
