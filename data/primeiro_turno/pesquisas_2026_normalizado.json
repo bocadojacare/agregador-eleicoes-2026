@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "2–4 Dec 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "Freitas": 23.0,
+      "Ratinho": 11.0,
+      "Zema": 3.0,
+      "Caiado": 6.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "22–27 Nov 2025",
     "candidatos": {
@@ -18,6 +29,18 @@
       "Freitas": 21.7,
       "Ratinho": 11.8,
       "Zema": 5.7
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "6–10 Nov 2025",
+    "candidatos": {
+      "Lula": 36.0,
+      "Freitas": 23.2,
+      "Gomes": 9.7,
+      "Ratinho": 9.0,
+      "Zema": 3.3,
+      "Caiado": 4.5
     }
   },
   {
@@ -354,6 +377,14 @@
     }
   },
   {
+    "instituto": "Datafolha",
+    "data": "2–4 Dec 2025",
+    "candidatos": {
+      "Lula": 47.0,
+      "Freitas": 42.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "22–27 Nov 2025",
     "candidatos": {
@@ -367,6 +398,14 @@
     "candidatos": {
       "Lula": 45.7,
       "Freitas": 39.1
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "6–10 Nov 2025",
+    "candidatos": {
+      "Lula": 43.0,
+      "Freitas": 41.8
     }
   },
   {
