@@ -90,6 +90,18 @@ try:
             table_years = []
             seen_polls = set()  # Track (instituto, data) pairs to avoid duplicates
             
+            # Get header row to find column indices for Lula and Freitas
+            header_cols = table.find_all('th')
+            lula_idx = None
+            freitas_idx = None
+            
+            for idx, th in enumerate(header_cols):
+                th_text = th.get_text(strip=True).lower()
+                if 'lula' in th_text:
+                    lula_idx = idx
+                elif 'freitas' in th_text:
+                    freitas_idx = idx
+            
             for row in rows:
                 cols = row.find_all('td')
                 if len(cols) < 3:
@@ -102,7 +114,7 @@ try:
                 if not is_valid_poll_row(cells_text):
                     continue
                 
-                # Tentar identificar: data, instituto, Lula, Tarcísio
+                # Tentar identificar: data, instituto, Lula, Freitas (by column index)
                 if len(cells_text) >= 4:
                     instituto = cells_text[0]
                     data = cells_text[1]
@@ -112,19 +124,26 @@ try:
                     if poll_key in seen_polls:
                         continue
                     
-                    # Procurar valores de Lula e Tarcísio
+                    # Extract Lula and Freitas by their column indices if found
                     lula = None
                     tarcisio = None
                     
-                    # Tentar encontrar os valores nas colunas seguintes
-                    for i in range(2, len(cells_text)):
-                        val = parse_percentage(cells_text[i])
-                        if val is not None:
-                            if lula is None:
-                                lula = val
-                            elif tarcisio is None:
-                                tarcisio = val
-                                break
+                    # If we found column indices, use them directly
+                    if lula_idx is not None and lula_idx < len(cells_text):
+                        lula = parse_percentage(cells_text[lula_idx])
+                    if freitas_idx is not None and freitas_idx < len(cells_text):
+                        tarcisio = parse_percentage(cells_text[freitas_idx])
+                    
+                    # Fallback to old method if column indices didn't work
+                    if lula is None or tarcisio is None:
+                        for i in range(2, len(cells_text)):
+                            val = parse_percentage(cells_text[i])
+                            if val is not None:
+                                if lula is None:
+                                    lula = val
+                                elif tarcisio is None:
+                                    tarcisio = val
+                                    break
                     
                     # Validar dados - só pegar dados de 2025 e 2026
                     year = extract_year(data)
@@ -147,9 +166,8 @@ try:
     
     # Usar apenas a primeira tabela com dados válidos de 2026
     if found_tables:
-        # Use table 1 if it exists (it has the correct second round data with higher Lula numbers)
-        # Otherwise use table 0
-        table_to_use = 1 if len(found_tables) > 1 else 0
+        # Use table 2 (it has the actual runoff second round data with higher Lula numbers ~47%)
+        table_to_use = 2 if len(found_tables) > 2 else 1 if len(found_tables) > 1 else 0
         table_idx, table_data, years = found_tables[table_to_use]
         pesquisas = table_data
         print(f"\n✓ Usando tabela {table_idx} (contém dados de 2026+)")
