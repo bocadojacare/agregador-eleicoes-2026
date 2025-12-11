@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Ipec",
+    "data": "4–8 Dec 2025",
+    "candidatos": {
+      "Lula": 38.0,
+      "Freitas": 17.0,
+      "Ratinho": 9.0,
+      "Zema": 3.0,
+      "Caiado": 5.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "2–4 Dec 2025",
     "candidatos": {
@@ -374,6 +385,14 @@
       "Gomes": 9.0,
       "Zema": 3.0,
       "Caiado": 3.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "6–7 Dec 2025",
+    "candidatos": {
+      "Lula": 40.3,
+      "Freitas": 44.9
     }
   },
   {

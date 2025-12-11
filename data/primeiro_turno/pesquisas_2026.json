@@ -1,5 +1,19 @@
 [
   {
+    "instituto": "Ipec",
+    "data": "4–8 Dec 2025",
+    "candidatos": {
+      "Lula": 38.0,
+      "Freitas": 17.0,
+      "Ratinho": 9.0,
+      "Zema": 3.0,
+      "Caiado": 5.0,
+      "BlankNullUndec.": 27.0,
+      "Sample size": 2.0,
+      "Lead": 21.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "2–4 Dec 2025",
     "candidatos": {
@@ -493,6 +507,17 @@
       "BlankNullUndec.": 19.0,
       "Sample size": 4.5,
       "Lead": 17.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "6–7 Dec 2025",
+    "candidatos": {
+      "Lula": 40.3,
+      "Freitas": 44.9,
+      "BlankNullUndec.": 14.8,
+      "Sample size": 2.519,
+      "Lead": 4.6
     }
   },
   {
