@@ -181,20 +181,43 @@ async function montarGrafico() {
     console.log('✓ Médias móveis carregadas:', Object.keys(mediaMovelData.candidatos));
   
   const ctx = document.getElementById('graficoVotos').getContext('2d');
-  const registros = pesquisas.slice().reverse();
+  
+  // Use moving average data order (already sorted by date)
+  // Create registro objects from MM data to maintain alignment
+  const registros = mediaMovelData.datas.map((d, i) => ({
+    data: new Date(d).toLocaleDateString('pt-BR', { year: 'numeric', month: 'short', day: 'numeric' }),
+    instituto: mediaMovelData.institutos[i],
+    candidatos: {}
+  }));
+  
+  // Also keep reference to original pesquisas for poll data
+  const pesquisasMap = {};
+  pesquisas.forEach(p => {
+    const key = `${p.instituto}|${p.data}`;
+    pesquisasMap[key] = p;
+  });
+  
+  // Fill in candidatos from MM data
+  for (const candidato in mediaMovelData.candidatos) {
+    registros.forEach((r, i) => {
+      r.candidatos[candidato] = mediaMovelData.candidatos[candidato].pesquisas_brutos[i];
+    });
+  }
 
   function parseDate(str) {
     if (!str) return null;
-    let m = str.match(/(\d{1,2})[-](\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    // Handle en-dash, em-dash, and regular hyphen
+    str = str.replace(/[–—-]/g, '-');
+    let m = str.match(/(\d{1,2})-(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
     if (m) return new Date(`${m[3]} ${m[2]}, ${m[4]}`);
-    m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s*[-]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
     if (m) return new Date(`${m[4]} ${m[3]}, ${m[5]}`);
     m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
     if (m) return new Date(`${m[2]} ${m[1]}, ${m[3]}`);
     return null;
   }
 
-  const datas = registros.map(r => parseDate(r.data));
+  const datas = mediaMovelData.datas.map(d => new Date(d));
   
   const registrosFiltrados = registros;
   const datasFiltradas = datas;
@@ -656,20 +679,35 @@ async function montarGraficoSegundoTurno() {
     console.log('✓ Médias móveis 2º turno carregadas:', Object.keys(mediaMovelData.candidatos));
 
     const ctx = document.getElementById('graficoVotosSegundo').getContext('2d');
-    const registros = pesquisas.slice().reverse();
+    
+    // Use moving average data order (already sorted by date)
+    const registros = mediaMovelData.datas.map((d, i) => ({
+      data: new Date(d).toLocaleDateString('pt-BR', { year: 'numeric', month: 'short', day: 'numeric' }),
+      instituto: mediaMovelData.institutos[i],
+      candidatos: {}
+    }));
+    
+    // Fill in candidatos from MM data
+    for (const candidato in mediaMovelData.candidatos) {
+      registros.forEach((r, i) => {
+        r.candidatos[candidato] = mediaMovelData.candidatos[candidato].pesquisas_brutos[i];
+      });
+    }
 
     function parseDate(str) {
       if (!str) return null;
-      let m = str.match(/(\d{1,2})[-](\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+      // Handle en-dash, em-dash, and regular hyphen
+      str = str.replace(/[–—-]/g, '-');
+      let m = str.match(/(\d{1,2})-(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
       if (m) return new Date(`${m[3]} ${m[2]}, ${m[4]}`);
-      m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s*[-]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+      m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
       if (m) return new Date(`${m[4]} ${m[3]}, ${m[5]}`);
       m = str.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
       if (m) return new Date(`${m[2]} ${m[1]}, ${m[3]}`);
       return null;
     }
 
-    const datas = registros.map(r => parseDate(r.data));
+    const datas = mediaMovelData.datas.map(d => new Date(d));
     const registrosFiltrados = registros;
     const datasFiltradas = datas;
     const series = {

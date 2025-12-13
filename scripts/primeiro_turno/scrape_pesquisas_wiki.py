@@ -9,16 +9,23 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import json
 from pathlib import Path
+import re
 
 WIKI_URL = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election"
 OUT_FILE = Path("data/primeiro_turno/pesquisas_2026.json")
 
 # Função utilitária para limpar nomes de candidatos
-import re
 def clean_candidate(name):
     name = re.sub(r"\[.*?\]", "", name)
     name = re.sub(r"\(.*?\)", "", name)
     return name.strip()
+
+def extract_year(date_str):
+    """Extrai o ano de uma string de data"""
+    if not date_str:
+        return None
+    match = re.search(r'\d{4}', date_str)
+    return int(match.group()) if match else None
 
 def main():
     print("Baixando página...")
@@ -26,6 +33,7 @@ def main():
     html = requests.get(WIKI_URL, headers=headers).text
     soup = BeautifulSoup(html, "lxml")
     pesquisas = []
+    seen = set()  # Track (instituto, data) pairs to avoid duplicates
     tables = soup.find_all("table")
     print(f"Tabelas encontradas: {len(tables)}")
     for table in tables:
@@ -58,6 +66,17 @@ def main():
                     break
             if not valid_date:
                 continue
+            
+            # Filtrar apenas pesquisas de 2025 em diante
+            year = extract_year(data)
+            if not year or year < 2025:
+                continue
+            
+            # Skip duplicate (instituto, data) pairs
+            poll_key = (instituto, data)
+            if poll_key in seen:
+                continue
+            seen.add(poll_key)
             
             candidatos = {}
             for i in range(2, cell_count):
