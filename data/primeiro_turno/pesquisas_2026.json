@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "6–10 Dec 2025",
+    "candidatos": {
+      "Lula": 34.0,
+      "F. Bolsonaro": 25.0,
+      "Gomes": 7.0,
+      "Ratinho": 8.0,
+      "Zema": 4.0,
+      "Caiado": 6.0,
+      "Others": 4.0,
+      "BlankNullUndec.": 12.0,
+      "Sample size": 2.0,
+      "Lead": 9.0
+    }
+  },
+  {
     "instituto": "Ipec",
     "data": "4–8 Dec 2025",
     "candidatos": {
@@ -507,6 +523,17 @@
       "BlankNullUndec.": 19.0,
       "Sample size": 4.5,
       "Lead": 17.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "6–10 Dec 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "F. Bolsonaro": 42.0,
+      "BlankNullUndec.": 17.0,
+      "Sample size": 2.0,
+      "Lead": 1.0
     }
   },
   {

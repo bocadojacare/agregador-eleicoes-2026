@@ -1,5 +1,13 @@
 [
   {
+    "data": "10 Dec 2025",
+    "instituto": "Gerp",
+    "candidatos": {
+      "Lula": 41.0,
+      "Freitas": 41.0
+    }
+  },
+  {
     "data": "7 Dec 2025",
     "instituto": "Veritá",
     "candidatos": {
