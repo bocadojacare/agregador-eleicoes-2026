@@ -53,7 +53,9 @@ def calcular_media_movel(valores, datas, window_days=31):
             if valores[j] is None or datas[j] is None:
                 continue
             
-            if abs((datas[j] - base).total_seconds() * 1000) <= msWindow:
+            # Only look backwards (historical data)
+            diff_ms = (datas[j] - base).total_seconds() * 1000
+            if diff_ms <= 0 and diff_ms >= -msWindow:
                 sum_val += valores[j]
                 cnt += 1
         

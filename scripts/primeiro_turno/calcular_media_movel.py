@@ -42,8 +42,9 @@ def calcular_media_movel(valores, datas, window_days=31):
             media_movel.append(None)
             continue
         
-        # Encontrar todas as pesquisas do candidato dentro de 31 dias
-        mascara = np.abs((datas - data_ref).dt.total_seconds() * 1000) <= ms_window
+        # Encontrar todas as pesquisas do candidato dentro de 31 dias ANTERIORES (backward-looking)
+        diff_ms = (datas - data_ref).dt.total_seconds() * 1000
+        mascara = (diff_ms <= 0) & (diff_ms >= -ms_window)
         valores_janela = valores[mascara].dropna()
         
         if len(valores_janela) > 0:
