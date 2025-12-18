@@ -1,5 +1,14 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "11–14 Dec 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "F. Bolsonaro": 23.0,
+      "Freitas": 10.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "6–10 Dec 2025",
     "candidatos": {
