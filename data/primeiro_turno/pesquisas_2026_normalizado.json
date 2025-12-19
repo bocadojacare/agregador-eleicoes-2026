@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "10–15 Dec 2025",
+    "candidatos": {
+      "Lula": 47.9,
+      "F. Bolsonaro": 21.3,
+      "Freitas": 15.0,
+      "Ratinho": 4.1,
+      "Zema": 3.0,
+      "Caiado": 4.4
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "11–14 Dec 2025",
     "candidatos": {
