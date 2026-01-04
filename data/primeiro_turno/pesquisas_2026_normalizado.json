@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Paraná Pesquisas",
+    "data": "18–22 Dec 2025",
+    "candidatos": {
+      "Lula": 37.6,
+      "F. Bolsonaro": 27.8,
+      "Gomes": 7.9,
+      "Ratinho": 9.0,
+      "Zema": 3.1
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "10–15 Dec 2025",
     "candidatos": {

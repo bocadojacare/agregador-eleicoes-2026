@@ -1,5 +1,13 @@
 [
   {
+    "data": "22 Dec 2025",
+    "instituto": "Paraná Pesquisas",
+    "candidatos": {
+      "Lula": 44.1,
+      "Freitas": 44.1
+    }
+  },
+  {
     "data": "15 Dec 2025",
     "instituto": "AtlasIntel",
     "candidatos": {
