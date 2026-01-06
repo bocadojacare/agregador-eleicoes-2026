@@ -4,12 +4,17 @@ Fonte: https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_pres
 
 Gera: data/segundo_turno/pesquisas_segundo_turno.json
 """
+import sys
+import io
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
 from pathlib import Path
 import re
+
+# Fix Unicode output on Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Brazilian_presidential_election"
 OUT_FILE = Path("data/segundo_turno/pesquisas_segundo_turno.json")
@@ -88,7 +93,7 @@ try:
             rows = table.find_all('tr')
             table_pesquisas = []
             table_years = []
-            seen_polls = set()  # Track (instituto, data) pairs to avoid duplicates
+            seen_polls = set()  # Track (instituto, data) pairs after finding Lula vs Freitas
             
             # Get header row to find column indices for Lula and Freitas
             header_cols = table.find_all('th')
@@ -99,8 +104,12 @@ try:
                 th_text = th.get_text(strip=True).lower()
                 if 'lula' in th_text:
                     lula_idx = idx
-                elif 'freitas' in th_text:
+                elif 'freitas' in th_text or 'tarcísio' in th_text or 'tarcisio' in th_text:
                     freitas_idx = idx
+            
+            # Group rows by instituto+data (each poll has multiple rows for different matchups)
+            current_instituto = None
+            current_data = None
             
             for row in rows:
                 cols = row.find_all('td')
@@ -110,67 +119,98 @@ try:
                 # Extrair informações
                 cells_text = [col.get_text(strip=True) for col in cols]
                 
-                # Validate that this is a proper poll row (not a subrow)
-                if not is_valid_poll_row(cells_text):
+                # Check if this is a new poll (has instituto and data in first two cells)
+                # or a continuation row (empty first cells, or numeric/N/a values)
+                first_cell = cells_text[0]
+                second_cell = cells_text[1]
+                
+                # A new poll row has both instituto name (text, not just numbers) and a date
+                # Continuation rows have empty cells, or numeric values, or just "N/a"
+                is_new_poll = (first_cell and second_cell and 
+                              not first_cell.replace('.', '').replace(',', '').replace('–', '').replace('N/a', '').strip().isdigit() and
+                              not first_cell in ['–N/a', 'N/a'] and
+                              len(first_cell) > 3)  # Instituto names are longer than 3 chars
+                
+                if is_new_poll:
+                    current_instituto = first_cell
+                    current_data = second_cell
+                # Otherwise, this is a continuation row using previous instituto/data
+                
+                if not current_instituto or not current_data:
                     continue
                 
-                # Tentar identificar: data, instituto, Lula, Freitas (by column index)
-                if len(cells_text) >= 4:
-                    instituto = cells_text[0]
-                    data = cells_text[1]
-                    
-                    # Skip if we've already seen this instituto/data combination (avoiding subrows)
-                    poll_key = (instituto, data)
-                    if poll_key in seen_polls:
-                        continue
-                    
-                    # Extract Lula and Freitas by their column indices if found
-                    lula = None
-                    tarcisio = None
-                    
-                    # If we found column indices, use them directly
-                    if lula_idx is not None and lula_idx < len(cells_text):
-                        lula = parse_percentage(cells_text[lula_idx])
-                    if freitas_idx is not None and freitas_idx < len(cells_text):
-                        tarcisio = parse_percentage(cells_text[freitas_idx])
-                    
-                    # Fallback to old method if column indices didn't work
-                    if lula is None or tarcisio is None:
-                        for i in range(2, len(cells_text)):
-                            val = parse_percentage(cells_text[i])
-                            if val is not None:
-                                if lula is None:
-                                    lula = val
-                                elif tarcisio is None:
-                                    tarcisio = val
-                                    break
-                    
-                    # Validar dados - só pegar dados de 2025 e 2026
-                    year = extract_year(data)
-                    if data and instituto and lula is not None and tarcisio is not None and year and year >= 2025:
-                        pesquisa = {
-                            "data": data,
-                            "instituto": instituto,
-                            "candidatos": {
-                                "Lula": lula,
-                                "Freitas": tarcisio
-                            }
+                # Extract Lula and Freitas by their column indices if found
+                # ONLY extract if BOTH columns have valid data (to skip Lula vs Bolsonaro rows)
+                lula = None
+                tarcisio = None
+                
+                # For continuation rows (where first cells are empty or numeric),
+                # the columns are shifted left by 2 (no instituto/date columns)
+                lula_col = lula_idx
+                freitas_col = freitas_idx
+                
+                if not is_new_poll and lula_idx is not None and lula_idx >= 2:
+                    lula_col = lula_idx - 2
+                    freitas_col = freitas_idx - 2 if freitas_idx else None
+                
+                # If we found column indices, use them directly
+                if lula_col is not None and lula_col < len(cells_text):
+                    lula = parse_percentage(cells_text[lula_col])
+                if freitas_col is not None and freitas_col < len(cells_text):
+                    tarcisio = parse_percentage(cells_text[freitas_col])
+                
+                # CRITICAL: Only proceed if BOTH Lula and Freitas columns have values
+                # This ensures we skip rows that are Lula vs Bolsonaro or other matchups
+                if lula is None or tarcisio is None:
+                    continue
+                
+                # Skip if we've already found Lula vs Freitas for this poll
+                poll_key = (current_instituto, current_data)
+                if poll_key in seen_polls:
+                    continue
+                
+                # Validar dados - só pegar dados de 2025 e 2026
+                year = extract_year(current_data)
+                if current_instituto and current_data and year and year >= 2025:
+                    pesquisa = {
+                        "data": current_data,
+                        "instituto": current_instituto,
+                        "candidatos": {
+                            "Lula": lula,
+                            "Freitas": tarcisio
                         }
-                        table_pesquisas.append(pesquisa)
-                        table_years.append(year)
-                        seen_polls.add(poll_key)
-                        print(f"    ✓ {instituto}: {data} - Lula {lula}% | Tarcísio {tarcisio}%")
+                    }
+                    table_pesquisas.append(pesquisa)
+                    table_years.append(year)
+                    seen_polls.add(poll_key)
+                    print(f"    ✓ {current_instituto}: {current_data} - Lula {lula}% | Tarcísio {tarcisio}%")
             
             if table_pesquisas:
                 found_tables.append((table_idx, table_pesquisas, table_years))
     
-    # Usar apenas a primeira tabela com dados válidos de 2026
+    # Use only the proper second round/runoff table (Table 2)
+    # Table 0 and 1 have first round multi-candidate scenarios, not head-to-head runoffs
     if found_tables:
-        # Use table 2 (it has the actual runoff second round data with higher Lula numbers ~47%)
-        table_to_use = 2 if len(found_tables) > 2 else 1 if len(found_tables) > 1 else 0
-        table_idx, table_data, years = found_tables[table_to_use]
-        pesquisas = table_data
-        print(f"\n✓ Usando tabela {table_idx} (contém dados de 2026+)")
+        # Find the table with highest average Lula+Freitas combined percentage (indicates runoff, not first round)
+        best_table_idx = None
+        highest_avg = 0
+        
+        for table_idx, table_data, years in found_tables:
+            if len(table_data) > 0:
+                avg_combined = sum(p['candidatos']['Lula'] + p['candidatos']['Freitas'] for p in table_data) / len(table_data)
+                print(f"\n✓ Tabela {table_idx}: {len(table_data)} pesquisas, média combinada: {avg_combined:.1f}%")
+                if avg_combined > highest_avg:
+                    highest_avg = avg_combined
+                    best_table_idx = table_idx
+        
+        # Get the data from the best table
+        pesquisas = []
+        for table_idx, table_data, years in found_tables:
+            if table_idx == best_table_idx:
+                pesquisas = table_data
+                break
+        
+        print(f"\n✓ Usando tabela {best_table_idx} (dados de segundo turno válidos)")
         print(f"✓ {len(pesquisas)} pesquisas extraídas do segundo turno")
         
         # Salvar JSON

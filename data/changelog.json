@@ -1,6 +1,14 @@
 {
-  "versao_atual": "1.1.1",
+  "versao_atual": "1.1.2",
   "versoes": [
+    {
+      "versao": "1.1.2",
+      "data": "2026-01-05",
+      "notas": [
+        "Correção da extração de pesquisas de segundo turno",
+        "Inclusão de pesquisas mais recentes (dezembro 2025)"
+      ]
+    },
     {
       "versao": "1.1.1",
       "data": "2025-12-13",
