@@ -1,5 +1,28 @@
 [
   {
+    "instituto": "Ideia",
+    "data": "8–12 Jan 2026",
+    "candidatos": {
+      "Lula": 39.7,
+      "F. Bolsonaro": 26.5,
+      "Ratinho": 7.0,
+      "Zema": 3.6,
+      "Caiado": 4.2
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "8–11 Jan 2026",
+    "candidatos": {
+      "Lula": 36.0,
+      "F. Bolsonaro": 23.0,
+      "Freitas": 9.0,
+      "Ratinho": 7.0,
+      "Zema": 2.0,
+      "Caiado": 3.0
+    }
+  },
+  {
     "instituto": "Paraná Pesquisas",
     "data": "18–22 Dec 2025",
     "candidatos": {
