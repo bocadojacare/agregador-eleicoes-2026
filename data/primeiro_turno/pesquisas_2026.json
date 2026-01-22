@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "15–20 Jan 2026",
+    "candidatos": {
+      "Lula": 48.4,
+      "F. Bolsonaro": 28.0,
+      "Freitas": 11.0,
+      "Ratinho": 1.7,
+      "Zema": 1.7,
+      "Caiado": 2.9,
+      "Others": 3.9,
+      "BlankNullUndec.": 2.4,
+      "Sample size": 5.418,
+      "Lead": 20.4
+    }
+  },
+  {
     "instituto": "Ideia",
     "data": "8–12 Jan 2026",
     "candidatos": {
