@@ -16,6 +16,21 @@
     }
   },
   {
+    "instituto": "Futura",
+    "data": "15–19 Jan 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "F. Bolsonaro": 33.3,
+      "Freitas": 10.5,
+      "Zema": 2.6,
+      "Caiado": 3.0,
+      "Others": 1.7,
+      "BlankNullUndec.": 11.9,
+      "Sample size": 2.0,
+      "Lead": 3.7
+    }
+  },
+  {
     "instituto": "Ideia",
     "data": "8–12 Jan 2026",
     "candidatos": {
