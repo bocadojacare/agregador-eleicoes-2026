@@ -1,5 +1,20 @@
 [
   {
+    "instituto": "Paraná Pesquisas",
+    "data": "25–28 Jan 2026",
+    "candidatos": {
+      "Lula": 39.8,
+      "F. Bolsonaro": 33.1,
+      "Ratinho": 6.5,
+      "Zema": 2.8,
+      "Caiado": 3.7,
+      "Others": 2.6,
+      "BlankNullUndec.": 11.5,
+      "Sample size": 2.08,
+      "Lead": 6.7
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "15–20 Jan 2026",
     "candidatos": {

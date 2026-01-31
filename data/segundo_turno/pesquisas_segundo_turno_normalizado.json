@@ -1,5 +1,13 @@
 [
   {
+    "data": "28 Jan 2026",
+    "instituto": "Paraná Pesquisas",
+    "candidatos": {
+      "Lula": 43.9,
+      "Freitas": 42.5
+    }
+  },
+  {
     "data": "20 Jan 2026",
     "instituto": "AtlasIntel",
     "candidatos": {
