@@ -10,6 +10,16 @@
     }
   },
   {
+    "instituto": "Futura",
+    "data": "3–7 Feb 2026",
+    "candidatos": {
+      "Others": 5.0,
+      "BlankNullUndec.": 10.2,
+      "Sample size": 2.0,
+      "Lead": 2.5
+    }
+  },
+  {
     "instituto": "Ideia",
     "data": "30 Jan–2 Feb 2026",
     "candidatos": {
