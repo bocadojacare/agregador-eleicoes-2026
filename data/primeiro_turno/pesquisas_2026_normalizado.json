@@ -1,5 +1,10 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "5–9 Feb 2026",
+    "candidatos": {}
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "6–7 Feb 2026",
     "candidatos": {}
@@ -7,6 +12,11 @@
   {
     "instituto": "Futura",
     "data": "3–7 Feb 2026",
+    "candidatos": {}
+  },
+  {
+    "instituto": "Gerp",
+    "data": "28 Jan–2 Feb 2026",
     "candidatos": {}
   },
   {

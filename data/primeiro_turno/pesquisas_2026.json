@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "5–9 Feb 2026",
+    "candidatos": {
+      "Others": 2.0,
+      "BlankNullUndec.": 22.0,
+      "Sample size": 2.004,
+      "Lead": 8.0
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "6–7 Feb 2026",
     "candidatos": {
@@ -17,6 +27,16 @@
       "BlankNullUndec.": 10.2,
       "Sample size": 2.0,
       "Lead": 2.5
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "28 Jan–2 Feb 2026",
+    "candidatos": {
+      "Others": 4.0,
+      "BlankNullUndec.": 11.0,
+      "Sample size": 2.0,
+      "Lead": 4.0
     }
   },
   {
