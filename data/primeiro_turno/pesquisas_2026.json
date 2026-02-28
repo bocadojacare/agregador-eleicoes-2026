@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Paraná Pesquisas",
+    "data": "22–25 Feb 2026",
+    "candidatos": {
+      "Others": 1.9,
+      "BlankNullUndec.": 13.0,
+      "Sample size": 2.08,
+      "Lead": 3.9
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "19–24 Feb 2026",
     "candidatos": {
