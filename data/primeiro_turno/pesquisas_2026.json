@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "3–5 Mar 2026",
+    "candidatos": {
+      "Others": 5.0,
+      "BlankNullUndec.": 15.0,
+      "Sample size": 2.004,
+      "Lead": 6.0
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "28 Feb–2 Mar 2026",
     "candidatos": {
