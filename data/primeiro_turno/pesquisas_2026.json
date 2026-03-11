@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Ideia",
+    "data": "6–10 Mar 2026",
+    "candidatos": {
+      "Others": 2.4,
+      "BlankNullUndec.": 11.9,
+      "Sample size": 1.5,
+      "Lead": 5.3
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "3–5 Mar 2026",
     "candidatos": {
