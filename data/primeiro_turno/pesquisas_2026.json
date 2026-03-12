@@ -10,6 +10,26 @@
     }
   },
   {
+    "instituto": "Quaest",
+    "data": "6–9 Mar 2026",
+    "candidatos": {
+      "Others": 2.0,
+      "BlankNullUndec.": 21.0,
+      "Sample size": 2.004,
+      "Lead": 7.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2–6 Mar 2026",
+    "candidatos": {
+      "Others": 4.1,
+      "BlankNullUndec.": 10.1,
+      "Sample size": 2.0,
+      "Lead": 6.8
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "3–5 Mar 2026",
     "candidatos": {
