@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "18–23 Mar 2026",
+    "candidatos": {
+      "Others": 5.0,
+      "BlankNullUndec.": 2.2,
+      "Sample size": 5.028,
+      "Lead": 5.8
+    }
+  },
+  {
     "instituto": "Ideia",
     "data": "6–10 Mar 2026",
     "candidatos": {
