@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "20-25 Mar 2026",
+    "candidatos": {
+      "Others": 8.0,
+      "BlankNullUndec.": 9.0,
+      "Sample size": 2.0,
+      "Lead": 2.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "18–23 Mar 2026",
     "candidatos": {
