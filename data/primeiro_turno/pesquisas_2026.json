@@ -1,5 +1,15 @@
 [
   {
+    "instituto": "Paraná Pesquias",
+    "data": "25-28 Mar 2026",
+    "candidatos": {
+      "Others": 2.3,
+      "BlankNullUndec.": 12.0,
+      "Sample size": 2.08,
+      "Lead": 3.5
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "20-25 Mar 2026",
     "candidatos": {
@@ -187,6 +197,15 @@
       "BlankNullUndec.": 18.0,
       "Sample size": 2.004,
       "Lead": 13.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "25-28 Mar 2026",
+    "candidatos": {
+      "BlankNullUndec.": 10.7,
+      "Sample size": 2.08,
+      "Lead": 1.1
     }
   },
   {

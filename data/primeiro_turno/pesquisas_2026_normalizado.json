@@ -1,5 +1,10 @@
 [
   {
+    "instituto": "Paraná Pesquias",
+    "data": "25-28 Mar 2026",
+    "candidatos": {}
+  },
+  {
     "instituto": "Gerp",
     "data": "20-25 Mar 2026",
     "candidatos": {}
@@ -92,6 +97,11 @@
   {
     "instituto": "Quaest",
     "data": "8–11 Jan 2026",
+    "candidatos": {}
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "25-28 Mar 2026",
     "candidatos": {}
   },
   {
