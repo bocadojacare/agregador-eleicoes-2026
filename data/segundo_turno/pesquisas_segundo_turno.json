@@ -1,298 +1,242 @@
 [
   {
-    "data": "18–22 Dec 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 44.0,
-      "Freitas": 42.5
-    }
-  },
-  {
-    "data": "10–15 Dec 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 49.0,
-      "Freitas": 45.0
-    }
-  },
-  {
-    "data": "11–14 Dec 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 45.0,
-      "Freitas": 35.0
-    }
-  },
-  {
-    "data": "6–7 Dec 2025",
-    "instituto": "Veritá",
-    "candidatos": {
-      "Lula": 40.3,
-      "Freitas": 44.9
-    }
-  },
-  {
-    "data": "2–4 Dec 2025",
-    "instituto": "Datafolha",
-    "candidatos": {
-      "Lula": 47.0,
-      "Freitas": 42.0
-    }
-  },
-  {
-    "data": "22–27 Nov 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 49.0,
-      "Freitas": 47.0
-    }
-  },
-  {
-    "data": "6–10 Nov 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 41.8
-    }
-  },
-  {
-    "data": "6–9 Nov 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 41.0,
-      "Freitas": 36.0
-    }
-  },
-  {
-    "data": "21–24 Oct 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 44.9,
-      "Freitas": 40.9
-    }
-  },
-  {
-    "data": "15–19 Oct 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 52.0,
-      "Freitas": 44.0
-    }
-  },
-  {
-    "data": "2–5 Oct 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 45.0,
-      "Freitas": 33.0
-    }
-  },
-  {
-    "data": "29 Sep – 6 Oct 2025",
-    "instituto": "Gerp",
-    "candidatos": {
-      "Lula": 36.0,
-      "Freitas": 45.0
-    }
-  },
-  {
-    "data": "12–14 Sep 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 35.0
-    }
-  },
-  {
-    "data": "10–14 Sep 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 50.6,
-      "Freitas": 45.2
-    }
-  },
-  {
-    "data": "20–25 Aug 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 46.6,
-      "Freitas": 48.4
-    }
-  },
-  {
-    "data": "17–21 Aug 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 41.9,
-      "Freitas": 41.9
-    }
-  },
-  {
-    "data": "13–17 Aug 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 35.0
-    }
-  },
-  {
-    "data": "29–30 Jul 2025",
-    "instituto": "Datafolha",
-    "candidatos": {
-      "Lula": 45.0,
-      "Freitas": 41.0
-    }
-  },
-  {
-    "data": "25–28 Jul 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 50.4,
-      "Freitas": 46.6
-    }
-  },
-  {
-    "data": "10–14 Jul 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 41.0,
-      "Freitas": 37.0
-    }
-  },
-  {
-    "data": "27–30 Jun 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 47.6,
-      "Freitas": 46.9
-    }
-  },
-  {
-    "data": "25–27 Jun 2025",
-    "instituto": "Neokemp",
-    "candidatos": {
-      "Lula": 41.7,
-      "Freitas": 46.5
-    }
-  },
-  {
-    "data": "12–23 Jun 2025",
-    "instituto": "Futura",
-    "candidatos": {
-      "Lula": 34.9,
-      "Freitas": 46.5
-    }
-  },
-  {
-    "data": "18–22 Jun 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 40.1,
-      "Freitas": 43.6
-    }
-  },
-  {
-    "data": "10–11 Jun 2025",
-    "instituto": "Datafolha",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 42.0
-    }
-  },
-  {
-    "data": "2–4 Jun 2025",
-    "instituto": "Futura",
-    "candidatos": {
-      "Lula": 41.1,
-      "Freitas": 41.0
-    }
-  },
-  {
-    "data": "29 May – 1 Jun 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 41.0,
-      "Freitas": 40.0
-    }
-  },
-  {
-    "data": "19–23 May 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 45.3,
-      "Freitas": 48.9
-    }
-  },
-  {
-    "data": "20–24 Apr 2025",
-    "instituto": "AtlasIntel",
-    "candidatos": {
-      "Lula": 46.7,
-      "Freitas": 46.7
-    }
-  },
-  {
-    "data": "16–19 Apr 2025",
-    "instituto": "Paraná Pesquisas",
-    "candidatos": {
-      "Lula": 40.6,
-      "Freitas": 43.4
-    }
-  },
-  {
-    "data": "1–3 Apr 2025",
-    "instituto": "Datafolha",
-    "candidatos": {
-      "Lula": 48.0,
-      "Freitas": 39.0
-    }
-  },
-  {
-    "data": "27–31 Mar 2025",
-    "instituto": "Quaest",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 37.0
-    }
-  },
-  {
-    "data": "20–24 Mar 2025",
-    "instituto": "AtlasIntel",
+    "instituto": "Nexus/BTG",
+    "data": "27 Mar - 29 Mar 2026",
     "candidatos": {
       "Lula": 46.0,
-      "Freitas": 47.0
+      "Flávio": 46.0
     }
   },
   {
-    "data": "19–22 Mar 2025",
-    "instituto": "Futura",
+    "instituto": "Paraná Pesquisas",
+    "data": "25 Mar - 28 Mar 2026",
     "candidatos": {
-      "Lula": 37.6,
-      "Freitas": 42.3
+      "Lula": 44.1,
+      "Flávio": 45.2
     }
   },
   {
-    "data": "24–27 Feb 2025",
+    "instituto": "Gerp",
+    "data": "20 Mar - 25 Mar 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 48.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
+    "data": "18 Mar - 23 Mar 2026",
+    "candidatos": {
+      "Lula": 46.6,
+      "Flávio": 47.6
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "06 Mar - 11 Mar 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 38.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "06 Mar - 09 Mar 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "02 Mar - 06 Mar 2026",
+    "candidatos": {
+      "Lula": 40.5,
+      "Flávio": 48.8
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "06 Mar - 10 Mar 2026",
     "candidatos": {
       "Lula": 47.0,
-      "Freitas": 49.0
+      "Flávio": 45.0
     }
   },
   {
-    "data": "27–31 Jan 2025",
-    "instituto": "AtlasIntel",
+    "instituto": "Datafolha",
+    "data": "03 Mar - 05 Mar 2026",
     "candidatos": {
-      "Lula": 45.7,
-      "Freitas": 44.7
+      "Lula": 46.0,
+      "Flávio": 43.0
     }
   },
   {
-    "data": "23–26 Jan 2025",
-    "instituto": "Quaest",
+    "instituto": "Vetor/Arrow",
+    "data": "27 Fev - 02 Mar 2026",
+    "candidatos": {
+      "Lula": 40.4,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "28 Fev - 2 Mar 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "22 Fev - 25 Fev 2026",
+    "candidatos": {
+      "Lula": 43.8,
+      "Flávio": 44.4
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "19 Fev - 24 Fev 2026",
+    "candidatos": {
+      "Lula": 46.2,
+      "Flávio": 46.3
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "05 Fev - 09 Fev 2026",
     "candidatos": {
       "Lula": 43.0,
-      "Freitas": 34.0
+      "Flávio": 38.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "03 Fev - 07 Fev 2026",
+    "candidatos": {
+      "Lula": 42.4,
+      "Flávio": 48.2
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "28 Jan - 02 Fev 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "30 Jan - 02 Fev 2026",
+    "candidatos": {
+      "Lula": 45.8,
+      "Flávio": 41.1
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "25 Jan - 28 Jan 2026",
+    "candidatos": {
+      "Lula": 44.8,
+      "Flávio": 42.2
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "15 Jan - 19 Jan 2026",
+    "candidatos": {
+      "Lula": 41.9,
+      "Flávio": 48.1
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "15 Jan - 20 Jan 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "08 Jan - 11 Jan 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 38.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "08 Jan - 12 Jan 2026",
+    "candidatos": {
+      "Lula": 46.2,
+      "Flávio": 36.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "18 Dez - 22 Dez 2025",
+    "candidatos": {
+      "Lula": 44.1,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "10 Dez - 15 Dez 2025",
+    "candidatos": {
+      "Lula": 53.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "11 Dez - 14 Dez 2025",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 36.0
+    }
+  },
+  {
+    "instituto": "Futura/Apex",
+    "data": "03 Dez - 09 Dez 2025",
+    "candidatos": {
+      "Lula": 42.1,
+      "Flávio": 41.6
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "06 Dez - 10 Dez 2025",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "06 Dez - 07 Dez 2025",
+    "candidatos": {
+      "Lula": 39.8,
+      "Flávio": 39.2
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "02 Dez - 04 Dez 2025",
+    "candidatos": {
+      "Lula": 51.0,
+      "Flávio": 36.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "06 Nov - 10 Nov 2025",
+    "candidatos": {
+      "Lula": 45.4,
+      "Flávio": 38.6
     }
   }
 ]

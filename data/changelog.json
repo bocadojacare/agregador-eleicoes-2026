@@ -1,6 +1,17 @@
 {
-  "versao_atual": "1.1.2",
+  "versao_atual": "1.2.0",
   "versoes": [
+    {
+      "versao": "1.2.0",
+      "data": "2026-04-04",
+      "notas": [
+        "Bem vindo à esse pequeno projeto, espero que seja útil!",
+        "Tentarei adicionar mais funcionalidades com o tempo.",
+        "Atualização dos pré-candidatos consolidados.",
+        "Melhorias visuais, inclusão dos partidos junto ao nome dos candidatos.",
+        "Pesquisas desde novembro incluídas, considerando entrada de Flávio Bolsonaro como pré-candidato"
+      ]
+    },
     {
       "versao": "1.1.2",
       "data": "2026-01-05",
@@ -33,8 +44,6 @@
       "versao": "1.0.0",
       "data": "2025-10-27",
       "notas": [
-        "Bem vindo à esse pequeno projeto, espero que seja útil!",
-        "Tentarei adicionar mais funcionalidades com o tempo.",
         "Lançamento inicial do agregador de pesquisas eleitorais",
         "Visualização de 5 candidatos principais",
         "Gráfico com médias móveis de 31 dias",

@@ -70,7 +70,7 @@ https://bocadojacare.github.io/agregador-eleicoes-2026/
 - **Toggle de Pesquisas**: Use o checkbox "Mostrar Pesquisas" para exibir ou ocultar os pontos individuais
 - **Timeline**: Arraste os controles para filtrar um período específico
 - **Modo Escuro**: Clique no ícone 🌙 no cabeçalho
-- **Changelog**: Clique no botão de versão (v1.1.0) para ver histórico de mudanças
+- **Changelog**: Clique no botão de versão (v1.2.0) para ver histórico de mudanças
 
 ## 🔄 Atualização Automática de Dados
 
@@ -78,7 +78,7 @@ Os dados são atualizados automaticamente via GitHub Actions todos os dias às 1
 
 1. **Scraping**: Coleta dados de institutos de pesquisa
 2. **Normalização**: Padroniza os dados coletados
-3. **Média Móvel**: Calcula média móvel de 31 dias
+3. **Média Móvel**: Calcula média móvel de 30 dias
 4. **Push Automático**: Envia dados para o repositório
 
 ## 📈 Dados e Fontes
@@ -99,6 +99,13 @@ Os dados agregados vêm de múltiplos institutos de pesquisa de opinião. Os arq
 - **Versionamento**: Git
 
 ## 📝 Versões
+
+### v1.2.0 (2026-04-04)
+- Exibição de partidos políticos nas caixas de Média Atual
+- Melhoria no comportamento do toggle 'Mostrar Pesquisas'
+- Correção do seletor de candidatos via legenda para respeitar estado do toggle
+- Atualização dos candidatos para refletir entrada de Flávio Bolsonaro como pré-candidato
+- Inclusão de Renan e Rebelo nos candidatos principais
 
 ### v1.1.0 (2025-11-01)
 - Implementação do segundo turno completo e independente

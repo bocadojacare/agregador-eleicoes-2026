@@ -4,13 +4,40 @@ import numpy as np
 from datetime import datetime
 import re
 
+# Portuguese to English month name mapping
+PT_MONTHS = {
+    'jan': 'Jan', 'janeiro': 'Jan',
+    'fev': 'Feb', 'fevereiro': 'Feb',
+    'mar': 'Mar', 'março': 'Mar',
+    'abr': 'Apr', 'abril': 'Apr',
+    'mai': 'May', 'maio': 'May',
+    'jun': 'Jun', 'junho': 'Jun',
+    'jul': 'Jul', 'julho': 'Jul',
+    'ago': 'Aug', 'agosto': 'Aug',
+    'set': 'Sep', 'setembro': 'Sep',
+    'out': 'Oct', 'outubro': 'Oct',
+    'nov': 'Nov', 'novembro': 'Nov',
+    'dez': 'Dec', 'dezembro': 'Dec',
+}
+
+def convert_pt_month_to_en(month_str):
+    """Converte nomes de meses em português para inglês"""
+    month_lower = month_str.lower()
+    return PT_MONTHS.get(month_lower, month_str)
+
 def parseDate(str_data):
-    """Parse dates in different formats from Wikipedia"""
+    """Parse dates in different formats from Wikipedia (English and Portuguese months)"""
     if not str_data:
         return None
     
     # Normalizar caracteres de travessão para hífen
     str_data = str_data.replace('–', '-').replace('−', '-').replace('–', '-')
+    
+    # Convert any Portuguese month names to English
+    for pt_month, en_month in PT_MONTHS.items():
+        # Create case-insensitive pattern
+        pattern = re.compile(f'\\b{pt_month}\\b', re.IGNORECASE)
+        str_data = pattern.sub(en_month, str_data)
     
     # Formato: "15-19 Oct 2025" (range de dias)
     m = re.match(r'(\d{1,2})\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
@@ -29,7 +56,7 @@ def parseDate(str_data):
     
     return None
 
-def calcular_media_movel(valores, datas, window_days=31):
+def calcular_media_movel(valores, datas, window_days=30):
     """
     Calcula m├®dia m├│vel baseada em janela de dias
     Apenas para dados do candidato espec├¡fico (ignora nulos)
@@ -42,7 +69,7 @@ def calcular_media_movel(valores, datas, window_days=31):
             media_movel.append(None)
             continue
         
-        # Encontrar todas as pesquisas do candidato dentro de 31 dias ANTERIORES (backward-looking)
+        # Encontrar todas as pesquisas do candidato dentro de 60 dias ANTERIORES (backward-looking)
         diff_ms = (datas - data_ref).dt.total_seconds() * 1000
         mascara = (diff_ms <= 0) & (diff_ms >= -ms_window)
         valores_janela = valores[mascara].dropna()
@@ -128,7 +155,7 @@ else:
     exit(1)
 
 # Candidatos principais
-candidatos_principais = ['Lula', 'Freitas', 'Gomes', 'Caiado', 'Zema', 'Ratinho']
+candidatos_principais = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Rebelo']
 
 # Estrutura para salvar
 resultado = {
@@ -149,7 +176,7 @@ for candidato in candidatos_principais:
         valores = pd.Series(df[candidato].values)
         datas = pd.Series(df['data_parsed'].values)
         
-        media_movel = calcular_media_movel(valores, datas, window_days=31)
+        media_movel = calcular_media_movel(valores, datas, window_days=30)
         
         # Substituir NaN por None
         media_movel = [None if (isinstance(x, float) and np.isnan(x)) else x for x in media_movel]

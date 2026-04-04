@@ -1,858 +1,394 @@
 [
   {
-    "instituto": "Paraná Pesquias",
-    "data": "25-28 Mar 2026",
-    "candidatos": {
-      "Others": 2.3,
-      "BlankNullUndec.": 12.0,
-      "Sample size": 2.08,
-      "Lead": 3.5
-    }
-  },
-  {
-    "instituto": "Gerp",
-    "data": "20-25 Mar 2026",
-    "candidatos": {
-      "Others": 8.0,
-      "BlankNullUndec.": 9.0,
-      "Sample size": 2.0,
-      "Lead": 2.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "18–23 Mar 2026",
-    "candidatos": {
-      "Others": 5.0,
-      "BlankNullUndec.": 2.2,
-      "Sample size": 5.028,
-      "Lead": 5.8
-    }
-  },
-  {
-    "instituto": "Ideia",
-    "data": "6–10 Mar 2026",
-    "candidatos": {
-      "Others": 2.4,
-      "BlankNullUndec.": 11.9,
-      "Sample size": 1.5,
-      "Lead": 5.3
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "6–9 Mar 2026",
-    "candidatos": {
-      "Others": 2.0,
-      "BlankNullUndec.": 21.0,
-      "Sample size": 2.004,
-      "Lead": 7.0
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "2–6 Mar 2026",
-    "candidatos": {
-      "Others": 4.1,
-      "BlankNullUndec.": 10.1,
-      "Sample size": 2.0,
-      "Lead": 6.8
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "3–5 Mar 2026",
-    "candidatos": {
-      "Others": 5.0,
-      "BlankNullUndec.": 15.0,
-      "Sample size": 2.004,
-      "Lead": 6.0
-    }
-  },
-  {
-    "instituto": "Real Time Big Data",
-    "data": "28 Feb–2 Mar 2026",
-    "candidatos": {
-      "Others": 4.0,
-      "BlankNullUndec.": 15.0,
-      "Sample size": 2.0,
-      "Lead": 7.0
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "22–25 Feb 2026",
-    "candidatos": {
-      "Others": 1.9,
-      "BlankNullUndec.": 13.0,
-      "Sample size": 2.08,
-      "Lead": 3.9
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "19–24 Feb 2026",
-    "candidatos": {
-      "Others": 4.7,
-      "BlankNullUndec.": 2.1,
-      "Sample size": 4.986,
-      "Lead": 14.0
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "5–9 Feb 2026",
-    "candidatos": {
-      "Others": 2.0,
-      "BlankNullUndec.": 22.0,
-      "Sample size": 2.004,
-      "Lead": 8.0
-    }
-  },
-  {
-    "instituto": "Real Time Big Data",
-    "data": "6–7 Feb 2026",
-    "candidatos": {
-      "Others": 3.0,
-      "BlankNullUndec.": 15.0,
-      "Sample size": 2.0,
-      "Lead": 9.0
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "3–7 Feb 2026",
-    "candidatos": {
-      "Others": 5.0,
-      "BlankNullUndec.": 10.2,
-      "Sample size": 2.0,
-      "Lead": 2.5
-    }
-  },
-  {
-    "instituto": "Gerp",
-    "data": "28 Jan–2 Feb 2026",
-    "candidatos": {
-      "Others": 4.0,
-      "BlankNullUndec.": 11.0,
-      "Sample size": 2.0,
-      "Lead": 4.0
-    }
-  },
-  {
-    "instituto": "Ideia",
-    "data": "30 Jan–2 Feb 2026",
-    "candidatos": {
-      "Others": 1.2,
-      "BlankNullUndec.": 15.5,
-      "Sample size": 1.5,
-      "Lead": 7.5
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "25–28 Jan 2026",
-    "candidatos": {
-      "Others": 2.6,
-      "BlankNullUndec.": 11.5,
-      "Sample size": 2.08,
-      "Lead": 6.7
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "15–20 Jan 2026",
-    "candidatos": {
-      "Others": 3.9,
-      "BlankNullUndec.": 2.4,
-      "Sample size": 5.418,
-      "Lead": 20.4
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "15–19 Jan 2026",
-    "candidatos": {
-      "Others": 1.7,
-      "BlankNullUndec.": 11.9,
-      "Sample size": 2.0,
-      "Lead": 3.7
-    }
-  },
-  {
-    "instituto": "Ideia",
-    "data": "8–12 Jan 2026",
-    "candidatos": {
-      "Others": 0.6,
-      "BlankNullUndec.": 18.5,
-      "Sample size": 2.0,
-      "Lead": 13.2
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "8–11 Jan 2026",
-    "candidatos": {
-      "Others": 2.0,
-      "BlankNullUndec.": 18.0,
-      "Sample size": 2.004,
-      "Lead": 13.0
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "25-28 Mar 2026",
-    "candidatos": {
-      "BlankNullUndec.": 10.7,
-      "Sample size": 2.08,
-      "Lead": 1.1
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "18–22 Dec 2025",
-    "candidatos": {
-      "Lula": 37.6,
-      "F. Bolsonaro": 27.8,
-      "Gomes": 7.9,
-      "Ratinho": 9.0,
-      "Zema": 3.1,
-      "Others": 2.7,
-      "BlankNullUndec.": 12.0,
-      "Sample size": 2.038,
-      "Lead": 9.8
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "10–15 Dec 2025",
-    "candidatos": {
-      "Lula": 47.9,
-      "F. Bolsonaro": 21.3,
-      "Freitas": 15.0,
-      "Ratinho": 4.1,
-      "Zema": 3.0,
-      "Caiado": 4.4,
-      "Others": 2.4,
-      "BlankNullUndec.": 2.0,
-      "Sample size": 18.154,
-      "Lead": 26.6
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "11–14 Dec 2025",
+    "instituto": "Nexus/BTG",
+    "data": "27 Mar - 29 Mar 2026",
     "candidatos": {
       "Lula": 41.0,
-      "F. Bolsonaro": 23.0,
-      "Freitas": 10.0,
-      "Others": 3.0,
-      "BlankNullUndec.": 23.0,
-      "Sample size": 2.004,
-      "Lead": 18.0
+      "Flávio": 38.0,
+      "Caiado": 4.0,
+      "Zema": 4.0,
+      "Renan": 2.0,
+      "Rebelo": 0.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "25 Mar - 28 Mar 2026",
+    "candidatos": {
+      "Lula": 41.3,
+      "Flávio": 37.8,
+      "Caiado": 3.6,
+      "Zema": 3.0,
+      "Renan": 1.2,
+      "Rebelo": 1.1
     }
   },
   {
     "instituto": "Gerp",
-    "data": "6–10 Dec 2025",
-    "candidatos": {
-      "Lula": 34.0,
-      "F. Bolsonaro": 25.0,
-      "Gomes": 7.0,
-      "Ratinho": 8.0,
-      "Zema": 4.0,
-      "Caiado": 6.0,
-      "Others": 4.0,
-      "BlankNullUndec.": 12.0,
-      "Sample size": 2.0,
-      "Lead": 9.0
-    }
-  },
-  {
-    "instituto": "Ipec",
-    "data": "4–8 Dec 2025",
+    "data": "20 Mar - 25 Mar 2026",
     "candidatos": {
       "Lula": 38.0,
-      "Freitas": 17.0,
-      "Ratinho": 9.0,
-      "Zema": 3.0,
+      "Flávio": 37.0,
       "Caiado": 5.0,
-      "BlankNullUndec.": 27.0,
-      "Sample size": 2.0,
-      "Lead": 21.0
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "2–4 Dec 2025",
-    "candidatos": {
-      "Lula": 41.0,
-      "Freitas": 23.0,
-      "Ratinho": 11.0,
-      "Zema": 3.0,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 16.0,
-      "Sample size": 2.002,
-      "Lead": 18.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "22–27 Nov 2025",
-    "candidatos": {
-      "Lula": 48.4,
-      "Freitas": 32.5,
-      "Ratinho": 4.1,
-      "Zema": 2.3,
-      "Caiado": 5.7,
-      "Others": 1.9,
-      "BlankNullUndec.": 5.0,
-      "Sample size": 5.51,
-      "Lead": 15.9
-    }
-  },
-  {
-    "instituto": "CNT",
-    "data": "19–23 Nov 2025",
-    "candidatos": {
-      "Lula": 42.0,
-      "Freitas": 21.7,
-      "Ratinho": 11.8,
-      "Zema": 5.7,
-      "BlankNullUndec.": 18.8,
-      "Sample size": 2.002,
-      "Lead": 20.3
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "6–10 Nov 2025",
-    "candidatos": {
-      "Lula": 36.0,
-      "Freitas": 23.2,
-      "Gomes": 9.7,
-      "Ratinho": 9.0,
-      "Zema": 3.3,
-      "Caiado": 4.5,
-      "BlankNullUndec.": 14.3,
-      "Sample size": 2.02,
-      "Lead": 12.8
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "6–9 Nov 2025",
-    "candidatos": {
-      "Lula": 35.0,
-      "Freitas": 16.0,
-      "Gomes": 12.0,
       "Zema": 5.0,
-      "Caiado": 4.0,
-      "BlankNullUndec.": 28.0,
-      "Sample size": 2.004,
-      "Lead": 20.0
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "21–24 Oct 2025",
-    "candidatos": {
-      "Lula": 37.4,
-      "Freitas": 22.3,
-      "Gomes": 9.0,
-      "Ratinho": 8.1,
-      "Zema": 5.7,
-      "Caiado": 4.1,
-      "BlankNullUndec.": 13.4,
-      "Sample size": 2.02,
-      "Lead": 15.1
+      "Renan": 1.0,
+      "Rebelo": 0.0
     }
   },
   {
     "instituto": "AtlasIntel",
-    "data": "15–19 Oct 2025",
-    "candidatos": {
-      "Lula": 51.3,
-      "Freitas": 30.4,
-      "Ratinho": 3.0,
-      "Zema": 2.5,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 6.9,
-      "Sample size": 14.063,
-      "Lead": 20.9
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "2–5 Oct 2025",
-    "candidatos": {
-      "Lula": 39.0,
-      "Freitas": 18.0,
-      "Gomes": 12.0,
-      "Zema": 4.0,
-      "Caiado": 4.0,
-      "BlankNullUndec.": 23.0,
-      "Sample size": 2.004,
-      "Lead": 21.0
-    }
-  },
-  {
-    "instituto": "Gerp",
-    "data": "29 Sep – 6 Oct 2025",
-    "candidatos": {
-      "Lula": 27.0,
-      "Freitas": 23.0,
-      "Gomes": 7.0,
-      "Ratinho": 5.0,
-      "Zema": 3.0,
-      "Caiado": 3.0,
-      "Others": 8.0,
-      "BlankNullUndec.": 24.0,
-      "Sample size": 2.0,
-      "Lead": 4.0
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "12–14 Sep 2025",
-    "candidatos": {
-      "Lula": 35.0,
-      "Freitas": 17.0,
-      "Gomes": 13.0,
-      "Zema": 5.0,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 24.0,
-      "Sample size": 2.004,
-      "Lead": 18.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "10–14 Sep 2025",
-    "candidatos": {
-      "Lula": 48.2,
-      "Freitas": 30.4,
-      "Gomes": 4.3,
-      "Ratinho": 2.6,
-      "Zema": 3.0,
-      "Caiado": 3.7,
-      "Others": 2.0,
-      "BlankNullUndec.": 5.7,
-      "Sample size": 7.291,
-      "Lead": 17.8
-    }
-  },
-  {
-    "instituto": "CNT",
-    "data": "3–6 Sep 2025",
-    "candidatos": {
-      "Lula": 35.8,
-      "Freitas": 17.1,
-      "Gomes": 11.6,
-      "Ratinho": 10.0,
-      "Zema": 3.6,
-      "Caiado": 4.2,
-      "BlankNullUndec.": 17.7,
-      "Sample size": 2.002,
-      "Lead": 18.7
-    }
-  },
-  {
-    "instituto": "Real Time",
-    "data": "28–30 Aug 2025",
-    "candidatos": {
-      "Lula": 42.0,
-      "Freitas": 40.0,
-      "Zema": 4.0,
-      "Others": 2.0,
-      "BlankNullUndec.": 9.0,
-      "Sample size": 2.5,
-      "Lead": 2.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "20–25 Aug 2025",
-    "candidatos": {
-      "Lula": 44.1,
-      "Freitas": 31.8,
-      "Gomes": 3.4,
-      "Ratinho": 4.0,
-      "Zema": 4.4,
-      "Caiado": 3.2,
-      "Others": 5.0,
-      "BlankNullUndec.": 4.2,
-      "Sample size": 6.238,
-      "Lead": 12.3
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "17–21 Aug 2025",
-    "candidatos": {
-      "Lula": 35.1,
-      "Freitas": 24.5,
-      "Gomes": 9.9,
-      "Ratinho": 8.8,
-      "Caiado": 4.6,
-      "Others": 1.2,
-      "BlankNullUndec.": 15.9,
-      "Sample size": 2.02,
-      "Lead": 10.6
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "13–17 Aug 2025",
-    "candidatos": {
-      "Lula": 35.0,
-      "Freitas": 17.0,
-      "Gomes": 11.0,
-      "Zema": 4.0,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 27.0,
-      "Sample size": 12.15,
-      "Lead": 18.0
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "29–30 Jul 2025",
-    "candidatos": {
-      "Lula": 38.0,
-      "Freitas": 21.0,
-      "Ratinho": 12.0,
-      "Zema": 6.0,
-      "Caiado": 7.0,
-      "BlankNullUndec.": 17.0,
-      "Sample size": 2.004,
-      "Lead": 17.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "25–28 Jul 2025",
-    "candidatos": {
-      "Lula": 48.5,
-      "Freitas": 33.0,
-      "Gomes": 2.9,
-      "Ratinho": 3.6,
-      "Zema": 3.6,
-      "Caiado": 3.0,
-      "Others": 2.6,
-      "BlankNullUndec.": 2.8,
-      "Sample size": 7.334,
-      "Lead": 15.5
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "10–14 Jul 2025",
-    "candidatos": {
-      "Lula": 32.0,
-      "Freitas": 15.0,
-      "Gomes": 12.0,
-      "Zema": 4.0,
-      "Caiado": 5.0,
-      "BlankNullUndec.": 32.0,
-      "Sample size": 2.004,
-      "Lead": 17.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "27–30 Jun 2025",
-    "candidatos": {
-      "Lula": 44.6,
-      "Freitas": 34.0,
-      "Gomes": 3.5,
-      "Ratinho": 2.5,
-      "Zema": 4.4,
-      "Caiado": 1.7,
-      "Others": 4.7,
-      "BlankNullUndec.": 4.6,
-      "Sample size": 2.621,
-      "Lead": 10.6
-    }
-  },
-  {
-    "instituto": "Neokemp",
-    "data": "25–27 Jun 2025",
-    "candidatos": {
-      "Lula": 35.0,
-      "Freitas": 37.5,
-      "Gomes": 10.2,
-      "Caiado": 4.9,
-      "BlankNullUndec.": 12.5,
-      "Sample size": 2.02,
-      "Lead": 2.5
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "12–23 Jun 2025",
-    "candidatos": {
-      "Lula": 28.2,
-      "Freitas": 26.3,
-      "Gomes": 14.4,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 25.1,
-      "Sample size": 2.0,
-      "Lead": 1.9
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "18–22 Jun 2025",
-    "candidatos": {
-      "Lula": 34.0,
-      "Freitas": 24.3,
-      "Gomes": 13.5,
-      "Ratinho": 6.9,
-      "Caiado": 4.3,
-      "BlankNullUndec.": 16.1,
-      "Sample size": 2.02,
-      "Lead": 9.7
-    }
-  },
-  {
-    "instituto": "CNT",
-    "data": "11–15 Jun 2025",
-    "candidatos": {
-      "Lula": 30.5,
-      "Freitas": 18.3,
-      "Gomes": 14.6,
-      "Ratinho": 8.1,
-      "Zema": 4.0,
-      "Caiado": 4.1,
-      "BlankNullUndec.": 20.4,
-      "Sample size": 2.002,
-      "Lead": 12.2
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "10–11 Jun 2025",
-    "candidatos": {
-      "Lula": 37.0,
-      "Freitas": 21.0,
-      "Ratinho": 11.0,
-      "Zema": 6.0,
-      "Caiado": 6.0,
-      "BlankNullUndec.": 19.0,
-      "Sample size": 2.004,
-      "Lead": 16.0
-    }
-  },
-  {
-    "instituto": "Gerp",
-    "data": "28–31 May 2025",
-    "candidatos": {
-      "Lula": 24.0,
-      "Freitas": 18.0,
-      "Gomes": 9.0,
-      "Ratinho": 7.0,
-      "Zema": 3.0,
-      "Caiado": 5.0,
-      "Others": 9.0,
-      "BlankNullUndec.": 25.0,
-      "Sample size": 2.0,
-      "Lead": 6.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "19–23 May 2025",
-    "candidatos": {
-      "Lula": 44.1,
-      "Freitas": 33.1,
-      "Gomes": 3.0,
-      "Zema": 1.4,
-      "Caiado": 4.7,
-      "Others": 8.3,
-      "BlankNullUndec.": 5.4,
-      "Sample size": 4.399,
-      "Lead": 11.0
-    }
-  },
-  {
-    "instituto": "Gerp",
-    "data": "21–25 Apr 2025",
-    "candidatos": {
-      "Lula": 30.0,
-      "Freitas": 19.0,
-      "Gomes": 9.0,
-      "Zema": 4.0,
-      "Caiado": 4.0,
-      "Others": 7.0,
-      "BlankNullUndec.": 18.0,
-      "Sample size": 2.0,
-      "Lead": 11.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "20–24 Apr 2025",
-    "candidatos": {
-      "Lula": 42.8,
-      "Freitas": 34.3,
-      "Gomes": 2.7,
-      "Zema": 1.6,
-      "Caiado": 4.3,
-      "Others": 6.4,
-      "BlankNullUndec.": 8.0,
-      "Sample size": 5.419,
-      "Lead": 8.5
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "16–19 Apr 2025",
-    "candidatos": {
-      "Lula": 34.0,
-      "Freitas": 27.3,
-      "Gomes": 12.6,
-      "Caiado": 4.8,
-      "Others": 5.5,
-      "BlankNullUndec.": 15.7,
-      "Sample size": 2.02,
-      "Lead": 6.7
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "1–3 Apr 2025",
-    "candidatos": {
-      "Lula": 35.0,
-      "Freitas": 15.0,
-      "Gomes": 11.0,
-      "Zema": 3.0,
-      "Caiado": 2.0,
-      "Others": 18.0,
-      "BlankNullUndec.": 14.0,
-      "Sample size": 3.054,
-      "Lead": 20.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "24–27 Feb 2025",
-    "candidatos": {
-      "Lula": 41.6,
-      "Freitas": 32.3,
-      "Zema": 4.5,
-      "Caiado": 4.5,
-      "Others": 4.5,
-      "BlankNullUndec.": 12.6,
-      "Sample size": 5.71,
-      "Lead": 9.3
-    }
-  },
-  {
-    "instituto": "CNT",
-    "data": "19–23 Feb 2025",
-    "candidatos": {
-      "Lula": 30.4,
-      "Freitas": 14.0,
-      "Gomes": 14.3,
-      "Zema": 3.9,
-      "Caiado": 3.9,
-      "Others": 13.2,
-      "BlankNullUndec.": 20.2,
-      "Sample size": 2.002,
-      "Lead": 16.1
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "23–26 Jan 2025",
-    "candidatos": {
-      "Lula": 30.0,
-      "Freitas": 13.0,
-      "Gomes": 9.0,
-      "Zema": 3.0,
-      "Caiado": 3.0,
-      "Others": 23.0,
-      "BlankNullUndec.": 19.0,
-      "Sample size": 4.5,
-      "Lead": 17.0
-    }
-  },
-  {
-    "instituto": "Veritá",
-    "data": "6–7 Dec 2025",
-    "candidatos": {
-      "Lula": 40.3,
-      "Freitas": 44.9,
-      "BlankNullUndec.": 14.8,
-      "Sample size": 2.519,
-      "Lead": 4.6
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "2–4 Jun 2025",
-    "candidatos": {
-      "Lula": 41.1,
-      "Freitas": 41.0,
-      "BlankNullUndec.": 17.9,
-      "Sample size": 1.001,
-      "Lead": 0.1
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "29 May – 1 Jun 2025",
-    "candidatos": {
-      "Lula": 41.0,
-      "Freitas": 40.0,
-      "BlankNullUndec.": 19.0,
-      "Sample size": 2.004,
-      "Lead": 1.0
-    }
-  },
-  {
-    "instituto": "Quaest",
-    "data": "27–31 Mar 2025",
-    "candidatos": {
-      "Lula": 43.0,
-      "Freitas": 37.0,
-      "BlankNullUndec.": 20.0,
-      "Sample size": 2.004,
-      "Lead": 6.0
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "20–24 Mar 2025",
-    "candidatos": {
-      "Lula": 46.0,
-      "Freitas": 47.0,
-      "BlankNullUndec.": 7.0,
-      "Sample size": 4.659,
-      "Lead": 1.0
-    }
-  },
-  {
-    "instituto": "Futura",
-    "data": "19–22 Mar 2025",
-    "candidatos": {
-      "Lula": 37.6,
-      "Freitas": 42.3,
-      "BlankNullUndec.": 20.1,
-      "Sample size": 1.0,
-      "Lead": 4.7
-    }
-  },
-  {
-    "instituto": "AtlasIntel",
-    "data": "27–31 Jan 2025",
+    "data": "18 Mar - 23 Mar 2026",
     "candidatos": {
       "Lula": 45.7,
-      "Freitas": 44.7,
-      "BlankNullUndec.": 9.6,
-      "Sample size": 3.125,
-      "Lead": 1.0
+      "Flávio": 35.8,
+      "Caiado": 2.8,
+      "Zema": 1.6,
+      "Renan": 4.3,
+      "Rebelo": 0.5
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "06 Mar - 11 Mar 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 30.0,
+      "Caiado": 3.0,
+      "Zema": 4.0,
+      "Renan": 1.0,
+      "Rebelo": 0.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "06 Mar - 09 Mar 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 32.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 1.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "02 Mar - 06 Mar 2026",
+    "candidatos": {
+      "Lula": 35.1,
+      "Flávio": 41.9,
+      "Caiado": 5.7,
+      "Renan": 2.0,
+      "Rebelo": 2.1
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "06 Mar - 10 Mar 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 5.0,
+      "Renan": 2.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "03 Mar - 05 Mar 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 4.0,
+      "Zema": 5.0,
+      "Renan": 3.0,
+      "Rebelo": 2.0
+    }
+  },
+  {
+    "instituto": "Vetor/Arrow",
+    "data": "27 Fev - 02 Mar 2026",
+    "candidatos": {
+      "Lula": 36.3,
+      "Flávio": 44.0,
+      "Zema": 2.3,
+      "Renan": 1.8,
+      "Rebelo": 1.4
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "28 Fev - 2 Mar 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 33.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 2.0,
+      "Rebelo": 2.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "22 Fev - 25 Fev 2026",
+    "candidatos": {
+      "Lula": 40.5,
+      "Flávio": 36.6,
+      "Caiado": 3.7,
+      "Zema": 4.3,
+      "Renan": 1.5,
+      "Rebelo": 0.4
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "19 Fev - 24 Fev 2026",
+    "candidatos": {
+      "Lula": 47.1,
+      "Flávio": 33.1,
+      "Caiado": 4.1,
+      "Zema": 1.5,
+      "Renan": 3.3,
+      "Rebelo": 1.4
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "05 Fev - 09 Fev 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 30.0,
+      "Caiado": 4.0,
+      "Zema": 4.0,
+      "Renan": 1.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "03 Fev - 07 Fev 2026",
+    "candidatos": {
+      "Lula": 35.3,
+      "Flávio": 35.7,
+      "Caiado": 6.6,
+      "Zema": 6.5,
+      "Renan": 2.1,
+      "Rebelo": 1.1
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "06 Fev - 07 Fev 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 32.0,
+      "Caiado": 6.0,
+      "Zema": 4.0,
+      "Renan": 1.0,
+      "Rebelo": 2.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "28 Jan - 02 Fev 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 35.0,
+      "Caiado": 2.0,
+      "Zema": 2.0,
+      "Renan": 0.0,
+      "Rebelo": 0.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "30 Jan - 02 Fev 2026",
+    "candidatos": {
+      "Lula": 39.5,
+      "Flávio": 33.0,
+      "Caiado": 5.1,
+      "Zema": 6.0,
+      "Renan": 0.7,
+      "Rebelo": 0.5
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "25 Jan - 28 Jan 2026",
+    "candidatos": {
+      "Lula": 39.8,
+      "Flávio": 33.1,
+      "Caiado": 3.7,
+      "Zema": 2.8,
+      "Renan": 1.5,
+      "Rebelo": 1.1
+    }
+  },
+  {
+    "instituto": "Data Povo",
+    "data": "18 Jan - 21 Jan 2026",
+    "candidatos": {
+      "Lula": 23.12,
+      "Flávio": 19.15,
+      "Caiado": 5.85,
+      "Zema": 4.92,
+      "Renan": 7.08,
+      "Rebelo": 3.38
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "15 Jan - 19 Jan 2026",
+    "candidatos": {
+      "Lula": 35.4,
+      "Flávio": 34.3,
+      "Caiado": 3.7,
+      "Zema": 4.4,
+      "Renan": 1.7,
+      "Rebelo": 0.6
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "15 Jan - 20 Jan 2026",
+    "candidatos": {
+      "Lula": 48.8,
+      "Flávio": 35.0,
+      "Caiado": 4.3,
+      "Zema": 2.8,
+      "Renan": 3.4,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "08 Jan - 11 Jan 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 31.0,
+      "Caiado": 5.0,
+      "Zema": 5.0,
+      "Renan": 2.0,
+      "Rebelo": 2.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "08 Jan - 12 Jan 2026",
+    "candidatos": {
+      "Lula": 39.6,
+      "Flávio": 27.6,
+      "Caiado": 5.5,
+      "Zema": 5.4,
+      "Renan": 0.7,
+      "Rebelo": 0.2
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "18 Dez - 22 Dez 2025",
+    "candidatos": {
+      "Flávio": 27.8,
+      "Lula": 37.6,
+      "Zema": 3.1,
+      "Renan": 0.8
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "10 Dez - 15 Dez 2025",
+    "candidatos": {
+      "Flávio": 29.3,
+      "Lula": 48.1,
+      "Zema": 3.8,
+      "Caiado": 7.2,
+      "Renan": 3.2
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "05 Dez - 16 Dez 2025",
+    "candidatos": {
+      "Flávio": 20.0,
+      "Lula": 35.0,
+      "Zema": 6.0,
+      "Caiado": 5.0,
+      "Renan": 1.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "11 Dez - 14 Dez 2025",
+    "candidatos": {
+      "Flávio": 21.0,
+      "Lula": 34.0,
+      "Zema": 4.0,
+      "Caiado": 2.0,
+      "Renan": 1.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
+    "instituto": "Futura/Apex",
+    "data": "03 Dez - 09 Dez 2025",
+    "candidatos": {
+      "Flávio": 29.6,
+      "Lula": 37.3,
+      "Zema": 9.1,
+      "Caiado": 10.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "06 Dez - 10 Dez 2025",
+    "candidatos": {
+      "Flávio": 25.0,
+      "Lula": 34.0,
+      "Zema": 4.0,
+      "Caiado": 6.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "04 Dez - 08 Dez 2025",
+    "candidatos": {
+      "Flávio": 19.0,
+      "Lula": 38.0,
+      "Zema": 5.0,
+      "Caiado": 7.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2 Dez - 4 Dez 2025",
+    "candidatos": {
+      "Flávio": 18.0,
+      "Lula": 41.0,
+      "Zema": 6.0,
+      "Caiado": 7.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "22 Nov - 27 Nov 2025",
+    "candidatos": {
+      "Flávio": 23.1,
+      "Lula": 47.3,
+      "Zema": 5.0,
+      "Caiado": 10.2,
+      "Renan": 2.4
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "06 Nov - 10 Nov 2025",
+    "candidatos": {
+      "Flávio": 19.7,
+      "Lula": 36.3,
+      "Zema": 4.8,
+      "Caiado": 5.2
     }
   }
 ]

@@ -1,5 +1,5 @@
 """
-Calcula médias móveis pré-calculadas para o segundo turno (Lula vs Tarcísio)
+Calcula médias móveis pré-calculadas para o segundo turno (Lula vs Flávio)
 - Lê data/segundo_turno/pesquisas_segundo_turno_normalizado.json
 - Calcula média móvel com janela de 31 dias
 - Salva data/segundo_turno/media_movel_segundo_turno_precalculada.json
@@ -12,26 +12,55 @@ import re
 from pathlib import Path
 
 def parseDate(str_data):
-    """Parse dates in different formats"""
+    """Parse dates in different formats (Portuguese or English month names)"""
     if not str_data:
         return None
     
+    # Map Portuguese months to English
+    PT_MONTHS = {
+        'jan': 'Jan', 'janeiro': 'January',
+        'fev': 'Feb', 'fevereiro': 'February',
+        'mar': 'Mar', 'março': 'March',
+        'abr': 'Apr', 'abril': 'April',
+        'mai': 'May', 'maio': 'May',
+        'jun': 'Jun', 'junho': 'June',
+        'jul': 'Jul', 'julho': 'July',
+        'ago': 'Aug', 'agosto': 'August',
+        'set': 'Sep', 'setembro': 'September',
+        'out': 'Oct', 'outubro': 'October',
+        'nov': 'Nov', 'novembro': 'November',
+        'dez': 'Dec', 'dezembro': 'December'
+    }
+    
     str_data = str_data.replace('–', '-').replace('−', '-').replace('–', '-')
+    
+    # Convert Portuguese months to English
+    for pt, en in PT_MONTHS.items():
+        str_data = re.sub(rf'\b{pt}\b', en, str_data, flags=re.IGNORECASE)
     
     # Formato: "15-19 Oct 2025"
     m = re.match(r'(\d{1,2})\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
-        return pd.to_datetime(f"{m.group(3)} {m.group(2)}, {m.group(4)}")
+        try:
+            return pd.to_datetime(f"{m.group(3)} {m.group(2)}, {m.group(4)}")
+        except:
+            pass
     
     # Formato: "29 Sep - 6 Oct 2025"
     m = re.match(r'(\d{1,2})\s+([A-Za-z]+)\s*-\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
-        return pd.to_datetime(f"{m.group(4)} {m.group(3)}, {m.group(5)}")
+        try:
+            return pd.to_datetime(f"{m.group(4)} {m.group(3)}, {m.group(5)}")
+        except:
+            pass
     
     # Formato: "29 Sep 2025"
     m = re.match(r'(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', str_data)
     if m:
-        return pd.to_datetime(f"{m.group(2)} {m.group(1)}, {m.group(3)}")
+        try:
+            return pd.to_datetime(f"{m.group(2)} {m.group(1)}, {m.group(3)}")
+        except:
+            pass
     
     return None
 
@@ -102,7 +131,7 @@ try:
             "institutos": [],
             "candidatos": {
                 "Lula": {"media_movel": [], "pesquisas_brutos": []},
-                "Freitas": {"media_movel": [], "pesquisas_brutos": []}
+                "Flávio": {"media_movel": [], "pesquisas_brutos": []}
             }
         }
     else:
@@ -134,7 +163,7 @@ try:
         }
         
         # Calcular para cada candidato
-        for candidato in ['Lula', 'Freitas']:
+        for candidato in ['Lula', 'Flávio']:
             valores = [r['candidatos'].get(candidato) for r in registros]
             mm = calcular_media_movel(valores, datas, window_days=31)
             

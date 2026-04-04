@@ -141,6 +141,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (togglePontos) {
     togglePontos.addEventListener('change', () => {
+      const spanText = togglePontos.parentElement.querySelector('span');
+      spanText.textContent = togglePontos.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+      
       if (window.graficoInstance) {
         window.graficoInstance.data.datasets.forEach(dataset => {
           if (dataset.label.includes('(pesquisas)')) {
@@ -154,6 +157,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (togglePontosSegundo) {
     togglePontosSegundo.addEventListener('change', () => {
+      const spanText = togglePontosSegundo.parentElement.querySelector('span');
+      spanText.textContent = togglePontosSegundo.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+      
       if (window.graficoSegundoInstance) {
         window.graficoSegundoInstance.data.datasets.forEach(dataset => {
           if (dataset.label.includes('(pesquisas)')) {
@@ -165,18 +171,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Initialize button text based on checkbox state
+  if (togglePontos) {
+    const spanPrimeiroTurno = togglePontos.parentElement.querySelector('span');
+    spanPrimeiroTurno.textContent = togglePontos.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+  }
+  
+  if (togglePontosSegundo) {
+    const spanSegundoTurno = togglePontosSegundo.parentElement.querySelector('span');
+    spanSegundoTurno.textContent = togglePontosSegundo.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+  }
+
   ativarTurno(1);
 });
 
 async function montarGrafico() {
   console.log('Iniciando montarGrafico...');
   try {
-    const resposta = await fetch('./data/primeiro_turno/pesquisas_2026_normalizado.json');
+    const cacheBuster = `?t=${Date.now()}`;
+    const resposta = await fetch(`./data/primeiro_turno/pesquisas_2026_normalizado.json${cacheBuster}`);
     const pesquisas = await resposta.json();
     console.log('✓ Pesquisas carregadas:', pesquisas.length);
     
     // Carregar médias móveis pré-calculadas
-    const respostaMM = await fetch('./data/primeiro_turno/media_movel_precalculada.json');
+    const respostaMM = await fetch(`./data/primeiro_turno/media_movel_precalculada.json${cacheBuster}`);
     const mediaMovelData = await respostaMM.json();
     console.log('✓ Médias móveis carregadas:', Object.keys(mediaMovelData.candidatos));
   
@@ -223,11 +241,11 @@ async function montarGrafico() {
   const datasFiltradas = datas;
   const series = {
     Lula: registrosFiltrados.map(r => r.candidatos?.Lula ?? null),
-    Tarcísio: registrosFiltrados.map(r => r.candidatos?.Freitas ?? null),
-    Ciro: registrosFiltrados.map(r => r.candidatos?.Gomes ?? null),
+    Flávio: registrosFiltrados.map(r => r.candidatos?.Flávio ?? null),
     Caiado: registrosFiltrados.map(r => r.candidatos?.Caiado ?? null),
     Zema: registrosFiltrados.map(r => r.candidatos?.Zema ?? null),
-    Ratinho: registrosFiltrados.map(r => r.candidatos?.Ratinho ?? null)
+    Renan: registrosFiltrados.map(r => r.candidatos?.Renan ?? null),
+    Rebelo: registrosFiltrados.map(r => r.candidatos?.Rebelo ?? null)
   };
 
   function movingAverageByDate(values, dates, windowDays = 31) {
@@ -288,21 +306,21 @@ async function montarGrafico() {
   const datasets = [];
   const colors = {
     Lula: '#e53935',
-    Tarcísio: '#43a047',
-    Ciro: '#8e24aa',
+    Flávio: '#43a047',
     Caiado: '#1565c0',
     Zema: '#ff9800',
-    Ratinho: '#64b5f6'
+    Renan: '#FDD835',
+    Rebelo: '#8B4513'
   };
   
   // Mapa de nomes: chave do series -> chave do JSON pré-calculado
   const candidatoMap = {
     Lula: 'Lula',
-    Tarcísio: 'Freitas',
-    Ciro: 'Gomes',
+    Flávio: 'Flávio',
     Caiado: 'Caiado',
     Zema: 'Zema',
-    Ratinho: 'Ratinho'
+    Renan: 'Renan',
+    Rebelo: 'Rebelo'
   };
 
   // Mapa de índice para data para cálculo de posição relativa
@@ -394,9 +412,17 @@ async function montarGrafico() {
             const candidateName = item.text;
             // Toggle visibility for both line and points
             const chart = legend.chart;
+            const togglePontos = document.getElementById('toggle-pontos');
+            
             chart.data.datasets.forEach((dataset) => {
-              if (dataset.label === candidateName || dataset.label === `${candidateName} (pesquisas)`) {
+              if (dataset.label === candidateName) {
+                // Toggle the main line
                 dataset.hidden = !dataset.hidden;
+              } else if (dataset.label === `${candidateName} (pesquisas)`) {
+                // For pesquisas: if main line is becoming hidden, hide pesquisas too
+                // Otherwise, respect the toggle state
+                const mainLineHidden = chart.data.datasets.find(d => d.label === candidateName).hidden;
+                dataset.hidden = mainLineHidden || !togglePontos.checked;
               }
             });
             chart.update();
@@ -600,9 +626,10 @@ async function montarGrafico() {
     const mediaFinalItems = document.getElementById('media-final-items');
     mediaFinalItems.innerHTML = '';
     
-    const candidatos = ['Lula', 'Tarcísio (Freitas)', 'Ciro (Gomes)', 'Caiado', 'Zema', 'Ratinho'];
-    const cores = ['#e53935', '#43a047', '#8e24aa', '#1565c0', '#ff9800', '#64b5f6'];
-    const nomesAbreviados = ['Lula', 'Tarcísio', 'Ciro', 'Caiado', 'Zema', 'Ratinho'];
+    // Updated candidate list for 2026 first round
+    const candidatos = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Rebelo'];
+    const cores = ['#e53935', '#43a047', '#1565c0', '#ff9800', '#FDD835', '#8B4513'];
+    const partidos = ['PT', 'PL', 'PSD', 'NOVO', 'MISSÃO', 'DC'];
     
     // Usa sempre o último índice do período geral (não do filtrado), baseado no comprimento dos dados pré-calculados
     const lastIdx = mediaMovelData.datas.length - 1;
@@ -610,15 +637,15 @@ async function montarGrafico() {
     // Coleta dados de todos os candidatos
     const dados = [];
     candidatos.forEach((cand, idx) => {
-      const jsonKey = cand.replace('Tarcísio (Freitas)', 'Freitas').replace('Ciro (Gomes)', 'Gomes');
-      const mmData = mediaMovelData.candidatos[jsonKey];
+      const mmData = mediaMovelData.candidatos[cand];
       
       if (mmData) {
         const lastValue = mmData.media_movel[lastIdx];
         
         if (lastValue !== null) {
           dados.push({
-            nome: nomesAbreviados[idx],
+            nome: cand,
+            partido: partidos[idx],
             valor: lastValue,
             cor: cores[idx]
           });
@@ -635,7 +662,7 @@ async function montarGrafico() {
       item.className = 'media-item';
       item.innerHTML = `
         <span style="color: ${d.cor}; font-size: 1.2rem;">●</span>
-        <span class="media-item-name">${d.nome}</span>
+        <span class="media-item-name">${d.nome} (${d.partido})</span>
         <span class="media-item-valor">${d.valor.toFixed(1)}%</span>
       `;
       mediaFinalItems.appendChild(item);
@@ -670,11 +697,12 @@ window.addEventListener('load', () => {
 async function montarGraficoSegundoTurno() {
   console.log('Iniciando montarGraficoSegundoTurno...');
   try {
-    const resposta = await fetch('./data/segundo_turno/pesquisas_segundo_turno_normalizado.json');
+    const cacheBuster = `?t=${Date.now()}`;
+    const resposta = await fetch(`./data/segundo_turno/pesquisas_segundo_turno_normalizado.json${cacheBuster}`);
     const pesquisas = await resposta.json();
     console.log('✓ Pesquisas 2º turno carregadas:', pesquisas.length);
 
-    const respostaMM = await fetch('./data/segundo_turno/media_movel_segundo_turno_precalculada.json');
+    const respostaMM = await fetch(`./data/segundo_turno/media_movel_segundo_turno_precalculada.json${cacheBuster}`);
     const mediaMovelData = await respostaMM.json();
     console.log('✓ Médias móveis 2º turno carregadas:', Object.keys(mediaMovelData.candidatos));
 
@@ -712,19 +740,19 @@ async function montarGraficoSegundoTurno() {
     const datasFiltradas = datas;
     const series = {
       Lula: registrosFiltrados.map(r => r.candidatos?.Lula ?? null),
-      'Tarcísio': registrosFiltrados.map(r => r.candidatos?.Freitas ?? null)
+      'Flávio': registrosFiltrados.map(r => r.candidatos?.Flávio ?? null)
     };
 
     const labels = registrosFiltrados.map((_, i) => i + 1);
     const datasets = [];
     const colors = {
       Lula: '#e53935',
-      'Tarcísio': '#43a047'
+      'Flávio': '#43a047'
     };
 
     const candidatoMap = {
       Lula: 'Lula',
-      'Tarcísio': 'Freitas'
+      'Flávio': 'Flávio'
     };
 
     const todasAsDatas = mediaMovelData.datas.map(d => new Date(d).getTime());
@@ -804,9 +832,17 @@ async function montarGraficoSegundoTurno() {
             onClick: (e, item, legend) => {
               const candidateName = item.text;
               const chart = legend.chart;
+              const togglePontosSegundo = document.getElementById('toggle-pontos-segundo');
+              
               chart.data.datasets.forEach((dataset) => {
-                if (dataset.label === candidateName || dataset.label === `${candidateName} (pesquisas)`) {
+                if (dataset.label === candidateName) {
+                  // Toggle the main line
                   dataset.hidden = !dataset.hidden;
+                } else if (dataset.label === `${candidateName} (pesquisas)`) {
+                  // For pesquisas: if main line is becoming hidden, hide pesquisas too
+                  // Otherwise, respect the toggle state
+                  const mainLineHidden = chart.data.datasets.find(d => d.label === candidateName).hidden;
+                  dataset.hidden = mainLineHidden || !togglePontosSegundo.checked;
                 }
               });
               chart.update();
@@ -982,9 +1018,10 @@ async function montarGraficoSegundoTurno() {
       const mediaFinalItems = document.getElementById('media-final-items-segundo');
       mediaFinalItems.innerHTML = '';
 
-      const candidatos = ['Lula', 'Tarcísio'];
+      const candidatos = ['Lula', 'Flávio'];
       const cores = ['#e53935', '#43a047'];
-      const nomesJson = ['Lula', 'Freitas'];
+      const partidos = ['PT', 'PL'];
+      const nomesJson = ['Lula', 'Flávio'];
 
       const lastIdx = mediaMovelData.datas.length - 1;
 
@@ -998,6 +1035,7 @@ async function montarGraficoSegundoTurno() {
           if (lastValue !== null) {
             dados.push({
               nome: displayName,
+              partido: partidos[idx],
               valor: lastValue,
               cor: cores[idx]
             });
@@ -1012,7 +1050,7 @@ async function montarGraficoSegundoTurno() {
         item.className = 'media-item';
         item.innerHTML = `
           <span style="color: ${d.cor}; font-size: 1.2rem;">●</span>
-          <span class="media-item-name">${d.nome}</span>
+          <span class="media-item-name">${d.nome} (${d.partido})</span>
           <span class="media-item-valor">${d.valor.toFixed(1)}%</span>
         `;
         mediaFinalItems.appendChild(item);
