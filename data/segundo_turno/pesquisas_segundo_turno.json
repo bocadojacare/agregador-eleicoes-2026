@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Veritá",
+    "data": "13 Mar - 4 Abr 2026",
+    "candidatos": {
+      "Lula": 38.4,
+      "Flávio": 42.8
+    }
+  },
+  {
     "instituto": "Nexus/BTG",
     "data": "27 Mar - 29 Mar 2026",
     "candidatos": {
