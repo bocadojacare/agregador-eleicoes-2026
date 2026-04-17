@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 import re
 import io
-from datetime import datetime
+from datetime import datetime, timedelta
 
 WIKI_URL = "https://pt.wikipedia.org/wiki/Pesquisas_de_opinião_para_a_eleição_presidencial_no_Brasil_em_2026"
 OUT_FILE = Path("data/primeiro_turno/pesquisas_2026.json")
@@ -58,8 +58,10 @@ def extract_institute_date(row_text):
 def parse_date_with_year(date_str):
     """
     Parse date string and infer year. Returns (date_str_with_year, parsed_date) or (None, None) if invalid.
-    Only includes polls from November 8, 2025 onwards (today is April 4, 2026).
+    Only includes polls from November 10, 2025 onwards.
     """
+    today = datetime.now()
+
     # If already has year, use it
     year_match = re.search(r'(\d{4})', date_str)
     if year_match:
@@ -83,12 +85,11 @@ def parse_date_with_year(date_str):
         if not found_month:
             return None, None
         
-        # Jan-Apr (before May): 2026
-        # May onwards: could be 2025 for past tracking
-        if found_month <= 4:
-            year = 2026
-        else:
-            year = 2025
+        # Infer year relative to current month with year rollover.
+        # Example: if today is April and we see "Nov" without year, it likely refers to previous year.
+        year = today.year
+        if found_month > today.month + 1:
+            year -= 1
     
     # Now try to parse the full date
     date_with_year = f"{date_str} {year}" if not re.search(r'\d{4}', date_str) else date_str
@@ -132,11 +133,11 @@ def parse_date_with_year(date_str):
             except ValueError:
                 return None, None
         
-        # Check if date is in the future (after April 4, 2026) or before Nov 10, 2025
-        today = datetime(2026, 4, 4)
+        # Reject dates too far in the future or before the supported window start.
+        max_allowed_date = today + timedelta(days=1)
         min_date = datetime(2025, 11, 10)  # Start from Nov 10, 2025 (first poll with both Lula and Flávio)
         
-        if parsed_date > today or parsed_date < min_date:
+        if parsed_date > max_allowed_date or parsed_date < min_date:
             return None, None  # Reject future dates or dates before Nov 8, 2025
         
         return date_with_year, parsed_date

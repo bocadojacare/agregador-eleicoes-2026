@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 import re
 import io
-from datetime import datetime
+from datetime import datetime, timedelta
 
 WIKI_URL = "https://pt.wikipedia.org/wiki/Pesquisas_de_opinião_para_a_eleição_presidencial_no_Brasil_em_2026"
 OUT_FILE = Path("data/segundo_turno/pesquisas_segundo_turno.json")
@@ -54,6 +54,8 @@ def extract_institute_date(row_text):
 
 def parse_date_with_year(date_str):
     """Parse date string and infer year"""
+    today = datetime.now()
+
     month_abbrev = {
         'jan': 1, 'fev': 2, 'mar': 3, 'abr': 4, 'mai': 5, 'jun': 6,
         'jul': 7, 'ago': 8, 'set': 9, 'out': 10, 'nov': 11, 'dez': 12,
@@ -75,10 +77,10 @@ def parse_date_with_year(date_str):
         if not found_month:
             return None, None
         
-        if found_month <= 4:
-            year = 2026
-        else:
-            year = 2025
+        # Infer year relative to current month with year rollover.
+        year = today.year
+        if found_month > today.month + 1:
+            year -= 1
     
     date_with_year = f"{date_str} {year}" if not re.search(r'\d{4}', date_str) else date_str
     
@@ -116,10 +118,10 @@ def parse_date_with_year(date_str):
             except ValueError:
                 return None, None
         
-        today = datetime(2026, 4, 4)
+        max_allowed_date = today + timedelta(days=1)
         min_date = datetime(2025, 11, 10)
         
-        if parsed_date > today or parsed_date < min_date:
+        if parsed_date > max_allowed_date or parsed_date < min_date:
             return None, None
         
         return date_with_year, parsed_date

@@ -1,10 +1,50 @@
 [
   {
+    "instituto": "Genial/Quaest",
+    "data": "09 Abr - 13 Abr 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "08 Abr - 12 Abr 2026",
+    "candidatos": {
+      "Lula": 44.9,
+      "Flávio": 40.2
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "07 Abr - 11 Abr 2026",
+    "candidatos": {
+      "Lula": 42.6,
+      "Flávio": 48.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "07 Abr - 09 Abr 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
     "instituto": "Veritá",
     "data": "13 Mar - 4 Abr 2026",
     "candidatos": {
       "Lula": 38.4,
       "Flávio": 42.8
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "3 Mar - 7 Abr 2026",
+    "candidatos": {
+      "Lula": 45.5,
+      "Flávio": 45.8
     }
   },
   {

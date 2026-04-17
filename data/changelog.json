@@ -1,6 +1,15 @@
 {
-  "versao_atual": "1.2.0",
+  "versao_atual": "1.2.1",
   "versoes": [
+        {
+      "versao": "1.2.1",
+      "data": "2026-04-17",
+      "notas": [
+        "Bem vindo à esse pequeno projeto, espero que seja útil!",
+        "Tentarei adicionar mais funcionalidades com o tempo.",
+        "Correção na atualização das pesquisas"
+      ]
+    },
     {
       "versao": "1.2.0",
       "data": "2026-04-04",
