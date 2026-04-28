@@ -1,7 +1,31 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "22 Abr - 27 Abr 2026",
+    "candidatos": {
+      "Lula": 46.7,
+      "Flávio": 39.7,
+      "Caiado": 3.3,
+      "Zema": 3.1,
+      "Renan": 5.3,
+      "Rebelo": 0.3
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "24 Abr - 26 Abr 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 36.0,
+      "Caiado": 4.0,
+      "Zema": 5.0,
+      "Renan": 4.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
-    "data": "09 Abr - 13 Abr 2026",
+    "data": "9 Abr - 13 Abr 2026",
     "candidatos": {
       "Lula": 37.0,
       "Flávio": 32.0,
@@ -13,7 +37,7 @@
   },
   {
     "instituto": "CNT/MDA",
-    "data": "08 Abr - 12 Abr 2026",
+    "data": "8 Abr - 12 Abr 2026",
     "candidatos": {
       "Lula": 39.2,
       "Flávio": 30.2,
@@ -25,7 +49,7 @@
   },
   {
     "instituto": "Apex/Futura",
-    "data": "07 Abr - 11 Abr 2026",
+    "data": "7 Abr - 11 Abr 2026",
     "candidatos": {
       "Lula": 39.8,
       "Flávio": 37.3,
@@ -37,7 +61,7 @@
   },
   {
     "instituto": "Datafolha",
-    "data": "07 Abr - 09 Abr 2026",
+    "data": "7 Abr - 9 Abr 2026",
     "candidatos": {
       "Lula": 39.0,
       "Flávio": 35.0,

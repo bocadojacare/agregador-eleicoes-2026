@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "27 Abr 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 47.8
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "26 Abr 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
     "data": "13 Abr 2026",
     "candidatos": {
