@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Real Time Big Data",
+    "data": "2 Mai - 4 Mai 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "22 Abr - 27 Abr 2026",
     "candidatos": {
