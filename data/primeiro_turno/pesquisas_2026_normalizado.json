@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Meio/Ideia",
+    "data": "1 Mai - 5 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 36.0,
+      "Caiado": 5.6,
+      "Zema": 3.0,
+      "Renan": 1.4,
+      "Rebelo": 0.8
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "2 Mai - 4 Mai 2026",
     "candidatos": {

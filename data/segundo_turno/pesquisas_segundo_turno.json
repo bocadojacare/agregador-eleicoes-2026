@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Meio/Ideia",
+    "data": "1 Mai - 5 Mai 2026",
+    "candidatos": {
+      "Lula": 44.7,
+      "Flávio": 45.3
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "2 Mai - 4 Mai 2026",
     "candidatos": {
