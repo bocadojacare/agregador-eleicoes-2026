@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Apex/Futura",
+    "data": "4 Mai - 8 Mai 2026",
+    "candidatos": {
+      "Lula": 38.3,
+      "Flávio": 36.1,
+      "Caiado": 4.4,
+      "Zema": 3.6,
+      "Renan": 1.5,
+      "Rebelo": 0.1
+    }
+  },
+  {
     "instituto": "Meio/Ideia",
     "data": "1 Mai - 5 Mai 2026",
     "candidatos": {

@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Apex/Futura",
+    "data": "8 Mai 2026",
+    "candidatos": {
+      "Lula": 44.4,
+      "Flávio": 46.9
+    }
+  },
+  {
     "instituto": "Meio/Ideia",
     "data": "5 Mai 2026",
     "candidatos": {
