@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Genial/Quaest",
+    "data": "8 Mai - 11 Mai 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 41.0
+    }
+  },
+  {
     "instituto": "Apex/Futura",
     "data": "4 Mai - 8 Mai 2026",
     "candidatos": {
