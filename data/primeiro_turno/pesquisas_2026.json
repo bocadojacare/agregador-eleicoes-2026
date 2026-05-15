@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "8 Mai - 12 Mai 2026",
+    "candidatos": {
+      "Lula": 34.0,
+      "Flávio": 36.0,
+      "Caiado": 1.0,
+      "Zema": 5.0,
+      "Renan": 1.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
     "data": "8 Mai - 11 Mai 2026",
     "candidatos": {

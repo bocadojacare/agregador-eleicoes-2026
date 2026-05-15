@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "12 Mai 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 50.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
     "data": "11 Mai 2026",
     "candidatos": {
