@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Vox",
+    "data": "9 Mai - 12 Mai 2026",
+    "candidatos": {
+      "Lula": 35.1,
+      "Flávio": 37.8,
+      "Caiado": 4.3,
+      "Zema": 4.5,
+      "Renan": 1.8,
+      "Rebelo": 0.2
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "8 Mai - 12 Mai 2026",
     "candidatos": {
