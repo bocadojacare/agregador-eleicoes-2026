@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "12 Mai - 14 Mai 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 35.0,
+      "Caiado": 3.0,
+      "Zema": 3.0,
+      "Renan": 2.0
+    }
+  },
+  {
     "instituto": "Vox",
     "data": "9 Mai - 12 Mai 2026",
     "candidatos": {

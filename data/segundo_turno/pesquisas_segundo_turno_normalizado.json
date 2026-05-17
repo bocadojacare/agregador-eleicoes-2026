@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "14 Mai 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Vox",
     "data": "12 Mai 2026",
     "candidatos": {
