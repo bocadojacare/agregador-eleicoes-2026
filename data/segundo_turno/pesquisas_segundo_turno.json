@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "13 Mai - 18 Mai 2026",
+    "candidatos": {
+      "Lula": 48.9,
+      "Flávio": 41.8
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "12 Mai - 14 Mai 2026",
     "candidatos": {

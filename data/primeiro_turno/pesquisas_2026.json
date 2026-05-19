@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "AtlasIntel",
+    "data": "13 Mai - 18 Mai 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 34.3,
+      "Caiado": 2.7,
+      "Zema": 5.2,
+      "Renan": 6.9,
+      "Rebelo": 0.2
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "12 Mai - 14 Mai 2026",
     "candidatos": {
