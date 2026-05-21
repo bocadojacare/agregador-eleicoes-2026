@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "17 Mai - 19 Mai 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 38.1
+    }
+  },
+  {
+    "instituto": "Vetor/Arrow",
+    "data": "15 Mai - 18 Mai 2026",
+    "candidatos": {
+      "Lula": 50.7,
+      "Flávio": 38.3
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "13 Mai - 18 Mai 2026",
     "candidatos": {
