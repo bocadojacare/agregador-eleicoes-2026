@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Apex/Futura",
+    "data": "15 Mai - 20 Mai 2026",
+    "candidatos": {
+      "Lula": 47.7,
+      "Flávio": 42.2
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "17 Mai - 19 Mai 2026",
     "candidatos": {

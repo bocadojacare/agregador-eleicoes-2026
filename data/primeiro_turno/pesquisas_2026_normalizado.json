@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Apex/Futura",
+    "data": "15 Mai - 20 Mai 2026",
+    "candidatos": {
+      "Lula": 42.7,
+      "Flávio": 35.6,
+      "Caiado": 3.3,
+      "Zema": 3.9,
+      "Renan": 1.7,
+      "Rebelo": 0.4
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "17 Mai - 19 Mai 2026",
     "candidatos": {
