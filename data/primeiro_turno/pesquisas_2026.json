@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "20 Mai - 22 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 31.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Rebelo": 1.0
+    }
+  },
+  {
     "instituto": "Apex/Futura",
     "data": "15 Mai - 20 Mai 2026",
     "candidatos": {
