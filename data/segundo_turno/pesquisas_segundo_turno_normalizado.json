@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Gerp",
+    "data": "21 Mai 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 47.0
+    }
+  },
+  {
     "instituto": "Apex/Futura",
     "data": "20 Mai 2026",
     "candidatos": {

@@ -12,6 +12,18 @@
     }
   },
   {
+    "instituto": "Gerp",
+    "data": "18 Mai - 21 Mai 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 38.0,
+      "Caiado": 2.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Rebelo": 0.0
+    }
+  },
+  {
     "instituto": "Apex/Futura",
     "data": "15 Mai - 20 Mai 2026",
     "candidatos": {
