@@ -83,6 +83,18 @@
     }
   },
   {
+    "instituto": "Veritá",
+    "data": "11 Mai - 15 Mai 2026",
+    "candidatos": {
+      "Lula": 37.2,
+      "Flávio": 37.0,
+      "Caiado": 2.9,
+      "Zema": 6.5,
+      "Renan": 2.3,
+      "Rebelo": 0.2
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "12 Mai - 14 Mai 2026",
     "candidatos": {

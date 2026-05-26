@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Datafolha",
+    "data": "22 Mai 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "21 Mai 2026",
     "candidatos": {
