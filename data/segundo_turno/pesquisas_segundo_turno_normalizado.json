@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Meio/Ideia",
+    "data": "27 Mai 2026",
+    "candidatos": {
+      "Lula": 46.5,
+      "Flávio": 41.4
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "24 Mai 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 41.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG",
     "data": "24 Mai 2026",
     "candidatos": {
