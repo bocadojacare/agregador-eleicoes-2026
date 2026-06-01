@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Real Time Big Data",
+    "data": "29 Mai - 30 Mai 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 40.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "25 Mai - 28 Mai 2026",
     "candidatos": {
