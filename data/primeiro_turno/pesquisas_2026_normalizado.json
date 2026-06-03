@@ -34,6 +34,18 @@
     }
   },
   {
+    "instituto": "Veritá",
+    "data": "22 Mai - 26 Mai 2026",
+    "candidatos": {
+      "Lula": 40.6,
+      "Flávio": 42.6,
+      "Caiado": 3.0,
+      "Zema": 6.3,
+      "Renan": 3.7,
+      "Rebelo": 1.8
+    }
+  },
+  {
     "instituto": "Indexa",
     "data": "22 Mai - 24 Mai 2026",
     "candidatos": {

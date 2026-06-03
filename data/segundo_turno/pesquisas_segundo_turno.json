@@ -24,6 +24,14 @@
     }
   },
   {
+    "instituto": "Veritá",
+    "data": "22 Mai - 26 Mai 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 53.2
+    }
+  },
+  {
     "instituto": "Indexa",
     "data": "22 Mai - 24 Mai 2026",
     "candidatos": {
