@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "1 Jun - 6 Jun 2026",
+    "candidatos": {
+      "Lula": 42.1,
+      "Flávio": 33.6,
+      "Caiado": 6.9,
+      "Zema": 5.1,
+      "Renan": 3.1
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "29 Mai - 30 Mai 2026",
     "candidatos": {
