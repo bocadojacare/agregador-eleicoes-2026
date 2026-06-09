@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Gerp",
+    "data": "5 Jun 2026",
+    "candidatos": {
+      "Lula": 39.1,
+      "Flávio": 44.7
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "30 Mai 2026",
     "candidatos": {

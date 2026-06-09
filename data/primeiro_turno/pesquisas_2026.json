@@ -11,6 +11,17 @@
     }
   },
   {
+    "instituto": "Gerp",
+    "data": "2 Jun - 5 Jun 2026",
+    "candidatos": {
+      "Lula": 34.0,
+      "Flávio": 35.0,
+      "Caiado": 2.0,
+      "Zema": 2.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "29 Mai - 30 Mai 2026",
     "candidatos": {
