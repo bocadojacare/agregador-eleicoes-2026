@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "5 Jun - 8 Jun 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 38.0
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "1 Jun - 6 Jun 2026",
     "candidatos": {
@@ -469,6 +477,14 @@
     "candidatos": {
       "Lula": 45.4,
       "Flávio": 38.6
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "10 Jun - 11 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 38.0
     }
   }
 ]

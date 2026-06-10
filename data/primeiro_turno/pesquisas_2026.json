@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "5 Jun - 8 Jun 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 29.0,
+      "Caiado": 3.0,
+      "Zema": 2.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "1 Jun - 6 Jun 2026",
     "candidatos": {
