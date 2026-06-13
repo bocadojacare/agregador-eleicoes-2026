@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Alfa Inteligência",
+    "data": "5 Jun - 10 Jun 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 31.0,
+      "Caiado": 7.0,
+      "Zema": 7.0,
+      "Renan": 2.0
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "5 Jun - 8 Jun 2026",
     "candidatos": {

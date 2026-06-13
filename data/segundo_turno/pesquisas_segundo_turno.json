@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Alfa Inteligência",
+    "data": "5 Jun - 10 Jun 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 41.0
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "5 Jun - 8 Jun 2026",
     "candidatos": {
