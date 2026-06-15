@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG",
+    "data": "12 Jun - 14 Jun 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "Alfa Inteligência",
     "data": "5 Jun - 10 Jun 2026",
     "candidatos": {
