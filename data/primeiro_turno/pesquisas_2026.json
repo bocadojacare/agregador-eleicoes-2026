@@ -11,6 +11,17 @@
     }
   },
   {
+    "instituto": "Futura/Apex",
+    "data": "8 Jun - 12 Jun 2026",
+    "candidatos": {
+      "Lula": 41.6,
+      "Flávio": 34.1,
+      "Caiado": 4.5,
+      "Zema": 3.5,
+      "Renan": 2.3
+    }
+  },
+  {
     "instituto": "Alfa Inteligência",
     "data": "5 Jun - 10 Jun 2026",
     "candidatos": {

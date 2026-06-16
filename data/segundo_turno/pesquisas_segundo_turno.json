@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Futura/Apex",
+    "data": "8 Jun - 12 Jun 2026",
+    "candidatos": {
+      "Lula": 48.1,
+      "Flávio": 42.9
+    }
+  },
+  {
     "instituto": "Alfa Inteligência",
     "data": "5 Jun - 10 Jun 2026",
     "candidatos": {
