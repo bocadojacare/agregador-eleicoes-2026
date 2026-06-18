@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "CTN/MDA",
+    "data": "10 Jun - 14 Jun 2026",
+    "candidatos": {
+      "Lula": 49.3,
+      "Flávio": 36.8
+    }
+  },
+  {
     "instituto": "Nexus/BTG",
     "data": "12 Jun - 14 Jun 2026",
     "candidatos": {
