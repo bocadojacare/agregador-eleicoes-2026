@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "17 Jun - 19 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "CTN/MDA",
     "data": "10 Jun - 14 Jun 2026",
     "candidatos": {
@@ -509,6 +517,14 @@
     "candidatos": {
       "Lula": 45.4,
       "Flávio": 38.6
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "18 Jun – 22 Jun 2026",
+    "candidatos": {
+      "Lula": 42.1,
+      "Flávio": 38.4
     }
   },
   {

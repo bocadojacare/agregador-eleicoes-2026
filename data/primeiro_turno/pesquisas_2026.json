@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "17 Jun - 19 Jun 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 31.0,
+      "Caiado": 3.0,
+      "Zema": 2.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "CTN/MDA",
     "data": "10 Jun - 14 Jun 2026",
     "candidatos": {
