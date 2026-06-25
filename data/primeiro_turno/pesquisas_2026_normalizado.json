@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "15 Jun - 20 Jun 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 34.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "17 Jun - 19 Jun 2026",
     "candidatos": {
