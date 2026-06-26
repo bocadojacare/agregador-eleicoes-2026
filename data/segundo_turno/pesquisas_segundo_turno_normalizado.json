@@ -16,6 +16,14 @@
     }
   },
   {
+    "instituto": "American Analytics",
+    "data": "15 Jun 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 40.0
+    }
+  },
+  {
     "instituto": "CTN/MDA",
     "data": "14 Jun 2026",
     "candidatos": {
