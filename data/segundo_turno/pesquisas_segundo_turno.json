@@ -1,10 +1,26 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "21 Jun - 24 Jun 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "15 Jun - 20 Jun 2026",
     "candidatos": {
       "Lula": 40.0,
       "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "18 Jun - 20 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 40.0
     }
   },
   {
