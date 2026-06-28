@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "25 Jun 2026",
+    "candidatos": {
+      "Lula": 45.3,
+      "Flávio": 42.8
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "24 Jun 2026",
     "candidatos": {

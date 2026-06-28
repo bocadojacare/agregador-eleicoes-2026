@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "23 Jun - 25 Jun 2026",
+    "candidatos": {
+      "Lula": 38.3,
+      "Flávio": 32.2,
+      "Caiado": 5.1,
+      "Zema": 3.8,
+      "Renan": 2.5
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "21 Jun - 24 Jun 2026",
     "candidatos": {
