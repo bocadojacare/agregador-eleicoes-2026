@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG",
+    "data": "28 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 42.0
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "25 Jun 2026",
     "candidatos": {
