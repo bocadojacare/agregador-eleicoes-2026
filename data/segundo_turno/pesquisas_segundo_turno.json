@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Atlasinstel",
+    "data": "26 Jun - 30 Jun 2026",
+    "candidatos": {
+      "Lula": 48.8,
+      "Flávio": 42.3
+    }
+  },
+  {
     "instituto": "Nexus/BTG",
     "data": "26 Jun - 28 Jun 2026",
     "candidatos": {
