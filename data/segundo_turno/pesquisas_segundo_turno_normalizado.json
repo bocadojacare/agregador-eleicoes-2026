@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "7 Jul 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Atlasinstel",
     "data": "30 Jun 2026",
     "candidatos": {

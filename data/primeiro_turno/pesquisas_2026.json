@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "3 Jul - 7 Jul 2026",
+    "candidatos": {
+      "Lula": 36.0,
+      "Flávio": 36.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 2.0
+    }
+  },
+  {
     "instituto": "Atlasinstel",
     "data": "26 Jun - 30 Jun 2026",
     "candidatos": {
