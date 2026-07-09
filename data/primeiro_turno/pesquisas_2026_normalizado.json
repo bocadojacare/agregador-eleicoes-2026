@@ -11,6 +11,17 @@
     }
   },
   {
+    "instituto": "Meio/Ideia",
+    "data": "3 Jul - 6 Jul 2026",
+    "candidatos": {
+      "Lula": 40.4,
+      "Flávio": 32.0,
+      "Caiado": 4.0,
+      "Zema": 2.5,
+      "Renan": 2.0
+    }
+  },
+  {
     "instituto": "Atlasinstel",
     "data": "26 Jun - 30 Jun 2026",
     "candidatos": {
