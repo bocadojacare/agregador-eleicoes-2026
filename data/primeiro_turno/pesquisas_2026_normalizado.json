@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "10 Jul - 12 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 34.0,
+      "Caiado": 5.0,
+      "Zema": 4.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "3 Jul - 7 Jul 2026",
     "candidatos": {
