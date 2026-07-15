@@ -11,6 +11,17 @@
     }
   },
   {
+    "instituto": "Futura/Apex",
+    "data": "7 Jul - 11 Jul 2026",
+    "candidatos": {
+      "Lula": 40.1,
+      "Flávio": 36.8,
+      "Caiado": 5.0,
+      "Zema": 3.7,
+      "Renan": 2.6
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "3 Jul - 7 Jul 2026",
     "candidatos": {

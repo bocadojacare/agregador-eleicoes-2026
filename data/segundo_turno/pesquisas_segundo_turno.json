@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Futura/Apex",
+    "data": "7 Jul - 11 Jul 2026",
+    "candidatos": {
+      "Lula": 46.3,
+      "Flávio": 46.1
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "3 Jul - 7 Jul 2026",
     "candidatos": {
