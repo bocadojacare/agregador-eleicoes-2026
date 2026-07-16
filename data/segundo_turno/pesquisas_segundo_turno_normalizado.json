@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "13 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 37.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "12 Jul 2026",
     "candidatos": {

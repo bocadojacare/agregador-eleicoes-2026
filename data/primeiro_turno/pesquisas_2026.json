@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "10 Jul - 13 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 28.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "10 Jul - 12 Jul 2026",
     "candidatos": {
