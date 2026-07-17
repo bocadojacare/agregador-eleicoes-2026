@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "12 Jul - 15 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 34.0,
+      "Caiado": 4.0,
+      "Zema": 4.0,
+      "Renan": 6.0
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "10 Jul - 13 Jul 2026",
     "candidatos": {
