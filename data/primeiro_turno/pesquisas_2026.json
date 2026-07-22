@@ -1,5 +1,38 @@
 [
   {
+    "instituto": "Real Time Big Data",
+    "data": "18 Jul - 20 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 33.0,
+      "Caiado": 7.0,
+      "Zema": 2.0,
+      "Renan": 9.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "16 Jul - 19 Jul 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 30.0,
+      "Caiado": 6.0,
+      "Zema": 3.0,
+      "Renan": 3.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "15 Jul - 17 Jul 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 38.0,
+      "Caiado": 3.0,
+      "Zema": 3.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "12 Jul - 15 Jul 2026",
     "candidatos": {

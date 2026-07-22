@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "Real Time Big Data",
+    "data": "18 Jul - 20 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "16 Jul - 19 Jul 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 39.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "15 Jul - 17 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "12 Jul - 15 Jul 2026",
     "candidatos": {
