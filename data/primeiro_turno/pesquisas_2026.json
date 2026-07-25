@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "22 Jul - 24 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 32.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "18 Jul - 20 Jul 2026",
     "candidatos": {
