@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG",
+    "data": "24 Jul - 26 Jul 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "22 Jul - 24 Jul 2026",
     "candidatos": {

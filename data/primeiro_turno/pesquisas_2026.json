@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Nexus/BTG",
+    "data": "24 Jul - 26 Jul 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 33.0,
+      "Caiado": 6.0,
+      "Zema": 3.0,
+      "Renan": 5.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "22 Jul - 24 Jul 2026",
     "candidatos": {
