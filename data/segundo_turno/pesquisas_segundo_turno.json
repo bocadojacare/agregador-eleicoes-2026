@@ -664,6 +664,14 @@
     }
   },
   {
+    "instituto": "Datafolha",
+    "data": "29 Jul - 30 Jul 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 37.0
+    }
+  },
+  {
     "instituto": "Paraná Pesquisas",
     "data": "18 Jun – 22 Jun 2026",
     "candidatos": {
