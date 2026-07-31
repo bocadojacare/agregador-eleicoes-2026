@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "PoderData",
+    "data": "26 Jul - 28 Jul 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "22 Jul - 27 Jul 2026",
     "candidatos": {
