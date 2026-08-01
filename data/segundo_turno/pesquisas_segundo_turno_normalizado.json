@@ -1,10 +1,26 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "28 Jul 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 41.1
+    }
+  },
+  {
     "instituto": "PoderData",
     "data": "28 Jul 2026",
     "candidatos": {
       "Lula": 46.0,
       "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Alfa/TMC",
+    "data": "28 Jul 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 41.0
     }
   },
   {
