@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "21 Jul - 2 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 37.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "26 Jul - 28 Jul 2026",
     "candidatos": {
