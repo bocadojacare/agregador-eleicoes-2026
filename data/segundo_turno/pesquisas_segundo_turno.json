@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Meio/Ideia",
+    "data": "31 Jul - 3 Ago 2026",
+    "candidatos": {
+      "Lula": 48.5,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "31 Jul - 3 Ago 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 39.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "31 Jul - 2 Ago 2026",
     "candidatos": {
