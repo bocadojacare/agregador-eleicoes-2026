@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "9 Ago 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "Meio/Ideia",
     "data": "3 Ago 2026",
     "candidatos": {

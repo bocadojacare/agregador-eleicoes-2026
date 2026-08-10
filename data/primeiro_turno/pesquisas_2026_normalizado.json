@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "7 Ago - 9 Ago 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "Meio/Ideia",
     "data": "31 Jul - 3 Ago 2026",
     "candidatos": {
