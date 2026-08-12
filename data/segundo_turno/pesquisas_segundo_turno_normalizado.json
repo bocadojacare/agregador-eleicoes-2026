@@ -1,9 +1,33 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "10 Ago 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "9 Ago 2026",
     "candidatos": {
       "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "9 Ago 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 39.1
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "7 Ago 2026",
+    "candidatos": {
+      "Lula": 46.5,
       "Flávio": 44.0
     }
   },
@@ -136,7 +160,7 @@
     }
   },
   {
-    "instituto": "Futura/Apex",
+    "instituto": "Apex/Futura",
     "data": "11 Jul 2026",
     "candidatos": {
       "Lula": 46.3,
@@ -224,7 +248,7 @@
     }
   },
   {
-    "instituto": "CTN/MDA",
+    "instituto": "CNT/MDA",
     "data": "14 Jun 2026",
     "candidatos": {
       "Lula": 49.3,
@@ -240,7 +264,7 @@
     }
   },
   {
-    "instituto": "Futura/Apex",
+    "instituto": "Apex/Futura",
     "data": "12 Jun 2026",
     "candidatos": {
       "Lula": 48.1,
@@ -696,7 +720,7 @@
     }
   },
   {
-    "instituto": "Futura/Apex",
+    "instituto": "Apex/Futura",
     "data": "09 Dez 2025",
     "candidatos": {
       "Lula": 42.1,

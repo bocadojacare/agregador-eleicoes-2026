@@ -94,13 +94,16 @@
     "2026-08-03T00:00:00",
     "2026-08-03T00:00:00",
     "2026-08-07T00:00:00",
-    "2026-08-09T00:00:00"
+    "2026-08-07T00:00:00",
+    "2026-08-09T00:00:00",
+    "2026-08-09T00:00:00",
+    "2026-08-10T00:00:00"
   ],
   "institutos": [
     "Paraná Pesquisas",
     "Datafolha",
     "Veritá",
-    "Futura/Apex",
+    "Apex/Futura",
     "Gerp",
     "Genial/Quaest",
     "AtlasIntel",
@@ -159,8 +162,8 @@
     "Quaest",
     "Alfa Inteligência",
     "Datafolha",
-    "Futura/Apex",
-    "CTN/MDA",
+    "Apex/Futura",
+    "CNT/MDA",
     "Nexus/BTG",
     "American Analytics",
     "Datafolha",
@@ -173,7 +176,7 @@
     "Atlasinstel",
     "Meio/Ideia",
     "Gerp",
-    "Futura/Apex",
+    "Apex/Futura",
     "Nexus/BTG Pactual",
     "Quaest",
     "PoderData/Aya",
@@ -190,8 +193,11 @@
     "Nexus/BTG Pactual",
     "Meio/Ideia",
     "Genial/Quaest",
+    "Apex/Futura",
     "Palver",
-    "Nexus/BTG Pactual"
+    "Nexus/BTG Pactual",
+    "CNT/MDA",
+    "Gerp"
   ],
   "candidatos": {
     "Lula": {
@@ -289,8 +295,11 @@
         46.23529411764706,
         46.23684210526316,
         46.23684210526316,
-        46.28947368421053,
-        46.55263157894737
+        46.3,
+        46.3,
+        46.61904761904762,
+        46.61904761904762,
+        46.45454545454545
       ],
       "pesquisas_brutos": [
         45.4,
@@ -386,8 +395,11 @@
         46.0,
         48.5,
         44.0,
+        46.5,
         46.0,
-        47.0
+        47.0,
+        48.0,
+        43.0
       ]
     },
     "Flávio": {
@@ -485,8 +497,11 @@
         42.241176470588236,
         42.11052631578948,
         42.11052631578948,
-        42.42631578947368,
-        42.373684210526314
+        42.505,
+        42.505,
+        42.2952380952381,
+        42.2952380952381,
+        42.41818181818182
       ],
       "pesquisas_brutos": [
         38.6,
@@ -582,8 +597,11 @@
         45.0,
         43.0,
         39.0,
+        44.0,
         46.0,
-        44.0
+        44.0,
+        39.1,
+        45.0
       ]
     }
   }
