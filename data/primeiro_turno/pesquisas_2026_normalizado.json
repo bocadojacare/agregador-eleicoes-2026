@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "9 Ago - 12 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 35.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "6 Ago - 10 Ago 2026",
     "candidatos": {
