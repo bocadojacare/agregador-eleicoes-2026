@@ -1,5 +1,16 @@
 [
   {
+    "instituto": "Genial/Quaest",
+    "data": "10 Ago - 13 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 31.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "9 Ago - 12 Ago 2026",
     "candidatos": {
