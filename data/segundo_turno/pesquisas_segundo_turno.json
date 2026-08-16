@@ -776,6 +776,14 @@
     }
   },
   {
+    "instituto": "Genial/Quaest",
+    "data": "13 Ago - 17 Ago 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 32.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "29 Jul - 30 Jul 2026",
     "candidatos": {
