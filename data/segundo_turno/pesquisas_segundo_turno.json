@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "14 Ago - 16 Ago 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
     "data": "10 Ago - 13 Ago 2026",
     "candidatos": {
