@@ -43,6 +43,7 @@ def normalize_percentage(val):
     except:
         return None
 
+
 def extract_institute_date(row_text):
     """Extract institute name and date from text"""
     match = re.search(r'^([^(\[]+)(?:\[\d+\])?\s*(?:\()?(\d{1,2}\s+\w+\s*(?:–|-)\s*\d{1,2}\s+\w+(?:\s+\d{4})?)\)?', str(row_text))
@@ -52,8 +53,8 @@ def extract_institute_date(row_text):
         return institute, date
     return None, None
 
-def parse_date_with_year(date_str):
-    """Parse date string and infer year"""
+def parse_date_with_year(date_str, fallback_year=None):
+    """Parse date string and infer year, preferring subsection year when available."""
     today = datetime.now()
 
     month_abbrev = {
@@ -66,6 +67,8 @@ def parse_date_with_year(date_str):
     year_match = re.search(r'(\d{4})', date_str)
     if year_match:
         year = int(year_match.group(1))
+    elif fallback_year is not None:
+        year = int(fallback_year)
     else:
         month_lower = date_str.lower()
         found_month = None
@@ -173,14 +176,19 @@ def main():
     
     print("✓ Seção 'Lula e Flávio' encontrada")
     
-    # Extract tables between this heading and the next h3/h2
+    # Extract tables between this heading and the next h3/h2, while tracking the year subsection.
     tables_content = []
+    current_subsection_year = None
     current = lula_flavio_heading.find_next()
     while current:
         if current.name in ['h3', 'h2']:
             break
+        if current.name == 'h4':
+            heading_text = current.get_text(strip=True)
+            if re.fullmatch(r'\d{4}', heading_text):
+                current_subsection_year = int(heading_text)
         if current.name == 'table':
-            tables_content.append(str(current))
+            tables_content.append((str(current), current_subsection_year))
         current = current.find_next()
     
     if not tables_content:
@@ -192,7 +200,8 @@ def main():
     # Process each table
     polls_by_date = {}
     
-    for table_idx, table_html in enumerate(tables_content):
+    for table_idx, table_info in enumerate(tables_content):
+        table_html, subsection_year = table_info
         try:
             dfs = pd.read_html(io.StringIO(table_html), match="Contratante")
             
@@ -255,12 +264,12 @@ def main():
                     if not candidatos:
                         continue
                     
-                    data_with_year, parsed_date = parse_date_with_year(date)
+                    data_with_year, parsed_date = parse_date_with_year(date, fallback_year=subsection_year)
                     
                     if not data_with_year:
                         continue
                     
-                    # Must have BOTH Lula and Flávio
+                    # Must have BOTH Lula and Flávio.
                     if not ("Lula" in candidatos and "Flávio" in candidatos):
                         continue
                     

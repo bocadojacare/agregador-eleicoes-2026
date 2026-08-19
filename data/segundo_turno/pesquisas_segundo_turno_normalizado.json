@@ -782,37 +782,5 @@
       "Lula": 45.4,
       "Flávio": 38.6
     }
-  },
-  {
-    "instituto": "Genial/Quaest",
-    "data": "17 Ago 2026",
-    "candidatos": {
-      "Lula": 48.0,
-      "Flávio": 32.0
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "30 Jul 2026",
-    "candidatos": {
-      "Lula": 48.0,
-      "Flávio": 37.0
-    }
-  },
-  {
-    "instituto": "Paraná Pesquisas",
-    "data": "22 Jun 2026",
-    "candidatos": {
-      "Lula": 42.1,
-      "Flávio": 38.4
-    }
-  },
-  {
-    "instituto": "Datafolha",
-    "data": "11 Jun 2026",
-    "candidatos": {
-      "Lula": 47.0,
-      "Flávio": 38.0
-    }
   }
 ]
