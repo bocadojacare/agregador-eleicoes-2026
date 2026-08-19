@@ -45,6 +45,31 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function applyDarkModeCandidateColors() {
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  const samaraColor = isDarkMode ? '#ffffff' : '#212121';
+
+  if (window.graficoInstance) {
+    window.graficoInstance.data.datasets.forEach(dataset => {
+      const label = dataset.label ? dataset.label.replace(' (pesquisas)', '') : '';
+      if (label === 'Samara') {
+        dataset.borderColor = samaraColor;
+        dataset.backgroundColor = samaraColor;
+      }
+    });
+    window.graficoInstance.update();
+  }
+
+  const mediaItems = document.querySelectorAll('#media-final-items .media-item');
+  mediaItems.forEach(item => {
+    const itemName = item.querySelector('.media-item-name');
+    if (itemName && itemName.textContent.startsWith('Samara')) {
+      const bullet = item.querySelector('span');
+      if (bullet) bullet.style.color = samaraColor;
+    }
+  });
+}
+
 // Dark Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn = document.getElementById('toggle-dark');
@@ -56,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     body.classList.add('dark-mode');
     toggleBtn.textContent = '☀️';
   }
+  applyDarkModeCandidateColors();
   
   // Toggle ao clicar
   toggleBtn.addEventListener('click', function() {
@@ -63,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const isNow = body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', isNow);
     toggleBtn.textContent = isNow ? '☀️' : '🌙';
+    applyDarkModeCandidateColors();
   });
   
   // Changelog Modal
@@ -245,7 +272,8 @@ async function montarGrafico() {
     Caiado: registrosFiltrados.map(r => r.candidatos?.Caiado ?? null),
     Zema: registrosFiltrados.map(r => r.candidatos?.Zema ?? null),
     Renan: registrosFiltrados.map(r => r.candidatos?.Renan ?? null),
-    Rebelo: registrosFiltrados.map(r => r.candidatos?.Rebelo ?? null)
+    Cury: registrosFiltrados.map(r => r.candidatos?.Cury ?? null),
+    Samara: registrosFiltrados.map(r => r.candidatos?.Samara ?? null)
   };
 
   function movingAverageByDate(values, dates, windowDays = 31) {
@@ -310,7 +338,8 @@ async function montarGrafico() {
     Caiado: '#1565c0',
     Zema: '#ff9800',
     Renan: '#FDD835',
-    Rebelo: '#8B4513'
+    Cury: '#81c784',
+    Samara: document.body.classList.contains('dark-mode') ? '#ffffff' : '#212121'
   };
   
   // Mapa de nomes: chave do series -> chave do JSON pré-calculado
@@ -320,7 +349,8 @@ async function montarGrafico() {
     Caiado: 'Caiado',
     Zema: 'Zema',
     Renan: 'Renan',
-    Rebelo: 'Rebelo'
+    Cury: 'Cury',
+    Samara: 'Samara'
   };
 
   // Mapa de índice para data para cálculo de posição relativa
@@ -627,9 +657,10 @@ async function montarGrafico() {
     mediaFinalItems.innerHTML = '';
     
     // Updated candidate list for 2026 first round
-    const candidatos = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Rebelo'];
-    const cores = ['#e53935', '#43a047', '#1565c0', '#ff9800', '#FDD835', '#8B4513'];
-    const partidos = ['PT', 'PL', 'PSD', 'NOVO', 'MISSÃO', 'DC'];
+    const candidatos = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Cury', 'Samara'];
+    const samaraCor = document.body.classList.contains('dark-mode') ? '#ffffff' : '#212121';
+    const cores = ['#e53935', '#43a047', '#1565c0', '#ff9800', '#FDD835', '#81c784', samaraCor];
+    const partidos = ['PT', 'PL', 'PSD', 'NOVO', 'MISSÃO', 'AVANTE', 'UP'];
     
     // Usa sempre o último índice do período geral (não do filtrado), baseado no comprimento dos dados pré-calculados
     const lastIdx = mediaMovelData.datas.length - 1;

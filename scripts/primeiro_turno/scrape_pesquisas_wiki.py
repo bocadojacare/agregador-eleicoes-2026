@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 WIKI_URL = "https://pt.wikipedia.org/wiki/Pesquisas_de_opinião_para_a_eleição_presidencial_no_Brasil_em_2026"
 OUT_FILE = Path("data/primeiro_turno/pesquisas_2026.json")
 
-CANDIDATE_WHITELIST = {"Lula", "Flávio", "Caiado", "Zema", "Renan", "Rebelo"}
+CANDIDATE_WHITELIST = {"Lula", "Flávio", "Caiado", "Zema", "Renan", "Cury", "Samara"}
 
 def clean_candidate(name):
     """Remove brackets, parties, and extra text from candidate names"""

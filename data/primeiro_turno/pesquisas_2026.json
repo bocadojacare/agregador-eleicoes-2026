@@ -1,19 +1,811 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "14 Ago - 16 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 36.0,
+      "Caiado": 5.0,
+      "Zema": 4.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
-    "data": "09 Abr - 13 Abr 2026",
+    "data": "10 Ago - 13 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 31.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "9 Ago - 12 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 35.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 3.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "6 Ago - 10 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 38.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 5.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "7 Ago - 9 Ago 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 2.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "5 Ago - 9 Ago 2026",
+    "candidatos": {
+      "Lula": 42.4,
+      "Flávio": 28.7,
+      "Caiado": 4.0,
+      "Zema": 3.3,
+      "Renan": 2.8,
+      "Cury": 1.2,
+      "Samara": 1.6
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "3 Ago - 7 Ago 2026",
+    "candidatos": {
+      "Lula": 38.8,
+      "Flávio": 34.1,
+      "Caiado": 5.9,
+      "Zema": 3.6,
+      "Renan": 3.6,
+      "Cury": 1.2,
+      "Samara": 0.7
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "3 Ago - 7 Ago 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 40.0,
+      "Caiado": 2.0,
+      "Zema": 1.0,
+      "Renan": 10.0,
+      "Cury": 0.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "31 Jul - 3 Ago 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 35.0,
+      "Caiado": 5.7,
+      "Zema": 2.6,
+      "Renan": 4.7,
+      "Cury": 1.7,
+      "Samara": 0.3
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "31 Jul - 3 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 30.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "31 Jul - 2 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 37.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "26 Jul - 28 Jul 2026",
+    "candidatos": {
+      "Lula": 40.5,
+      "Flávio": 31.2,
+      "Caiado": 5.5,
+      "Zema": 3.2,
+      "Renan": 3.0,
+      "Cury": 1.1,
+      "Samara": 0.2
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "26 Jul - 28 Jul 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 3.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "22 Jul - 27 Jul 2026",
+    "candidatos": {
+      "Lula": 44.9,
+      "Flávio": 35.8,
+      "Caiado": 3.1,
+      "Zema": 2.8,
+      "Renan": 7.8,
+      "Cury": 1.6,
+      "Samara": 2.1
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "24 Jul - 26 Jul 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 33.0,
+      "Caiado": 6.0,
+      "Zema": 3.0,
+      "Renan": 5.0,
+      "Cury": 2.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "22 Jul - 24 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 32.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "18 Jul - 20 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 33.0,
+      "Caiado": 7.0,
+      "Zema": 2.0,
+      "Renan": 9.0,
+      "Cury": 1.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "16 Jul - 19 Jul 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 30.0,
+      "Caiado": 6.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "15 Jul - 17 Jul 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 38.0,
+      "Caiado": 3.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "12 Jul - 15 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 34.0,
+      "Caiado": 4.0,
+      "Zema": 4.0,
+      "Renan": 6.0,
+      "Cury": 3.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "10 Jul - 13 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 28.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "10 Jul - 12 Jul 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 34.0,
+      "Caiado": 5.0,
+      "Zema": 4.0,
+      "Renan": 4.0,
+      "Cury": 2.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "7 Jul - 11 Jul 2026",
+    "candidatos": {
+      "Lula": 40.1,
+      "Flávio": 36.8,
+      "Caiado": 5.0,
+      "Zema": 3.7,
+      "Renan": 2.6,
+      "Cury": 1.1
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "3 Jul - 7 Jul 2026",
+    "candidatos": {
+      "Lula": 36.0,
+      "Flávio": 36.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 2.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "3 Jul - 6 Jul 2026",
+    "candidatos": {
+      "Lula": 40.4,
+      "Flávio": 32.0,
+      "Caiado": 4.0,
+      "Zema": 2.5,
+      "Renan": 2.0,
+      "Cury": 1.5,
+      "Samara": 0.4
+    }
+  },
+  {
+    "instituto": "Atlasinstel",
+    "data": "26 Jun - 30 Jun 2026",
+    "candidatos": {
+      "Lula": 46.3,
+      "Flávio": 36.6,
+      "Caiado": 2.9,
+      "Zema": 2.0,
+      "Renan": 7.8,
+      "Cury": 0.5,
+      "Samara": 0.6
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "26 Jun - 28 Jun 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 1.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "23 Jun - 25 Jun 2026",
+    "candidatos": {
+      "Lula": 38.3,
+      "Flávio": 32.2,
+      "Caiado": 5.1,
+      "Zema": 3.8,
+      "Renan": 2.5,
+      "Cury": 0.7
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "21 Jun - 24 Jun 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 36.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 3.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "15 Jun - 20 Jun 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 34.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "18 Jun - 20 Jun 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 31.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "17 Jun - 19 Jun 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 31.0,
+      "Caiado": 3.0,
+      "Zema": 2.0,
+      "Renan": 3.0,
+      "Cury": 2.0,
+      "Samara": 2.0
+    }
+  },
+  {
+    "instituto": "American Analytics",
+    "data": "11 Jun - 15 Jun 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 30.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 3.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "10 Jun - 14 Jun 2026",
+    "candidatos": {
+      "Lula": 41.8,
+      "Flávio": 28.2,
+      "Caiado": 4.0,
+      "Zema": 2.8,
+      "Renan": 2.0,
+      "Cury": 1.8
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "12 Jun - 14 Jun 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 33.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 2.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "8 Jun - 12 Jun 2026",
+    "candidatos": {
+      "Lula": 41.6,
+      "Flávio": 34.1,
+      "Caiado": 4.5,
+      "Zema": 3.5,
+      "Renan": 2.3,
+      "Cury": 0.9
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "5 Jun - 10 Jun 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 31.0,
+      "Caiado": 7.0,
+      "Zema": 7.0,
+      "Renan": 2.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "5 Jun - 8 Jun 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 29.0,
+      "Caiado": 3.0,
+      "Zema": 2.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "1 Jun - 6 Jun 2026",
+    "candidatos": {
+      "Lula": 42.1,
+      "Flávio": 33.6,
+      "Caiado": 6.9,
+      "Zema": 5.1,
+      "Renan": 3.1,
+      "Cury": 0.5
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "2 Jun - 5 Jun 2026",
+    "candidatos": {
+      "Lula": 34.0,
+      "Flávio": 35.0,
+      "Caiado": 2.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "29 Mai - 30 Mai 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 31.0,
+      "Caiado": 6.0,
+      "Zema": 5.0,
+      "Renan": 6.0,
+      "Rebelo": 1.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "25 Mai - 28 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 35.0,
+      "Caiado": 3.0,
+      "Zema": 4.0,
+      "Renan": 3.0,
+      "Cury": 3.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "23 Mai - 27 Mai 2026",
+    "candidatos": {
+      "Lula": 38.5,
+      "Flávio": 31.5,
+      "Caiado": 5.5,
+      "Zema": 2.4,
+      "Renan": 2.1
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "22 Mai - 26 Mai 2026",
+    "candidatos": {
+      "Lula": 40.6,
+      "Flávio": 42.6,
+      "Caiado": 3.0,
+      "Zema": 6.3,
+      "Renan": 3.7,
+      "Cury": 2.1
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "22 Mai - 24 Mai 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 30.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 2.0,
+      "Cury": 0.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "22 Mai - 24 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 35.0,
+      "Caiado": 5.0,
+      "Zema": 4.0,
+      "Renan": 3.0,
+      "Cury": 1.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "20 Mai - 21 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 31.0,
+      "Caiado": 4.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Rebelo": 1.0,
+      "Cury": 2.0,
+      "Samara": 3.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "18 Mai - 21 Mai 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 38.0,
+      "Caiado": 2.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Rebelo": 0.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "15 Mai - 20 Mai 2026",
+    "candidatos": {
+      "Lula": 42.7,
+      "Flávio": 35.6,
+      "Caiado": 3.3,
+      "Zema": 3.9,
+      "Renan": 1.7,
+      "Rebelo": 0.4,
+      "Cury": 0.9
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "17 Mai - 19 Mai 2026",
+    "candidatos": {
+      "Lula": 41.5,
+      "Flávio": 32.1,
+      "Caiado": 5.9,
+      "Zema": 4.1,
+      "Renan": 1.5,
+      "Rebelo": 0.1,
+      "Cury": 0.3
+    }
+  },
+  {
+    "instituto": "Vetor/Arrow",
+    "data": "15 Mai - 18 Mai 2026",
+    "candidatos": {
+      "Lula": 37.4,
+      "Flávio": 30.2,
+      "Caiado": 2.9,
+      "Zema": 3.6,
+      "Renan": 7.4,
+      "Rebelo": 1.5,
+      "Cury": 1.3
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "13 Mai - 18 Mai 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 34.3,
+      "Caiado": 2.7,
+      "Zema": 5.2,
+      "Renan": 6.9,
+      "Rebelo": 0.2,
+      "Cury": 0.4
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "11 Mai - 15 Mai 2026",
+    "candidatos": {
+      "Lula": 37.2,
+      "Flávio": 37.0,
+      "Caiado": 2.9,
+      "Zema": 6.5,
+      "Renan": 2.3,
+      "Rebelo": 0.2,
+      "Cury": 2.3
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "12 Mai - 14 Mai 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 35.0,
+      "Caiado": 3.0,
+      "Zema": 3.0,
+      "Renan": 2.0,
+      "Cury": 2.0,
+      "Samara": 2.0
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "9 Mai - 12 Mai 2026",
+    "candidatos": {
+      "Lula": 35.1,
+      "Flávio": 37.8,
+      "Caiado": 4.3,
+      "Zema": 4.5,
+      "Renan": 1.8,
+      "Rebelo": 0.2,
+      "Cury": 0.8
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "8 Mai - 12 Mai 2026",
+    "candidatos": {
+      "Lula": 34.0,
+      "Flávio": 36.0,
+      "Caiado": 1.0,
+      "Zema": 5.0,
+      "Renan": 1.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "8 Mai - 11 Mai 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 4.0,
+      "Zema": 4.0,
+      "Renan": 2.0,
+      "Rebelo": 0.0,
+      "Cury": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "4 Mai - 8 Mai 2026",
+    "candidatos": {
+      "Lula": 38.3,
+      "Flávio": 36.1,
+      "Caiado": 4.4,
+      "Zema": 3.6,
+      "Renan": 1.5,
+      "Rebelo": 0.1,
+      "Cury": 1.4
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "1 Mai - 5 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 36.0,
+      "Caiado": 5.6,
+      "Zema": 3.0,
+      "Renan": 1.4,
+      "Rebelo": 0.8,
+      "Cury": 1.5,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "2 Mai - 4 Mai 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 34.0,
+      "Caiado": 5.0,
+      "Zema": 4.0,
+      "Renan": 3.0,
+      "Rebelo": 1.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "22 Abr - 27 Abr 2026",
+    "candidatos": {
+      "Lula": 44.2,
+      "Flávio": 39.3,
+      "Caiado": 3.0,
+      "Zema": 3.5,
+      "Renan": 5.1,
+      "Rebelo": 0.4,
+      "Cury": 0.4,
+      "Samara": 2.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "24 Abr - 26 Abr 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 36.0,
+      "Caiado": 3.0,
+      "Zema": 4.0,
+      "Renan": 3.0,
+      "Rebelo": 1.0,
+      "Cury": 2.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "9 Abr - 13 Abr 2026",
     "candidatos": {
       "Lula": 37.0,
       "Flávio": 32.0,
       "Caiado": 6.0,
       "Zema": 3.0,
       "Renan": 2.0,
-      "Rebelo": 0.0
+      "Rebelo": 0.0,
+      "Cury": 2.0,
+      "Samara": 1.0
     }
   },
   {
     "instituto": "CNT/MDA",
-    "data": "08 Abr - 12 Abr 2026",
+    "data": "8 Abr - 12 Abr 2026",
     "candidatos": {
       "Lula": 39.2,
       "Flávio": 30.2,
@@ -25,19 +817,20 @@
   },
   {
     "instituto": "Apex/Futura",
-    "data": "07 Abr - 11 Abr 2026",
+    "data": "7 Abr - 11 Abr 2026",
     "candidatos": {
       "Lula": 39.8,
       "Flávio": 37.3,
       "Caiado": 4.8,
       "Zema": 2.9,
       "Renan": 1.4,
-      "Rebelo": 0.3
+      "Rebelo": 0.3,
+      "Cury": 1.3
     }
   },
   {
     "instituto": "Datafolha",
-    "data": "07 Abr - 09 Abr 2026",
+    "data": "7 Abr - 9 Abr 2026",
     "candidatos": {
       "Lula": 39.0,
       "Flávio": 35.0,
@@ -403,7 +1196,7 @@
     }
   },
   {
-    "instituto": "Futura/Apex",
+    "instituto": "Apex/Futura",
     "data": "03 Dez - 09 Dez 2025",
     "candidatos": {
       "Flávio": 29.6,

@@ -30,6 +30,10 @@ CANDIDATE_NAME_MAPPING = {
     "RenanMISSÃO": "Renan",  # Encoding issue variant
     # Aldo Rebelo
     "RebeloDC": "Rebelo",
+    # Cury (Avante)
+    "CuryAvante": "Cury",
+    # Samara (UP)
+    "SamaraUP": "Samara",
     # Tarcísio (if found)
     "TarcísioRepublicanos": "Tarcísio",
     "TarcIsioRepublicanos": "Tarcísio",
@@ -55,7 +59,7 @@ def main():
     registros = []
     
     # Candidates to keep (whitelist)
-    CANDIDATES_TO_KEEP = {"Lula", "Flávio", "Caiado", "Zema", "Renan", "Rebelo"}
+    CANDIDATES_TO_KEEP = {"Lula", "Flávio", "Caiado", "Zema", "Renan", "Cury", "Samara"}
     
     colunas_irrelevantes = {"Sample size", "Lead", "BlankNullUndec.", "Others", "Outros"}
     

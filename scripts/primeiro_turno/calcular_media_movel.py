@@ -155,7 +155,7 @@ else:
     exit(1)
 
 # Candidatos principais
-candidatos_principais = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Rebelo']
+candidatos_principais = ['Lula', 'Flávio', 'Caiado', 'Zema', 'Renan', 'Cury', 'Samara']
 
 # Estrutura para salvar
 resultado = {
