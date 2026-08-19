@@ -5,7 +5,7 @@
       "versao": "1.3.0",
       "data": "2026-08-19",
       "notas": [
-        "Bem vindo à esse pequeno projeto, espero que seja útil!",
+        "Bem-vindo a esse pequeno projeto, espero que seja útil!",
         "Tentarei adicionar mais funcionalidades com o tempo.",
         "Novos candidatos adicionados: Cury e Samara"
       ]
@@ -16,7 +16,6 @@
       "notas": [
         "Correção crítica: scrapers rejeitavam novas pesquisas após 04 Apr 2026",
         "Migração de data 'hoje' fixa para sistema dinâmico de validação de datas",
-        "Suporte para novas pesquisas: Quaest, CNT/MDA, Datafolha, Apex/Futura, Meio/Ideia",
         "Pipeline de atualização agora se adapta continuamente ao calendário"
       ]
     },
@@ -24,8 +23,6 @@
       "versao": "1.2.0",
       "data": "2026-04-04",
       "notas": [
-        "Bem vindo à esse pequeno projeto, espero que seja útil!",
-        "Tentarei adicionar mais funcionalidades com o tempo.",
         "Atualização dos pré-candidatos consolidados.",
         "Melhorias visuais, inclusão dos partidos junto ao nome dos candidatos.",
         "Pesquisas desde novembro incluídas, considerando entrada de Flávio Bolsonaro como pré-candidato"
