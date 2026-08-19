@@ -1,5 +1,501 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "16 Ago 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "13 Ago 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 40.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "12 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "10 Ago 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "9 Ago 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "9 Ago 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 39.1
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "7 Ago 2026",
+    "candidatos": {
+      "Lula": 46.5,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "7 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "3 Ago 2026",
+    "candidatos": {
+      "Lula": 48.5,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "3 Ago 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 39.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "2 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "28 Jul 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 41.1
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "28 Jul 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Alfa/TMC",
+    "data": "28 Jul 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "27 Jul 2026",
+    "candidatos": {
+      "Lula": 49.2,
+      "Flávio": 42.9
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "26 Jul 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "24 Jul 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "20 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "19 Jul 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 39.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "17 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "15 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "13 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 37.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "12 Jul 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "11 Jul 2026",
+    "candidatos": {
+      "Lula": 46.3,
+      "Flávio": 46.1
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "7 Jul 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "6 Jul 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 40.0
+    }
+  },
+  {
+    "instituto": "Atlasinstel",
+    "data": "30 Jun 2026",
+    "candidatos": {
+      "Lula": 48.8,
+      "Flávio": 42.3
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "28 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "25 Jun 2026",
+    "candidatos": {
+      "Lula": 45.3,
+      "Flávio": 42.8
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "24 Jun 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "20 Jun 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "20 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 40.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "19 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "American Analytics",
+    "data": "15 Jun 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 40.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "14 Jun 2026",
+    "candidatos": {
+      "Lula": 49.3,
+      "Flávio": 36.8
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "14 Jun 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "12 Jun 2026",
+    "candidatos": {
+      "Lula": 48.1,
+      "Flávio": 42.9
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "10 Jun 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "8 Jun 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 38.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "6 Jun 2026",
+    "candidatos": {
+      "Lula": 47.8,
+      "Flávio": 41.3
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "5 Jun 2026",
+    "candidatos": {
+      "Lula": 39.1,
+      "Flávio": 44.7
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "30 Mai 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 40.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "28 Mai 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "27 Mai 2026",
+    "candidatos": {
+      "Lula": 46.5,
+      "Flávio": 41.4
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "26 Mai 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 53.2
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "24 Mai 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "24 Mai 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "21 Mai 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "21 Mai 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "20 Mai 2026",
+    "candidatos": {
+      "Lula": 47.7,
+      "Flávio": 42.2
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "19 Mai 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 38.1
+    }
+  },
+  {
+    "instituto": "Vetor/Arrow",
+    "data": "18 Mai 2026",
+    "candidatos": {
+      "Lula": 50.7,
+      "Flávio": 38.3
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "18 Mai 2026",
+    "candidatos": {
+      "Lula": 48.9,
+      "Flávio": 41.8
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "14 Mai 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "12 Mai 2026",
+    "candidatos": {
+      "Lula": 40.2,
+      "Flávio": 43.8
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "12 Mai 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "11 Mai 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "8 Mai 2026",
+    "candidatos": {
+      "Lula": 44.4,
+      "Flávio": 46.9
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "5 Mai 2026",
+    "candidatos": {
+      "Lula": 44.7,
+      "Flávio": 45.3
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "4 Mai 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "27 Abr 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 47.8
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "26 Abr 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Genial/Quaest",
     "data": "13 Abr 2026",
     "candidatos": {
@@ -248,7 +744,7 @@
     }
   },
   {
-    "instituto": "Futura/Apex",
+    "instituto": "Apex/Futura",
     "data": "09 Dez 2025",
     "candidatos": {
       "Lula": 42.1,
@@ -285,6 +781,38 @@
     "candidatos": {
       "Lula": 45.4,
       "Flávio": 38.6
+    }
+  },
+  {
+    "instituto": "Genial/Quaest",
+    "data": "17 Ago 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 32.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "30 Jul 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 37.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "22 Jun 2026",
+    "candidatos": {
+      "Lula": 42.1,
+      "Flávio": 38.4
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "11 Jun 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 38.0
     }
   }
 ]
