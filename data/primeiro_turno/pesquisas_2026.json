@@ -1,5 +1,31 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "18 Ago - 20 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "16 Ago - 20 Ago 2026",
+    "candidatos": {
+      "Lula": 39.3,
+      "Flávio": 39.1,
+      "Caiado": 3.3,
+      "Zema": 1.3,
+      "Renan": 3.8,
+      "Cury": 2.2,
+      "Samara": 0.4
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "14 Ago - 16 Ago 2026",
     "candidatos": {
@@ -510,7 +536,6 @@
       "Caiado": 6.0,
       "Zema": 5.0,
       "Renan": 6.0,
-      "Rebelo": 1.0,
       "Cury": 1.0,
       "Samara": 0.0
     }
@@ -584,7 +609,6 @@
       "Caiado": 4.0,
       "Zema": 3.0,
       "Renan": 3.0,
-      "Rebelo": 1.0,
       "Cury": 2.0,
       "Samara": 3.0
     }
@@ -598,7 +622,6 @@
       "Caiado": 2.0,
       "Zema": 3.0,
       "Renan": 3.0,
-      "Rebelo": 0.0,
       "Cury": 1.0,
       "Samara": 1.0
     }
@@ -612,7 +635,6 @@
       "Caiado": 3.3,
       "Zema": 3.9,
       "Renan": 1.7,
-      "Rebelo": 0.4,
       "Cury": 0.9
     }
   },
@@ -625,7 +647,6 @@
       "Caiado": 5.9,
       "Zema": 4.1,
       "Renan": 1.5,
-      "Rebelo": 0.1,
       "Cury": 0.3
     }
   },
@@ -638,7 +659,6 @@
       "Caiado": 2.9,
       "Zema": 3.6,
       "Renan": 7.4,
-      "Rebelo": 1.5,
       "Cury": 1.3
     }
   },
@@ -651,7 +671,6 @@
       "Caiado": 2.7,
       "Zema": 5.2,
       "Renan": 6.9,
-      "Rebelo": 0.2,
       "Cury": 0.4
     }
   },
@@ -664,7 +683,6 @@
       "Caiado": 2.9,
       "Zema": 6.5,
       "Renan": 2.3,
-      "Rebelo": 0.2,
       "Cury": 2.3
     }
   },
@@ -690,7 +708,6 @@
       "Caiado": 4.3,
       "Zema": 4.5,
       "Renan": 1.8,
-      "Rebelo": 0.2,
       "Cury": 0.8
     }
   },
@@ -716,7 +733,6 @@
       "Caiado": 4.0,
       "Zema": 4.0,
       "Renan": 2.0,
-      "Rebelo": 0.0,
       "Cury": 1.0,
       "Samara": 1.0
     }
@@ -730,7 +746,6 @@
       "Caiado": 4.4,
       "Zema": 3.6,
       "Renan": 1.5,
-      "Rebelo": 0.1,
       "Cury": 1.4
     }
   },
@@ -743,7 +758,6 @@
       "Caiado": 5.6,
       "Zema": 3.0,
       "Renan": 1.4,
-      "Rebelo": 0.8,
       "Cury": 1.5,
       "Samara": 0.0
     }
@@ -757,7 +771,6 @@
       "Caiado": 5.0,
       "Zema": 4.0,
       "Renan": 3.0,
-      "Rebelo": 1.0,
       "Cury": 1.0,
       "Samara": 0.0
     }
@@ -771,7 +784,6 @@
       "Caiado": 3.0,
       "Zema": 3.5,
       "Renan": 5.1,
-      "Rebelo": 0.4,
       "Cury": 0.4,
       "Samara": 2.0
     }
@@ -785,7 +797,6 @@
       "Caiado": 3.0,
       "Zema": 4.0,
       "Renan": 3.0,
-      "Rebelo": 1.0,
       "Cury": 2.0
     }
   },
@@ -798,7 +809,6 @@
       "Caiado": 6.0,
       "Zema": 3.0,
       "Renan": 2.0,
-      "Rebelo": 0.0,
       "Cury": 2.0,
       "Samara": 1.0
     }
@@ -811,8 +821,7 @@
       "Flávio": 30.2,
       "Caiado": 4.6,
       "Zema": 3.3,
-      "Renan": 1.8,
-      "Rebelo": 1.5
+      "Renan": 1.8
     }
   },
   {
@@ -824,7 +833,6 @@
       "Caiado": 4.8,
       "Zema": 2.9,
       "Renan": 1.4,
-      "Rebelo": 0.3,
       "Cury": 1.3
     }
   },
@@ -836,8 +844,7 @@
       "Flávio": 35.0,
       "Caiado": 5.0,
       "Zema": 4.0,
-      "Renan": 2.0,
-      "Rebelo": 1.0
+      "Renan": 2.0
     }
   },
   {
@@ -848,8 +855,7 @@
       "Flávio": 35.9,
       "Caiado": 1.9,
       "Zema": 1.8,
-      "Renan": 1.8,
-      "Rebelo": 0.4
+      "Renan": 1.8
     }
   },
   {
@@ -860,8 +866,7 @@
       "Flávio": 37.0,
       "Caiado": 6.5,
       "Zema": 3.0,
-      "Renan": 3.0,
-      "Rebelo": 0.6
+      "Renan": 3.0
     }
   },
   {
@@ -872,8 +877,7 @@
       "Flávio": 38.0,
       "Caiado": 4.0,
       "Zema": 4.0,
-      "Renan": 2.0,
-      "Rebelo": 0.0
+      "Renan": 2.0
     }
   },
   {
@@ -884,8 +888,7 @@
       "Flávio": 37.8,
       "Caiado": 3.6,
       "Zema": 3.0,
-      "Renan": 1.2,
-      "Rebelo": 1.1
+      "Renan": 1.2
     }
   },
   {
@@ -896,8 +899,7 @@
       "Flávio": 37.0,
       "Caiado": 5.0,
       "Zema": 5.0,
-      "Renan": 1.0,
-      "Rebelo": 0.0
+      "Renan": 1.0
     }
   },
   {
@@ -908,8 +910,7 @@
       "Flávio": 35.8,
       "Caiado": 2.8,
       "Zema": 1.6,
-      "Renan": 4.3,
-      "Rebelo": 0.5
+      "Renan": 4.3
     }
   },
   {
@@ -920,8 +921,7 @@
       "Flávio": 30.0,
       "Caiado": 3.0,
       "Zema": 4.0,
-      "Renan": 1.0,
-      "Rebelo": 0.0
+      "Renan": 1.0
     }
   },
   {
@@ -932,8 +932,7 @@
       "Flávio": 32.0,
       "Caiado": 4.0,
       "Zema": 2.0,
-      "Renan": 1.0,
-      "Rebelo": 1.0
+      "Renan": 1.0
     }
   },
   {
@@ -943,8 +942,7 @@
       "Lula": 35.1,
       "Flávio": 41.9,
       "Caiado": 5.7,
-      "Renan": 2.0,
-      "Rebelo": 2.1
+      "Renan": 2.0
     }
   },
   {
@@ -955,8 +953,7 @@
       "Flávio": 35.0,
       "Caiado": 5.0,
       "Zema": 5.0,
-      "Renan": 2.0,
-      "Rebelo": 1.0
+      "Renan": 2.0
     }
   },
   {
@@ -967,8 +964,7 @@
       "Flávio": 33.0,
       "Caiado": 4.0,
       "Zema": 5.0,
-      "Renan": 3.0,
-      "Rebelo": 2.0
+      "Renan": 3.0
     }
   },
   {
@@ -978,8 +974,7 @@
       "Lula": 36.3,
       "Flávio": 44.0,
       "Zema": 2.3,
-      "Renan": 1.8,
-      "Rebelo": 1.4
+      "Renan": 1.8
     }
   },
   {
@@ -990,8 +985,7 @@
       "Flávio": 33.0,
       "Caiado": 5.0,
       "Zema": 3.0,
-      "Renan": 2.0,
-      "Rebelo": 2.0
+      "Renan": 2.0
     }
   },
   {
@@ -1002,8 +996,7 @@
       "Flávio": 36.6,
       "Caiado": 3.7,
       "Zema": 4.3,
-      "Renan": 1.5,
-      "Rebelo": 0.4
+      "Renan": 1.5
     }
   },
   {
@@ -1014,8 +1007,7 @@
       "Flávio": 33.1,
       "Caiado": 4.1,
       "Zema": 1.5,
-      "Renan": 3.3,
-      "Rebelo": 1.4
+      "Renan": 3.3
     }
   },
   {
@@ -1026,8 +1018,7 @@
       "Flávio": 30.0,
       "Caiado": 4.0,
       "Zema": 4.0,
-      "Renan": 1.0,
-      "Rebelo": 1.0
+      "Renan": 1.0
     }
   },
   {
@@ -1038,8 +1029,7 @@
       "Flávio": 35.7,
       "Caiado": 6.6,
       "Zema": 6.5,
-      "Renan": 2.1,
-      "Rebelo": 1.1
+      "Renan": 2.1
     }
   },
   {
@@ -1050,8 +1040,7 @@
       "Flávio": 32.0,
       "Caiado": 6.0,
       "Zema": 4.0,
-      "Renan": 1.0,
-      "Rebelo": 2.0
+      "Renan": 1.0
     }
   },
   {
@@ -1062,8 +1051,7 @@
       "Flávio": 35.0,
       "Caiado": 2.0,
       "Zema": 2.0,
-      "Renan": 0.0,
-      "Rebelo": 0.0
+      "Renan": 0.0
     }
   },
   {
@@ -1074,8 +1062,7 @@
       "Flávio": 33.0,
       "Caiado": 5.1,
       "Zema": 6.0,
-      "Renan": 0.7,
-      "Rebelo": 0.5
+      "Renan": 0.7
     }
   },
   {
@@ -1086,8 +1073,7 @@
       "Flávio": 33.1,
       "Caiado": 3.7,
       "Zema": 2.8,
-      "Renan": 1.5,
-      "Rebelo": 1.1
+      "Renan": 1.5
     }
   },
   {
@@ -1098,8 +1084,7 @@
       "Flávio": 19.15,
       "Caiado": 5.85,
       "Zema": 4.92,
-      "Renan": 7.08,
-      "Rebelo": 3.38
+      "Renan": 7.08
     }
   },
   {
@@ -1110,8 +1095,7 @@
       "Flávio": 34.3,
       "Caiado": 3.7,
       "Zema": 4.4,
-      "Renan": 1.7,
-      "Rebelo": 0.6
+      "Renan": 1.7
     }
   },
   {
@@ -1122,8 +1106,7 @@
       "Flávio": 35.0,
       "Caiado": 4.3,
       "Zema": 2.8,
-      "Renan": 3.4,
-      "Rebelo": 1.0
+      "Renan": 3.4
     }
   },
   {
@@ -1134,8 +1117,7 @@
       "Flávio": 31.0,
       "Caiado": 5.0,
       "Zema": 5.0,
-      "Renan": 2.0,
-      "Rebelo": 2.0
+      "Renan": 2.0
     }
   },
   {
@@ -1146,8 +1128,7 @@
       "Flávio": 27.6,
       "Caiado": 5.5,
       "Zema": 5.4,
-      "Renan": 0.7,
-      "Rebelo": 0.2
+      "Renan": 0.7
     }
   },
   {
@@ -1179,8 +1160,7 @@
       "Lula": 35.0,
       "Zema": 6.0,
       "Caiado": 5.0,
-      "Renan": 1.0,
-      "Rebelo": 1.0
+      "Renan": 1.0
     }
   },
   {
@@ -1191,8 +1171,7 @@
       "Lula": 34.0,
       "Zema": 4.0,
       "Caiado": 2.0,
-      "Renan": 1.0,
-      "Rebelo": 1.0
+      "Renan": 1.0
     }
   },
   {
