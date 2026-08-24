@@ -1,5 +1,18 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "21 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 37.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "18 Ago - 20 Ago 2026",
     "candidatos": {

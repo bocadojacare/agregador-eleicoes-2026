@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "21 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "18 Ago - 20 Ago 2026",
     "candidatos": {
