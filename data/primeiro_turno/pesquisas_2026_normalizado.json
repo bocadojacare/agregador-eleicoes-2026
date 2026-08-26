@@ -1,5 +1,18 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "21 Ago - 25 Ago 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 38.0,
+      "Caiado": 3.0,
+      "Zema": 1.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "21 Ago - 23 Ago 2026",
     "candidatos": {

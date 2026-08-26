@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "25 Ago 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 47.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "23 Ago 2026",
     "candidatos": {
