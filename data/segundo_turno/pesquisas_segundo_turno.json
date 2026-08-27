@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "23 Ago - 26 Ago 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "21 Ago - 25 Ago 2026",
     "candidatos": {
@@ -13,6 +21,14 @@
     "candidatos": {
       "Lula": 46.0,
       "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Indexa/Broadcast",
+    "data": "20 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 41.0
     }
   },
   {

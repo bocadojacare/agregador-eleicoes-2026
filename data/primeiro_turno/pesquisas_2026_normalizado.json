@@ -1,5 +1,18 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "23 Ago - 26 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 35.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 4.0,
+      "Samara": 1.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "21 Ago - 25 Ago 2026",
     "candidatos": {
@@ -23,6 +36,19 @@
       "Renan": 3.0,
       "Cury": 2.0,
       "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Indexa/Broadcast",
+    "data": "20 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 34.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 0.0
     }
   },
   {
