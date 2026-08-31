@@ -1,5 +1,31 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "28 Ago - 30 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Renan": 3.0,
+      "Cury": 11.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "25 Ago - 30 Ago 2026",
+    "candidatos": {
+      "Lula": 43.4,
+      "Flávio": 33.7,
+      "Caiado": 3.3,
+      "Zema": 1.0,
+      "Renan": 7.6,
+      "Cury": 7.8,
+      "Samara": 0.9
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "25 Ago - 27 Ago 2026",
     "candidatos": {

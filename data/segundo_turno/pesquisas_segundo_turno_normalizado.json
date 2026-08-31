@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "30 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "30 Ago 2026",
+    "candidatos": {
+      "Lula": 47.1,
+      "Flávio": 42.6
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "27 Ago 2026",
     "candidatos": {
