@@ -1,5 +1,17 @@
 [
   {
+    "instituto": "Real Time Big Data",
+    "data": "27 Ago - 31 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 29.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 6.0,
+      "Cury": 10.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "28 Ago - 30 Ago 2026",
     "candidatos": {
