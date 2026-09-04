@@ -1,10 +1,26 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "2 Set 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "2 Set 2026",
     "candidatos": {
       "Lula": 45.0,
       "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Futura/Apex",
+    "data": "1 Set 2026",
+    "candidatos": {
+      "Lula": 45.2,
+      "Flávio": 45.6
     }
   },
   {
