@@ -1,5 +1,173 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "1 Set - 2 Set 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 33.0,
+      "Cury": 8.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "30 Ago - 2 Set 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 34.0,
+      "Cury": 10.0,
+      "Renan": 3.0,
+      "Caiado": 2.0,
+      "Zema": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "27 Ago - 1 Set 2026",
+    "candidatos": {
+      "Lula": 38.7,
+      "Flávio": 33.6,
+      "Cury": 9.9,
+      "Renan": 2.8,
+      "Caiado": 3.5,
+      "Zema": 1.6,
+      "Samara": 0.4
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "27 Ago - 31 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 29.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 6.0,
+      "Cury": 10.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "28 Ago - 30 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Renan": 3.0,
+      "Cury": 11.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "25 Ago - 30 Ago 2026",
+    "candidatos": {
+      "Lula": 43.4,
+      "Flávio": 33.7,
+      "Caiado": 3.3,
+      "Zema": 1.0,
+      "Renan": 7.6,
+      "Cury": 7.8,
+      "Samara": 0.9
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "25 Ago - 27 Ago 2026",
+    "candidatos": {
+      "Lula": 37.1,
+      "Flávio": 34.8,
+      "Caiado": 5.0,
+      "Zema": 2.8,
+      "Renan": 3.3,
+      "Cury": 2.6,
+      "Samara": 0.1
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "23 Ago - 26 Ago 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 35.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Renan": 4.0,
+      "Cury": 4.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "21 Ago - 25 Ago 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 38.0,
+      "Caiado": 3.0,
+      "Zema": 1.0,
+      "Renan": 3.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "21 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 37.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 3.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Indexa/Broadcast",
+    "data": "20 Ago - 23 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 34.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Renan": 4.0,
+      "Cury": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "18 Ago - 20 Ago 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 33.0,
+      "Caiado": 5.0,
+      "Zema": 3.0,
+      "Renan": 4.0,
+      "Cury": 2.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "16 Ago - 20 Ago 2026",
+    "candidatos": {
+      "Lula": 39.3,
+      "Flávio": 39.1,
+      "Caiado": 3.3,
+      "Zema": 1.3,
+      "Renan": 3.8,
+      "Cury": 2.2,
+      "Samara": 0.4
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "14 Ago - 16 Ago 2026",
     "candidatos": {
@@ -1254,6 +1422,19 @@
       "Lula": 36.3,
       "Zema": 4.8,
       "Caiado": 5.2
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "30 Ago - 1 Set 2026",
+    "candidatos": {
+      "Lula": 37.0,
+      "Flávio": 30.0,
+      "Cury": 10.0,
+      "Renan": 3.0,
+      "Caiado": 1.0,
+      "Zema": 1.0,
+      "Samara": 0.0
     }
   }
 ]

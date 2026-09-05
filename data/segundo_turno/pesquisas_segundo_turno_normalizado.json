@@ -1,5 +1,117 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "2 Set 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "2 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "1 Set 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "1 Set 2026",
+    "candidatos": {
+      "Lula": 45.6,
+      "Flávio": 45.2
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "31 Ago 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "30 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "30 Ago 2026",
+    "candidatos": {
+      "Lula": 47.1,
+      "Flávio": 42.6
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "27 Ago 2026",
+    "candidatos": {
+      "Lula": 44.5,
+      "Flávio": 45.1
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "26 Ago 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "25 Ago 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "23 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Indexa/Broadcast",
+    "data": "23 Ago 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 41.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "20 Ago 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 43.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "20 Ago 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 47.3
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "16 Ago 2026",
     "candidatos": {

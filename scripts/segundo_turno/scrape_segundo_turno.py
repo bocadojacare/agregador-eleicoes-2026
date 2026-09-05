@@ -46,11 +46,19 @@ def normalize_percentage(val):
 
 def extract_institute_date(row_text):
     """Extract institute name and date from text"""
-    match = re.search(r'^([^(\[]+)(?:\[\d+\])?\s*(?:\()?(\d{1,2}\s+\w+\s*(?:–|-)\s*\d{1,2}\s+\w+(?:\s+\d{4})?)\)?', str(row_text))
+    row_text = re.sub(r"\[\d+\]", "", str(row_text))
+    match = re.search(r'^([^()\[]+)(?:\[\d+\])?\s*(?:\()?(\d{1,2}\s+\w+\s*(?:–|-)\s*\d{1,2}\s+\w+(?:\s+\d{4})?)\)?', str(row_text))
     if match:
         institute = match.group(1).strip()
         date = match.group(2).strip()
         return institute, date
+    return None, None
+
+def extract_institute_date(row_text):
+    row_text = re.sub(r"\[[0-9]+\]", "", str(row_text))
+    match = re.search(r'^([^()]+?)[ ]*[(]?([0-9]{1,2}[ ]+[A-Za-zÀ-ÿ]+[ ]*(?:–|-)[ ]*[0-9]{1,2}[ ]+[A-Za-zÀ-ÿ]+(?:[ ]+[0-9]{4})?)[)]?', row_text)
+    if match:
+        return match.group(1).strip(), match.group(2).strip()
     return None, None
 
 def parse_date_with_year(date_str, fallback_year=None):

@@ -48,11 +48,19 @@ def normalize_percentage(val):
 def extract_institute_date(row_text):
     """Extract institute name and date from text"""
     # Format: "Instituto[XX] (DD Mês - DD Mês YYYY)" or "Instituto DD Mês - DD Mês"
+    row_text = re.sub(r"\[\d+\]", "", str(row_text))
     match = re.search(r'^([^(\[]+)(?:\[\d+\])?\s*(?:\()?(\d{1,2}\s+\w+\s*(?:–|-)\s*\d{1,2}\s+\w+(?:\s+\d{4})?)\)?', str(row_text))
     if match:
         institute = match.group(1).strip()
         date = match.group(2).strip()
         return institute, date
+    return None, None
+
+def extract_institute_date(row_text):
+    row_text = re.sub(r"\[[0-9]+\]", "", str(row_text))
+    match = re.search(r'^([^()]+?)[ ]*[(]?([0-9]{1,2}[ ]+[A-Za-zÀ-ÿ]+[ ]*(?:–|-)[ ]*[0-9]{1,2}[ ]+[A-Za-zÀ-ÿ]+(?:[ ]+[0-9]{4})?)[)]?', row_text)
+    if match:
+        return match.group(1).strip(), match.group(2).strip()
     return None, None
 
 def parse_date_with_year(date_str):
@@ -167,6 +175,24 @@ def main():
     # Collect all polls by (institute, date) and keep only those with BOTH Lula and Flávio
     # If multiple scenarios for same date, keep the one with most candidates
     polls_by_date = {}  # key: (institute, data_with_year) -> best poll with Lula+Flávio
+
+    # Preserve the local history because Wikipedia now exposes only recent monthly tables.
+    if OUT_FILE.exists():
+        try:
+            existing_polls = json.loads(OUT_FILE.read_text(encoding="utf-8"))
+            for poll in existing_polls:
+                candidatos = poll.get("candidatos", {})
+                if poll.get("instituto") and poll.get("data") and candidatos:
+                    poll_key = (poll["instituto"], poll["data"])
+                    polls_by_date[poll_key] = {
+                        "instituto": poll["instituto"],
+                        "data": poll["data"],
+                        "candidatos": candidatos,
+                        "num_candidates": len(candidatos)
+                    }
+            print(f"Histórico local preservado: {len(polls_by_date)} registros")
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"Aviso: não foi possível carregar o histórico local: {e}")
     
     for table_idx, df in enumerate(dfs):
         # Skip very small tables
