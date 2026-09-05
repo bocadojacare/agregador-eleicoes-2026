@@ -39,6 +39,16 @@ Um agregador de pesquisas eleitorais brasileiras que consolida dados de múltipl
 
 ## 🚀 Como Usar
 
+### Fluxo de trabalho
+
+Antes de iniciar qualquer alteração no projeto, atualize a cópia local:
+
+```bash
+git pull --ff-only
+```
+
+Se o comando não puder aplicar a atualização automaticamente, resolva o estado do Git antes de editar os arquivos.
+
 ### Localmente
 
 1. Clone o repositório:
