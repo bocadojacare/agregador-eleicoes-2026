@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Veritá",
+    "data": "4 Set 2026",
+    "candidatos": {
+      "Lula": 43.1,
+      "Flávio": 48.5
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "2 Set 2026",
     "candidatos": {

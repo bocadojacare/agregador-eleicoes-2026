@@ -1389,5 +1389,18 @@
       "Zema": 1.0,
       "Samara": 0.0
     }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "1 Set - 4 Set 2026",
+    "candidatos": {
+      "Lula": 38.4,
+      "Flávio": 38.9,
+      "Cury": 12.2,
+      "Renan": 3.7,
+      "Caiado": 1.9,
+      "Zema": 0.3,
+      "Samara": 0.2
+    }
   }
 ]
