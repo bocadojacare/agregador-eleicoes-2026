@@ -1449,5 +1449,31 @@
       "Zema": 0.3,
       "Samara": 0.2
     }
+  },
+  {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "4 Set - 7 Set 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 35.0,
+      "Cury": 9.0,
+      "Renan": 4.0,
+      "Caiado": 4.0,
+      "Zema": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "3 Set - 6 Set 2026",
+    "candidatos": {
+      "Lula": 36.0,
+      "Flávio": 29.0,
+      "Cury": 8.0,
+      "Renan": 3.0,
+      "Caiado": 3.0,
+      "Zema": 2.0,
+      "Samara": 1.0
+    }
   }
 ]

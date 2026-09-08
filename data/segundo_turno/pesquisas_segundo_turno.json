@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Nexus/BTG Pactual",
+    "data": "4 Set - 7 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "3 Set - 6 Set 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 41.0
+    }
+  },
+  {
     "instituto": "Veritá",
     "data": "1 Set - 4 Set 2026",
     "candidatos": {
