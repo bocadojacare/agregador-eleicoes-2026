@@ -1475,5 +1475,44 @@
       "Zema": 2.0,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "3 Set - 8 Set 2026",
+    "candidatos": {
+      "Lula": 34.0,
+      "Flávio": 37.0,
+      "Cury": 6.0,
+      "Renan": 4.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "4 Set - 7 Set 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 40.0,
+      "Cury": 4.0,
+      "Renan": 11.0,
+      "Caiado": 1.0,
+      "Zema": 0.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "4 Set - 7 Set 2026",
+    "candidatos": {
+      "Lula": 38.4,
+      "Flávio": 37.3,
+      "Cury": 6.6,
+      "Renan": 4.0,
+      "Caiado": 4.0,
+      "Zema": 1.5,
+      "Samara": 0.7
+    }
   }
 ]

@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "8 Set 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "7 Set 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "7 Set 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 46.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG Pactual",
     "data": "7 Set 2026",
     "candidatos": {
