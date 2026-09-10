@@ -1467,5 +1467,18 @@
       "Zema": 1.5,
       "Samara": 0.7
     }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "6 Set - 9 Set 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 36.0,
+      "Cury": 10.0,
+      "Renan": 3.0,
+      "Caiado": 2.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
   }
 ]

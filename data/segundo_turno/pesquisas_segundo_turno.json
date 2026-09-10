@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "6 Set - 9 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 47.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "3 Set - 8 Set 2026",
     "candidatos": {
