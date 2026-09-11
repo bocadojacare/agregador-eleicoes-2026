@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Apex/Futura",
+    "data": "10 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 45.4
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "9 Set 2026",
+    "candidatos": {
+      "Lula": 46.2,
+      "Flávio": 46.4
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "9 Set 2026",
     "candidatos": {

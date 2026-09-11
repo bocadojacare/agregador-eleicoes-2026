@@ -1480,5 +1480,31 @@
       "Zema": 1.0,
       "Samara": 0.0
     }
+  },
+  {
+    "instituto": "Apex/Futura",
+    "data": "4 Set - 10 Set 2026",
+    "candidatos": {
+      "Lula": 39.2,
+      "Flávio": 33.6,
+      "Cury": 6.4,
+      "Renan": 4.3,
+      "Caiado": 4.4,
+      "Zema": 0.7,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "4 Set - 9 Set 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 37.4,
+      "Cury": 6.6,
+      "Renan": 6.5,
+      "Caiado": 1.1,
+      "Zema": 2.1,
+      "Samara": 1.0
+    }
   }
 ]
