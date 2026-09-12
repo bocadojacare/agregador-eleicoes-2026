@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "DataFolha",
+    "data": "11 Set 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "Apex/Futura",
     "data": "10 Set 2026",
     "candidatos": {

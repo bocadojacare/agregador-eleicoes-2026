@@ -1553,5 +1553,18 @@
       "Zema": 2.1,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "DataFolha",
+    "data": "8 Set – 11 Set 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 35.0,
+      "Cury": 6.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 2.0,
+      "Samara": 1.0
+    }
   }
 ]
