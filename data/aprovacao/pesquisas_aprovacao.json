@@ -1,0 +1,1618 @@
+[
+  {
+    "instituto": "PoderData",
+    "data": "2026-09-10",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-09-09",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "2026-09-09",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "2026-09-09",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-09-08",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-09-07",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Poderdata",
+    "data": "2026-09-03",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-09-03",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-09-03",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-09-02",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-08-31",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-08-31",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-08-26",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "2026-08-26",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-08-26",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-08-24",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-08-21",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-08-17",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-08-14",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-08-13",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-08-11",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2026-08-11",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-08-11",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-08-10",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-08-05",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-08-05",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-08-03",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "2026-07-31",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-07-30",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-07-29",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-07-27",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-07-24",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-07-22",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "2026-07-21",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "2026-07-21",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-07-16",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-07-15",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-07-14",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-07-13",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-07-08",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-07-08",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-07-01",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-06-29",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Vox Brasil",
+    "data": "2026-06-27",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-06-25",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2026-06-22",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 44.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-06-20",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-06-16",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2026-06-16",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-06-15",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-06-10",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-06-09",
+    "candidatos": {
+      "Aprova": 40.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "2026-06-01",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-05-29",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-05-28",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "2026-05-27",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-05-25",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-05-23",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-05-22",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-05-19",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-05-17",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-05-13",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-05-11",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-05-06",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "2026-05-05",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-04-28",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-04-27",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-04-15",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-04-14",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2026-04-14",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-04-12",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-04-07",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2026-04-02",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-03-30",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-03-25",
+    "candidatos": {
+      "Aprova": 31.0,
+      "Desaprova": 61.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-03-25",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-03-11",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-03-11",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-03-11",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2026-03-10",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-03-07",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2026-02-28",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-02-25",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-02-11",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-02-04",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-02-04",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2026-01-29",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-01-22",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-01-22",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-01-14",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2026-01-12",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-12-29",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-12-18",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-12-17",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-12-16",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-12-12",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2025-12-11",
+    "candidatos": {
+      "Aprova": 39.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2025-12-09",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2025-12-05",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-12-02",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2025-11-25",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-11-12",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-11-11",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-11-11",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-10-28",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-10-24",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-10-23",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-10-08",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2025-10-08",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-10-01",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-09-17",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-09-17",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-09-17",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2025-09-11",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2025-09-11",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2025-09-08",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "2025-09-02",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-08-28",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-08-25",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-08-20",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2025-08-02",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-07-31",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-07-30",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2025-07-23",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-07-16",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-07-15",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-07-08",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-06-27",
+    "candidatos": {
+      "Aprova": 36.0,
+      "Desaprova": 59.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-06-25",
+    "candidatos": {
+      "Aprova": 40.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2025-06-17",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2025-06-12",
+    "candidatos": {
+      "Aprova": 39.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2025-06-12",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-06-11",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-06-04",
+    "candidatos": {
+      "Aprova": 40.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-06-03",
+    "candidatos": {
+      "Aprova": 39.0,
+      "Desaprova": 56.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-05-30",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2025-04-29",
+    "candidatos": {
+      "Aprova": 33.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-04-28",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-04-22",
+    "candidatos": {
+      "Aprova": 39.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2025-04-05",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-04-02",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 56.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2025-03-29",
+    "candidatos": {
+      "Aprova": 31.0,
+      "Desaprova": 61.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-03-25",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-03-19",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2025-03-18",
+    "candidatos": {
+      "Aprova": 37.0,
+      "Desaprova": 60.0
+    }
+  },
+  {
+    "instituto": "Ipsos-Ipec",
+    "data": "2025-03-13",
+    "candidatos": {
+      "Aprova": 40.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-03-07",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2025-02-25",
+    "candidatos": {
+      "Aprova": 40.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-02-19",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2025-02-11",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2025-01-29",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2025-01-27",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2025-01-17",
+    "candidatos": {
+      "Aprova": 38.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2025-01-13",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2024-12-31",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2024-12-18",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2024-12-15",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2024-12-11",
+    "candidatos": {
+      "Aprova": 52.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2024-11-27",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2024-11-12",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2024-10-31",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2024-10-02",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2024-09-12",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2024-07-11",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 44.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2024-07-10",
+    "candidatos": {
+      "Aprova": 54.0,
+      "Desaprova": 43.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2024-05-24",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2024-05-08",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2024-05-07",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 44.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2024-05-07",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2024-03-27",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2024-03-08",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2024-03-07",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2024-03-06",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 46.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2024-02-06",
+    "candidatos": {
+      "Aprova": 52.0,
+      "Desaprova": 43.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2024-01-31",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 42.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2024-01-23",
+    "candidatos": {
+      "Aprova": 55.0,
+      "Desaprova": 40.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-12-21",
+    "candidatos": {
+      "Aprova": 54.0,
+      "Desaprova": 43.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2023-12-20",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 44.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2023-12-07",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 43.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2023-11-22",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-10-25",
+    "candidatos": {
+      "Aprova": 54.0,
+      "Desaprova": 42.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2023-10-03",
+    "candidatos": {
+      "Aprova": 55.0,
+      "Desaprova": 39.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2023-09-26",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2023-09-06",
+    "candidatos": {
+      "Aprova": 56.0,
+      "Desaprova": 39.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-08-16",
+    "candidatos": {
+      "Aprova": 60.0,
+      "Desaprova": 35.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2023-07-05",
+    "candidatos": {
+      "Aprova": 50.0,
+      "Desaprova": 45.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2023-06-29",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 43.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-06-15",
+    "candidatos": {
+      "Aprova": 56.0,
+      "Desaprova": 40.0
+    }
+  },
+  {
+    "instituto": "Paraná Pesquisas",
+    "data": "2023-05-23",
+    "candidatos": {
+      "Aprova": 54.0,
+      "Desaprova": 39.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2023-05-17",
+    "candidatos": {
+      "Aprova": 33.0,
+      "Desaprova": 33.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2023-05-16",
+    "candidatos": {
+      "Aprova": 57.0,
+      "Desaprova": 35.0
+    }
+  },
+  {
+    "instituto": "Ipespe",
+    "data": "2023-05-02",
+    "candidatos": {
+      "Aprova": 52.0,
+      "Desaprova": 38.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-04-19",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 42.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2023-04-11",
+    "candidatos": {
+      "Aprova": 54.0,
+      "Desaprova": 37.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2023-04-05",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 41.0
+    }
+  },
+  {
+    "instituto": "Ipec",
+    "data": "2023-03-19",
+    "candidatos": {
+      "Aprova": 57.0,
+      "Desaprova": 35.0
+    }
+  },
+  {
+    "instituto": "Ipespe",
+    "data": "2023-03-01",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 36.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2023-02-15",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 40.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2023-02-14",
+    "candidatos": {
+      "Aprova": 56.0,
+      "Desaprova": 28.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2023-02-01",
+    "candidatos": {
+      "Aprova": 52.0,
+      "Desaprova": 39.0
+    }
+  },
+  {
+    "instituto": "Ideia",
+    "data": "2023-01-19",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 32.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2023-01-11",
+    "candidatos": {
+      "Aprova": 51.0,
+      "Desaprova": 42.0
+    }
+  }
+]

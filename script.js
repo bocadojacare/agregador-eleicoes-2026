@@ -99,29 +99,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const btnTurno1 = document.querySelectorAll('#btn-turno-1');
   const btnTurno2 = document.querySelectorAll('#btn-turno-2');
+  const btnTurnoAprovacao = document.querySelectorAll('#btn-turno-aprovacao');
   const secPrimeiro = document.getElementById('grafico');
   const secSegundo = document.getElementById('grafico-segundo');
+  const secAprovacao = document.getElementById('grafico-aprovacao');
 
   function ativarTurno(turno) {
-    if (turno === 1) {
-      btnTurno1.forEach(btn => btn.classList.add('ativo'));
-      btnTurno2.forEach(btn => btn.classList.remove('ativo'));
-      secPrimeiro.classList.remove('hidden');
-      secSegundo.classList.add('hidden');
-    } else {
-      btnTurno1.forEach(btn => btn.classList.remove('ativo'));
-      btnTurno2.forEach(btn => btn.classList.add('ativo'));
-      secPrimeiro.classList.add('hidden');
-      secSegundo.classList.remove('hidden');
-    }
+    btnTurno1.forEach(btn => btn.classList.toggle('ativo', turno === 1));
+    btnTurno2.forEach(btn => btn.classList.toggle('ativo', turno === 2));
+    btnTurnoAprovacao.forEach(btn => btn.classList.toggle('ativo', turno === 'aprovacao'));
+    secPrimeiro.classList.toggle('hidden', turno !== 1);
+    secSegundo.classList.toggle('hidden', turno !== 2);
+    secAprovacao.classList.toggle('hidden', turno !== 'aprovacao');
   }
 
   btnTurno1.forEach(btn => btn.addEventListener('click', () => ativarTurno(1)));
   btnTurno2.forEach(btn => btn.addEventListener('click', () => ativarTurno(2)));
+  btnTurnoAprovacao.forEach(btn => btn.addEventListener('click', () => ativarTurno('aprovacao')));
 
   // Toggle para mostrar/ocultar pontos
   const togglePontos = document.getElementById('toggle-pontos');
   const togglePontosSegundo = document.getElementById('toggle-pontos-segundo');
+  const togglePontosAprovacao = document.getElementById('toggle-pontos-aprovacao');
   
   if (togglePontos) {
     togglePontos.addEventListener('change', () => {
@@ -155,6 +154,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  if (togglePontosAprovacao) {
+    togglePontosAprovacao.addEventListener('change', () => {
+      const spanText = togglePontosAprovacao.parentElement.querySelector('span');
+      spanText.textContent = togglePontosAprovacao.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+
+      if (window.graficoAprovacaoInstance) {
+        window.graficoAprovacaoInstance.data.datasets.forEach(dataset => {
+          if (dataset.label.includes('(pesquisas)')) {
+            dataset.hidden = !togglePontosAprovacao.checked;
+          }
+        });
+        window.graficoAprovacaoInstance.update();
+      }
+    });
+  }
+
   // Initialize button text based on checkbox state
   if (togglePontos) {
     const spanPrimeiroTurno = togglePontos.parentElement.querySelector('span');
@@ -164,6 +179,11 @@ document.addEventListener('DOMContentLoaded', function() {
   if (togglePontosSegundo) {
     const spanSegundoTurno = togglePontosSegundo.parentElement.querySelector('span');
     spanSegundoTurno.textContent = togglePontosSegundo.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
+  }
+
+  if (togglePontosAprovacao) {
+    const spanAprovacao = togglePontosAprovacao.parentElement.querySelector('span');
+    spanAprovacao.textContent = togglePontosAprovacao.checked ? 'Não Mostrar Pesquisas' : 'Mostrar Pesquisas';
   }
 
   ativarTurno(1);
@@ -680,6 +700,7 @@ async function montarGrafico() {
 window.addEventListener('load', () => {
   montarGrafico();
   montarGraficoSegundoTurno();
+  montarGraficoAprovacao();
 });
 
 async function montarGraficoSegundoTurno() {
@@ -1059,5 +1080,330 @@ async function montarGraficoSegundoTurno() {
   } catch (error) {
     console.error('❌ Erro ao montar gráfico 2º turno:', error);
     document.getElementById('graficoVotosSegundo').innerHTML = `<p style="color: red; padding: 20px;">Erro: ${error.message}</p>`;
+  }
+}
+
+async function montarGraficoAprovacao() {
+  console.log('Iniciando montarGraficoAprovacao...');
+  try {
+    const cacheBuster = `?t=${Date.now()}`;
+    const respostaMM = await fetch(`./data/aprovacao/media_movel_aprovacao_precalculada.json${cacheBuster}`);
+    const mediaMovelData = await respostaMM.json();
+    console.log('✓ Médias móveis aprovação carregadas:', Object.keys(mediaMovelData.candidatos));
+
+    const ctx = document.getElementById('graficoAprovacao').getContext('2d');
+
+    const registros = mediaMovelData.datas.map((d, i) => ({
+      data: new Date(d).toLocaleDateString('pt-BR', { year: 'numeric', month: 'short', day: 'numeric' }),
+      instituto: mediaMovelData.institutos[i],
+      candidatos: {}
+    }));
+
+    for (const candidato in mediaMovelData.candidatos) {
+      registros.forEach((r, i) => {
+        r.candidatos[candidato] = mediaMovelData.candidatos[candidato].pesquisas_brutos[i];
+      });
+    }
+
+    const datas = mediaMovelData.datas.map(d => new Date(d));
+    const registrosFiltrados = registros;
+    const datasFiltradas = datas;
+    const series = {
+      Aprova: registrosFiltrados.map(r => r.candidatos?.Aprova ?? null),
+      Desaprova: registrosFiltrados.map(r => r.candidatos?.Desaprova ?? null)
+    };
+
+    const labels = registrosFiltrados.map((_, i) => i + 1);
+    const datasets = [];
+    const colors = {
+      Aprova: '#43a047',
+      Desaprova: '#e53935'
+    };
+
+    const candidatoMap = {
+      Aprova: 'Aprova',
+      Desaprova: 'Desaprova'
+    };
+
+    const todasAsDatas = mediaMovelData.datas.map(d => new Date(d).getTime());
+    const minDateMs = Math.min(...todasAsDatas);
+    const maxDateMs = Math.max(...todasAsDatas);
+    const totalMs = maxDateMs - minDateMs;
+
+    for (const displayName of Object.keys(series)) {
+      const jsonKey = candidatoMap[displayName];
+      const mmData = mediaMovelData.candidatos[jsonKey];
+      if (!mmData) continue;
+
+      const lineData = mmData.media_movel.map((avg, i) => {
+        if (avg === null) return null;
+        return {
+          x: i / (registros.length - 1) * (registros.length - 1),
+          y: avg,
+          instituto: 'Média móvel',
+          data: registros[i].data
+        };
+      }).filter(d => d !== null);
+
+      datasets.push({
+        label: displayName,
+        data: lineData,
+        borderColor: colors[displayName] || '#666',
+        backgroundColor: 'transparent',
+        tension: 0.4,
+        fill: false,
+        pointRadius: 0,
+        pointHoverRadius: 5,
+        borderWidth: 2,
+        parsing: { xAxisKey: 'x', yAxisKey: 'y' }
+      });
+
+      const pointsData = [];
+      for (let i = 0; i < mmData.pesquisas_brutos.length; i++) {
+        const val = mmData.pesquisas_brutos[i];
+        if (val !== null) {
+          const posicaoRelativa = (todasAsDatas[i] - minDateMs) / totalMs * (registros.length - 1);
+          pointsData.push({
+            x: posicaoRelativa,
+            y: val,
+            instituto: registrosFiltrados[i].instituto,
+            data: registrosFiltrados[i].data
+          });
+        }
+      }
+
+      datasets.push({
+        label: `${displayName} (pesquisas)`,
+        data: pointsData,
+        borderColor: colors[displayName] || '#666',
+        backgroundColor: colors[displayName] || '#666',
+        showLine: false,
+        pointRadius: 4,
+        pointHoverRadius: 6,
+        parsing: { xAxisKey: 'x', yAxisKey: 'y' }
+      });
+    }
+
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: { labels, datasets },
+      options: {
+        responsive: true,
+        clip: false,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              filter: (item) => !item.text.includes('(pesquisas)'),
+              usePointStyle: true,
+              padding: 15,
+              font: { size: 12 }
+            },
+            onClick: (e, item, legend) => {
+              const candidateName = item.text;
+              const chart = legend.chart;
+              const togglePontosAprovacao = document.getElementById('toggle-pontos-aprovacao');
+
+              chart.data.datasets.forEach((dataset) => {
+                if (dataset.label === candidateName) {
+                  dataset.hidden = !dataset.hidden;
+                } else if (dataset.label === `${candidateName} (pesquisas)`) {
+                  const mainLineHidden = chart.data.datasets.find(d => d.label === candidateName).hidden;
+                  dataset.hidden = mainLineHidden || !togglePontosAprovacao.checked;
+                }
+              });
+              chart.update();
+            }
+          },
+          title: { display: false },
+          tooltip: {
+            mode: 'nearest',
+            intersect: false,
+            callbacks: {
+              title: function(context) {
+                if (!context || context.length === 0) return '';
+                const raw = context[0].raw;
+                if (raw && raw.instituto && raw.data) {
+                  return `${raw.instituto} - ${raw.data}`;
+                }
+                return '';
+              },
+              label: function(context) {
+                let label = context.dataset.label || '';
+                label = label.replace(' (pesquisas)', '');
+                const value = context.parsed.y;
+                if (value !== null) {
+                  return `${label}: ${value.toFixed(1)}%`;
+                }
+                return label;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            display: false,
+            type: 'linear',
+            max: registros.length - 1,
+            grid: { display: false }
+          },
+          y: {
+            beginAtZero: false,
+            min: 30,
+            max: 60,
+            title: { display: true, text: 'Percentual (%)' },
+            grid: { display: false }
+          }
+        }
+      }
+    });
+
+    window.graficoAprovacaoInstance = chart;
+
+    const timelineStart = document.getElementById('timeline-start-aprovacao');
+    const timelineEnd = document.getElementById('timeline-end-aprovacao');
+    const timelineLabel = document.getElementById('timeline-label-aprovacao');
+    const timelineTrack = document.getElementById('timeline-track-aprovacao');
+
+    const validDates = datasFiltradas.filter(d => d !== null && d !== undefined);
+    if (validDates.length === 0) {
+      console.error('No valid dates found (aprovação)');
+      return;
+    }
+    const minDate = new Date(Math.min(...validDates.map(d => d.getTime())));
+    const maxDate = new Date(Math.max(...validDates.map(d => d.getTime())));
+
+    function formatDate(date) {
+      const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+      return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    }
+
+    function updateTimelineAprovacao() {
+      const startPercentage = parseInt(timelineStart.value, 10);
+      const endPercentage = parseInt(timelineEnd.value, 10);
+
+      if (startPercentage > endPercentage) {
+        if (event.target === timelineStart) {
+          timelineEnd.value = startPercentage;
+        } else {
+          timelineStart.value = endPercentage;
+        }
+      }
+
+      const actualStart = Math.min(startPercentage, endPercentage);
+      const actualEnd = Math.max(startPercentage, endPercentage);
+
+      timelineTrack.style.background = `linear-gradient(to right, #ddd ${actualStart}%, #1565c0 ${actualStart}%, #1565c0 ${actualEnd}%, #ddd ${actualEnd}%)`;
+
+      const timeRange = maxDate.getTime() - minDate.getTime();
+      const startTime = minDate.getTime() + (timeRange * actualStart / 100);
+      const endTime = minDate.getTime() + (timeRange * actualEnd / 100);
+      const startDate = new Date(startTime);
+      const endDate = new Date(endTime);
+
+      const filteredDataIndices = datasFiltradas.map((d, i) => d && d >= startDate && d <= endDate ? i : -1).filter(i => i !== -1);
+
+      for (let datasetIdx = 0; datasetIdx < chart.data.datasets.length; datasetIdx++) {
+        const dataset = chart.data.datasets[datasetIdx];
+        const isSmoothLine = !dataset.label.includes('(pesquisas)');
+        const displayName = isSmoothLine ? dataset.label : dataset.label.replace(' (pesquisas)', '');
+        const jsonKey = candidatoMap[displayName];
+        const mmData = mediaMovelData.candidatos[jsonKey];
+        if (!mmData) continue;
+        if (isSmoothLine) {
+          const filteredLine = filteredDataIndices
+            .map((origIdx, idx) => {
+              const avg = mmData.media_movel[origIdx];
+              if (avg === null) return null;
+              return {
+                x: idx / (filteredDataIndices.length - 1 || 1) * (filteredDataIndices.length - 1),
+                y: avg,
+                instituto: 'Média móvel',
+                data: registrosFiltrados[origIdx].data
+              };
+            })
+            .filter(d => d !== null);
+          dataset.data = filteredLine;
+        } else {
+          const filteredPoints = [];
+          for (let i = 0; i < filteredDataIndices.length; i++) {
+            const origIdx = filteredDataIndices[i];
+            const val = mmData.pesquisas_brutos[origIdx];
+            if (val !== null) {
+              const posicaoRelativa = (filteredDataIndices.length > 1)
+                ? i / (filteredDataIndices.length - 1) * (filteredDataIndices.length - 1)
+                : 0;
+              filteredPoints.push({
+                x: posicaoRelativa,
+                y: val,
+                instituto: registrosFiltrados[origIdx].instituto,
+                data: registrosFiltrados[origIdx].data
+              });
+            }
+          }
+          dataset.data = filteredPoints;
+        }
+      }
+
+      timelineLabel.textContent = `${formatDate(startDate)} a ${formatDate(endDate)}`;
+
+      const numFilteredPoints = filteredDataIndices.length;
+      chart.options.scales.x.max = numFilteredPoints > 0 ? numFilteredPoints - 1 : 10;
+      chart.resize();
+      chart.update();
+      updateMediaFinalBoxAprovacao(filteredDataIndices);
+    }
+
+    function updateMediaFinalBoxAprovacao(filteredIndices) {
+      const mediaFinalItems = document.getElementById('media-final-items-aprovacao');
+      mediaFinalItems.innerHTML = '';
+
+      const candidatos = ['Aprova', 'Desaprova'];
+      const cores = ['#43a047', '#e53935'];
+
+      const lastIdx = mediaMovelData.datas.length - 1;
+
+      const dados = [];
+      candidatos.forEach((nome, idx) => {
+        const mmData = mediaMovelData.candidatos[nome];
+
+        if (mmData) {
+          const lastValue = mmData.media_movel[lastIdx];
+          if (lastValue !== null) {
+            dados.push({
+              nome,
+              valor: lastValue,
+              cor: cores[idx]
+            });
+          }
+        }
+      });
+
+      dados.forEach((d) => {
+        const item = document.createElement('div');
+        item.className = 'media-item';
+        item.innerHTML = `
+          <span style="color: ${d.cor}; font-size: 1.2rem;">●</span>
+          <span class="media-item-name">${d.nome}</span>
+          <span class="media-item-valor">${d.valor.toFixed(1)}%</span>
+        `;
+        mediaFinalItems.appendChild(item);
+      });
+    }
+
+    timelineStart.addEventListener('input', updateTimelineAprovacao);
+    timelineEnd.addEventListener('input', updateTimelineAprovacao);
+
+    updateTimelineAprovacao();
+
+    window.addEventListener('resize', () => {
+      chart.resize();
+    });
+
+    timelineLabel.textContent = `${formatDate(minDate)} a ${formatDate(maxDate)}`;
+    updateMediaFinalBoxAprovacao(registros.map((_, i) => i));
+  } catch (error) {
+    console.error('❌ Erro ao montar gráfico de aprovação:', error);
+    document.getElementById('graficoAprovacao').innerHTML = `<p style="color: red; padding: 20px;">Erro: ${error.message}</p>`;
   }
 }
