@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "10 Set – 13 Set 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "11 Set – 13 Set 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 46.0
+    }
+  },
+  {
     "instituto": "DataFolha",
     "data": "8 Set – 11 Set 2026",
     "candidatos": {
