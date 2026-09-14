@@ -865,13 +865,13 @@ th {
 }
 
 .timeline-input::-webkit-slider-track {
-    background: #ddd !important;
+    background: transparent !important;
     height: 6px;
     border-radius: 3px;
 }
 
 .timeline-input::-moz-range-track {
-    background: #ddd !important;
+    background: transparent !important;
     height: 6px;
     border-radius: 3px;
 }
@@ -1065,7 +1065,7 @@ body.dark-mode #timeline-container-aprovacao {
 }
 
 body.dark-mode .timeline-input {
-    background: #444;
+    background: transparent;
 }
 
 body.dark-mode .toggle-btn {
