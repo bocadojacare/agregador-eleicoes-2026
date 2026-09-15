@@ -248,8 +248,8 @@
     "PoderData/Aya",
     "Apex/Futura",
     "DataFolha",
-    "Quaest",
-    "Nexus/BTG"
+    "Nexus/BTG",
+    "Quaest"
   ],
   "candidatos": {
     "Lula": {
@@ -502,8 +502,8 @@
         45.0,
         45.0,
         46.0,
-        40.0,
-        47.0
+        47.0,
+        40.0
       ]
     },
     "Flávio": {
@@ -756,8 +756,8 @@
         47.0,
         45.4,
         44.0,
-        42.0,
-        46.0
+        46.0,
+        42.0
       ]
     }
   }
