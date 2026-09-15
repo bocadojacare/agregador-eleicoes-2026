@@ -1592,5 +1592,30 @@
       "Zema": 1.0,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "10 Set – 13 Set 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 36.0,
+      "Cury": 6.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 0.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "9 Set – 13 Set 2026",
+    "candidatos": {
+      "Lula": 40.5,
+      "Flávio": 30.4,
+      "Cury": 6.0,
+      "Renan": 2.7,
+      "Caiado": 3.0,
+      "Zema": 1.0
+    }
   }
 ]
