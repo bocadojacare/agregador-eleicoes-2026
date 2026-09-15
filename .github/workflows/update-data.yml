@@ -47,17 +47,23 @@ jobs:
       - name: Calculate second round moving average
         run: python ./scripts/segundo_turno/calcular_media_movel_segundo_turno.py
       
+      - name: Run approval rating scraper
+        run: python ./scripts/aprovacao/scrape_aprovacao.py
+      
+      - name: Calculate approval rating moving average
+        run: python ./scripts/aprovacao/calcular_media_movel_aprovacao.py
+      
       - name: Check if data changed
         id: changed
         run: |
-          git diff --exit-code data/primeiro_turno/pesquisas_2026_normalizado.json data/primeiro_turno/media_movel_precalculada.json data/segundo_turno/pesquisas_segundo_turno_normalizado.json data/segundo_turno/media_movel_segundo_turno_precalculada.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code data/primeiro_turno/pesquisas_2026_normalizado.json data/primeiro_turno/media_movel_precalculada.json data/segundo_turno/pesquisas_segundo_turno_normalizado.json data/segundo_turno/media_movel_segundo_turno_precalculada.json data/aprovacao/pesquisas_aprovacao.json data/aprovacao/media_movel_aprovacao_precalculada.json || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push changes
         if: steps.changed.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/primeiro_turno/*.json data/segundo_turno/*.json
+          git add data/primeiro_turno/*.json data/segundo_turno/*.json data/aprovacao/*.json
           git commit -m "atualizar dados de pesquisas - $(date +'%Y-%m-%d %H:%M:%S')"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
       
