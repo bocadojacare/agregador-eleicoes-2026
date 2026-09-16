@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "DataTrends",
+    "data": "12 Set – 14 Set 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Nexus/BTG",
     "data": "11 Set – 13 Set 2026",
     "candidatos": {

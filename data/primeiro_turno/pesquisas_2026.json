@@ -1617,5 +1617,18 @@
       "Caiado": 3.0,
       "Zema": 1.0
     }
+  },
+  {
+    "instituto": "DataTrends",
+    "data": "12 Set – 14 Set 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 35.0,
+      "Cury": 6.0,
+      "Renan": 4.0,
+      "Caiado": 3.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
   }
 ]
