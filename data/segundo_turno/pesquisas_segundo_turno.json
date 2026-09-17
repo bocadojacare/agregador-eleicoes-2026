@@ -1,5 +1,37 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "14 Set - 16 Set 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "13 Set - 16 Set 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "11 Set – 16 Set 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 47.2
+    }
+  },
+  {
+    "instituto": "Futura/Apex",
+    "data": "11 Set - 15 Set 2026",
+    "candidatos": {
+      "Lula": 43.7,
+      "Flávio": 48.1
+    }
+  },
+  {
     "instituto": "DataTrends",
     "data": "12 Set – 14 Set 2026",
     "candidatos": {
@@ -56,19 +88,19 @@
     }
   },
   {
-    "instituto": "AtlasIntel",
-    "data": "4 Set - 9 Set 2026",
-    "candidatos": {
-      "Lula": 46.2,
-      "Flávio": 46.4
-    }
-  },
-  {
     "instituto": "PoderData/Aya",
     "data": "6 Set - 9 Set 2026",
     "candidatos": {
       "Lula": 45.0,
       "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "4 Set - 9 Set 2026",
+    "candidatos": {
+      "Lula": 46.2,
+      "Flávio": 46.4
     }
   },
   {

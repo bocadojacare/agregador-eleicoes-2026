@@ -1,6 +1,30 @@
 [
   {
+    "instituto": "Atlas",
+    "data": "2026-09-17",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-09-17",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
     "instituto": "MDA",
+    "data": "2026-09-15",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Indexa",
     "data": "2026-09-15",
     "candidatos": {
       "Aprova": 46.0,
