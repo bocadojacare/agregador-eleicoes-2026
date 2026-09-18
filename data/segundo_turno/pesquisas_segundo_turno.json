@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "15 Set – 16 Set 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 44.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "14 Set - 16 Set 2026",
     "candidatos": {
