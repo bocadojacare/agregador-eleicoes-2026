@@ -16,6 +16,22 @@
     }
   },
   {
+    "instituto": "Datafolha",
+    "data": "2026-09-17",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-09-17",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
     "instituto": "MDA",
     "data": "2026-09-15",
     "candidatos": {
