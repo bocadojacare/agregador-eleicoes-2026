@@ -1695,5 +1695,42 @@
       "Zema": 2.0,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "18 Set – 20 Set 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 37.0,
+      "Cury": 6.0,
+      "Renan": 3.0,
+      "Caiado": 5.0,
+      "Zema": 1.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "10 Set – 19 Set 2026",
+    "candidatos": {
+      "Lula": 41.76,
+      "Flávio": 45.53,
+      "Cury": 5.68,
+      "Renan": 3.03,
+      "Caiado": 1.84,
+      "Zema": 0.59,
+      "Samara": 0.2
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "15 Set – 18 Set 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 42.0,
+      "Cury": 2.0,
+      "Renan": 11.0,
+      "Caiado": 1.0,
+      "Zema": 1.0
+    }
   }
 ]

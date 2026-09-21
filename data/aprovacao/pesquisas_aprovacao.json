@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Nexus",
+    "data": "2026-09-21",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "2026-09-21",
+    "candidatos": {
+      "Aprova": 42.0,
+      "Desaprova": 57.0
+    }
+  },
+  {
     "instituto": "Atlas",
     "data": "2026-09-17",
     "candidatos": {
