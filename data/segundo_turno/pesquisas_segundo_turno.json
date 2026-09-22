@@ -8,6 +8,14 @@
     }
   },
   {
+    "instituto": "Quaest",
+    "data": "17 Set – 20 Set 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 42.0
+    }
+  },
+  {
     "instituto": "Palver",
     "data": "15 Set – 18 Set 2026",
     "candidatos": {

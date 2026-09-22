@@ -16,6 +16,14 @@
     }
   },
   {
+    "instituto": "Quaest",
+    "data": "2026-09-21",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
     "instituto": "Atlas",
     "data": "2026-09-17",
     "candidatos": {
