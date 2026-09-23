@@ -1698,5 +1698,30 @@
       "Zema": 1.0,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "17 Set – 22 Set 2026",
+    "candidatos": {
+      "Lula": 45.8,
+      "Flávio": 43.4,
+      "Cury": 2.1,
+      "Renan": 4.5,
+      "Caiado": 1.3,
+      "Zema": 0.9,
+      "Samara": 0.4
+    }
+  },
+  {
+    "instituto": "American Analytics",
+    "data": "15 Set – 20 Set 2026",
+    "candidatos": {
+      "Lula": 38.0,
+      "Flávio": 34.0,
+      "Cury": 5.0,
+      "Renan": 4.0,
+      "Caiado": 4.0,
+      "Zema": 1.0
+    }
   }
 ]
