@@ -1,5 +1,45 @@
 [
   {
+    "instituto": "Palver",
+    "data": "23 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 48.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "23 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "23 Set 2026",
+    "candidatos": {
+      "Lula": 43.7,
+      "Flávio": 49.4
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "23 Set 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "23 Set 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 43.0
+    }
+  },
+  {
     "instituto": "AtlasIntel",
     "data": "22 Set 2026",
     "candidatos": {
