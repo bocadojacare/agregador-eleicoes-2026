@@ -1,5 +1,53 @@
 [
   {
+    "instituto": "Datafolha",
+    "data": "2026-09-24",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "2026-09-24",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "RealTime Big Data",
+    "data": "2026-09-24",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-09-24",
+    "candidatos": {
+      "Aprova": 41.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "2026-09-24",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Atlas",
+    "data": "2026-09-23",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
     "instituto": "Nexus",
     "data": "2026-09-21",
     "candidatos": {
