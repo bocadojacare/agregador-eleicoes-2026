@@ -1785,5 +1785,44 @@
       "Caiado": 5.0,
       "Zema": 1.0
     }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "25 Set – 27 Set 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 37.0,
+      "Cury": 5.0,
+      "Renan": 4.0,
+      "Caiado": 5.0,
+      "Zema": 1.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "24 Set – 27 Set 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 34.0,
+      "Cury": 4.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "DataFolha",
+    "data": "22 Set – 24 Set 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 36.0,
+      "Cury": 5.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 1.0,
+      "Samara": 1.0
+    }
   }
 ]

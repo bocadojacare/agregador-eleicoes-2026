@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Nexus",
+    "data": "2026-09-28",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
     "instituto": "Datafolha",
     "data": "2026-09-24",
     "candidatos": {
