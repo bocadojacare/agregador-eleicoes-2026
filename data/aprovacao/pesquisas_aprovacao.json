@@ -1,6 +1,38 @@
 [
   {
+    "instituto": "Atlas",
+    "data": "2026-09-29",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 54.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "2026-09-29",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 55.0
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "2026-09-29",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
     "instituto": "Nexus",
+    "data": "2026-09-28",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Quaest",
     "data": "2026-09-28",
     "candidatos": {
       "Aprova": 46.0,
