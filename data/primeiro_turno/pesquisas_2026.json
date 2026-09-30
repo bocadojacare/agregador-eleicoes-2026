@@ -1922,5 +1922,44 @@
       "Caiado": 1.8,
       "Zema": 0.9
     }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "27 Set – 29 Set 2026",
+    "candidatos": {
+      "Lula": 39.0,
+      "Flávio": 34.0,
+      "Cury": 4.0,
+      "Renan": 3.0,
+      "Caiado": 4.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "25 Set – 29 Set 2026",
+    "candidatos": {
+      "Lula": 39.4,
+      "Flávio": 42.2,
+      "Cury": 3.8,
+      "Renan": 3.4,
+      "Caiado": 4.0,
+      "Zema": 1.6,
+      "Samara": 0.2
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "25 Set – 28 Set 2026",
+    "candidatos": {
+      "Lula": 39.4,
+      "Flávio": 38.4,
+      "Cury": 6.7,
+      "Renan": 4.5,
+      "Caiado": 4.4,
+      "Zema": 3.5,
+      "Samara": 0.4
+    }
   }
 ]

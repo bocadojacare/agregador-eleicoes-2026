@@ -1,10 +1,34 @@
 [
   {
+    "instituto": "Indexa",
+    "data": "27 Set – 29 Set 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 42.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "25 Set – 29 Set 2026",
+    "candidatos": {
+      "Lula": 43.5,
+      "Flávio": 49.0
+    }
+  },
+  {
     "instituto": "Vox Brasil",
     "data": "26 Set – 28 Set 2026",
     "candidatos": {
       "Lula": 44.7,
       "Flávio": 45.2
+    }
+  },
+  {
+    "instituto": "Meio/Ideia",
+    "data": "25 Set – 28 Set 2026",
+    "candidatos": {
+      "Lula": 48.5,
+      "Flávio": 48.0
     }
   },
   {
