@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Vox",
+    "data": "1 Out 2026",
+    "candidatos": {
+      "Lula": 45.2,
+      "Flávio": 48.2
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "1 Out 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "Real Time Big Data",
     "data": "30 Set 2026",
     "candidatos": {
