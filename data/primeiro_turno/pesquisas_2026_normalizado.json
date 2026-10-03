@@ -1965,5 +1965,56 @@
       "Zema": 1.0,
       "Samara": 1.0
     }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "30 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 44.0,
+      "Cury": 4.0,
+      "Caiado": 3.0,
+      "Renan": 2.0,
+      "Zema": 0.0,
+      "Samara": 1.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "30 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 41.0,
+      "Cury": 3.0,
+      "Caiado": 2.0,
+      "Renan": 3.0,
+      "Zema": 1.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "IFP",
+    "data": "29 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 40.62,
+      "Flávio": 37.49,
+      "Cury": 4.52,
+      "Caiado": 3.47,
+      "Renan": 3.22,
+      "Zema": 1.19,
+      "Samara": 0.68
+    }
+  },
+  {
+    "instituto": "DataTrends",
+    "data": "28 Set – 30 Set 2026",
+    "candidatos": {
+      "Lula": 41.0,
+      "Flávio": 39.0,
+      "Cury": 4.0,
+      "Renan": 4.0,
+      "Caiado": 3.0,
+      "Zema": 1.0
+    }
   }
 ]

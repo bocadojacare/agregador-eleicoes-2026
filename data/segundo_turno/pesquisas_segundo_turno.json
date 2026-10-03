@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "30 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "30 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "IFP",
+    "data": "29 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 45.88,
+      "Flávio": 45.01
+    }
+  },
+  {
     "instituto": "Vox",
     "data": "29 Set – 1 Out 2026",
     "candidatos": {
@@ -12,6 +36,14 @@
     "data": "28 Set – 1 Out 2026",
     "candidatos": {
       "Lula": 48.0,
+      "Flávio": 45.0
+    }
+  },
+  {
+    "instituto": "DataTrends",
+    "data": "28 Set – 30 Set 2026",
+    "candidatos": {
+      "Lula": 45.0,
       "Flávio": 45.0
     }
   },
