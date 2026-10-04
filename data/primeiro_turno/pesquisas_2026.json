@@ -2063,5 +2063,67 @@
       "Caiado": 3.0,
       "Zema": 1.0
     }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2 Out – 3 Out 2026",
+    "candidatos": {
+      "Lula": 40.0,
+      "Flávio": 38.0,
+      "Cury": 3.0,
+      "Caiado": 3.0,
+      "Renan": 3.0,
+      "Zema": 0.0,
+      "Samara": 0.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "29 Set – 3 Out 2026",
+    "candidatos": {
+      "Lula": 42.6,
+      "Flávio": 44.8,
+      "Cury": 4.1,
+      "Caiado": 3.9,
+      "Renan": 2.8,
+      "Zema": 0.8,
+      "Samara": 0.4
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "30 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 43.1,
+      "Flávio": 38.0,
+      "Cury": 3.1,
+      "Caiado": 3.0,
+      "Renan": 1.5,
+      "Zema": 0.8
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "27 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 44.1,
+      "Cury": 2.1,
+      "Caiado": 1.4,
+      "Renan": 4.6
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "30 Set – 1 Out 2026",
+    "candidatos": {
+      "Lula": 43.0,
+      "Flávio": 47.0,
+      "Cury": 1.0,
+      "Caiado": 1.0,
+      "Renan": 7.0,
+      "Zema": 0.0,
+      "Samara": 0.0
+    }
   }
 ]

@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Quaest",
+    "data": "3 Out 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "3 Out 2026",
+    "candidatos": {
+      "Lula": 45.1,
+      "Flávio": 48.0
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "2 Out 2026",
     "candidatos": {
@@ -16,11 +32,35 @@
     }
   },
   {
+    "instituto": "CNT/MDA",
+    "data": "2 Out 2026",
+    "candidatos": {
+      "Lula": 47.3,
+      "Flávio": 43.1
+    }
+  },
+  {
     "instituto": "IFP",
     "data": "2 Out 2026",
     "candidatos": {
       "Lula": 45.88,
       "Flávio": 45.01
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "2 Out 2026",
+    "candidatos": {
+      "Lula": 50.1,
+      "Flávio": 49.9
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "1 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 49.0
     }
   },
   {
