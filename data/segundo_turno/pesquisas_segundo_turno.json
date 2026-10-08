@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "5 Out – 7 Out 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 53.0
+    }
+  },
+  {
     "instituto": "Quaest",
     "data": "2 Out – 3 Out 2026",
     "candidatos": {

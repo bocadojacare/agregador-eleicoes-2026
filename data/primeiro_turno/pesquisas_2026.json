@@ -2125,5 +2125,18 @@
       "Zema": 0.0,
       "Samara": 0.0
     }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "1 Out – 3 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 42.0,
+      "Cury": 3.0,
+      "Caiado": 4.0,
+      "Renan": 2.0,
+      "Zema": 1.0,
+      "Samara": 1.0
+    }
   }
 ]
