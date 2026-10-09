@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "DataFolha",
+    "data": "8 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "8 Out 2026",
+    "candidatos": {
+      "Lula": 45.7,
+      "Flávio": 51.1
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "7 Out 2026",
+    "candidatos": {
+      "Lula": 44.2,
+      "Flávio": 42.7
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "7 Out 2026",
     "candidatos": {

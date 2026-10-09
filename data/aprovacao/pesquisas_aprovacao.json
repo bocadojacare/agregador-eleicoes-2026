@@ -1,5 +1,37 @@
 [
   {
+    "instituto": "Atlas",
+    "data": "2026-10-09",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "2026-10-09",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 52.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-10-08",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-10-08",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
     "instituto": "PoderData",
     "data": "2026-10-03",
     "candidatos": {
