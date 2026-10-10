@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Ipespe",
+    "data": "6 Out – 8 Out 2026",
+    "candidatos": {
+      "Lula": 47.3,
+      "Flávio": 52.7
+    }
+  },
+  {
     "instituto": "DataFolha",
     "data": "6 Out – 8 Out 2026",
     "candidatos": {
@@ -85,6 +93,14 @@
     "candidatos": {
       "Lula": 50.1,
       "Flávio": 49.9
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "26 Set – 2 Out 2026",
+    "candidatos": {
+      "Lula": 48.44,
+      "Flávio": 51.56
     }
   },
   {
