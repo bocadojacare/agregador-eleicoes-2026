@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Datatrends",
+    "data": "2026-10-11",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 53.0
+    }
+  },
+  {
+    "instituto": "Ipespe",
+    "data": "2026-10-10",
+    "candidatos": {
+      "Aprova": 43.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
     "instituto": "Atlas",
     "data": "2026-10-09",
     "candidatos": {

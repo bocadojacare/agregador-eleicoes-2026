@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "DataTrends",
+    "data": "7 Out – 9 Out 2026",
+    "candidatos": {
+      "Lula": 46.9,
+      "Flávio": 53.1
+    }
+  },
+  {
     "instituto": "Ipespe",
     "data": "6 Out – 8 Out 2026",
     "candidatos": {
