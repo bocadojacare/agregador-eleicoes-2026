@@ -1,5 +1,37 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "10 Out – 12 Out 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 51.0
+    }
+  },
+  {
+    "instituto": "BTG/Nexus",
+    "data": "10 Out - 12 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 48.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "8 Out – 12 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 53.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "7 Out – 10 Out 2026",
+    "candidatos": {
+      "Lula": 46.6,
+      "Flávio": 50.0
+    }
+  },
+  {
     "instituto": "DataTrends",
     "data": "7 Out – 9 Out 2026",
     "candidatos": {

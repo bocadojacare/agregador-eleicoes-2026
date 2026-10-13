@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "GERP",
+    "data": "2026-10-13",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-10-13",
+    "candidatos": {
+      "Aprova": 44.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Nexus",
+    "data": "2026-10-13",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
     "instituto": "Datatrends",
     "data": "2026-10-11",
     "candidatos": {
