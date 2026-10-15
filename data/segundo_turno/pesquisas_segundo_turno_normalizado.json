@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "Indexa",
+    "data": "14 Out 2026",
+    "candidatos": {
+      "Lula": 42.0,
+      "Flávio": 44.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "13 Out 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "13 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 46.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "12 Out 2026",
     "candidatos": {
