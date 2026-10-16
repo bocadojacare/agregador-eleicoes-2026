@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "Palver",
+    "data": "2026-10-15",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "2026-10-14",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
     "instituto": "GERP",
     "data": "2026-10-13",
     "candidatos": {

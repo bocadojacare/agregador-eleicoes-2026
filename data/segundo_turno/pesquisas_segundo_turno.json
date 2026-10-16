@@ -1,5 +1,37 @@
 [
   {
+    "instituto": "Futura",
+    "data": "14 Out – 15 Out 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "CNT/MDA",
+    "data": "13 Out – 15 Out 2026",
+    "candidatos": {
+      "Lula": 45.9,
+      "Flávio": 46.8
+    }
+  },
+  {
+    "instituto": "PoderData/Aya",
+    "data": "13 Out – 15 Out 2026",
+    "candidatos": {
+      "Lula": 50.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "DataFolha",
+    "data": "13 Out – 15 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 47.0
+    }
+  },
+  {
     "instituto": "Indexa",
     "data": "13 Out – 14 Out 2026",
     "candidatos": {
