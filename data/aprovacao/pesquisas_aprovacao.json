@@ -1,10 +1,42 @@
 [
   {
+    "instituto": "PoderData",
+    "data": "2026-10-16",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 47.0
+    }
+  },
+  {
+    "instituto": "MDA",
+    "data": "2026-10-16",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
     "instituto": "Palver",
     "data": "2026-10-15",
     "candidatos": {
       "Aprova": 48.0,
       "Desaprova": 51.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-10-15",
+    "candidatos": {
+      "Aprova": 48.0,
+      "Desaprova": 50.0
+    }
+  },
+  {
+    "instituto": "Indexa",
+    "data": "2026-10-15",
+    "candidatos": {
+      "Aprova": 45.0,
+      "Desaprova": 50.0
     }
   },
   {

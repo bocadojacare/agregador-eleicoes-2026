@@ -1,10 +1,34 @@
 [
   {
+    "instituto": "Gerp",
+    "data": "14 Out – 16 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "12 Out – 16 Out 2026",
+    "candidatos": {
+      "Lula": 48.9,
+      "Flávio": 51.1
+    }
+  },
+  {
     "instituto": "Futura",
     "data": "14 Out – 15 Out 2026",
     "candidatos": {
       "Lula": 47.5,
       "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "Ipespe",
+    "data": "13 Out – 15 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 48.0
     }
   },
   {
