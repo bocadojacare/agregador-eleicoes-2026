@@ -1,5 +1,13 @@
 [
   {
+    "instituto": "Vox",
+    "data": "17 Out 2026",
+    "candidatos": {
+      "Lula": 46.4,
+      "Flávio": 44.6
+    }
+  },
+  {
     "instituto": "Gerp",
     "data": "16 Out 2026",
     "candidatos": {
