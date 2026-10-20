@@ -1,5 +1,45 @@
 [
   {
+    "instituto": "IFP",
+    "data": "16 Out – 20 Out 2026",
+    "candidatos": {
+      "Lula": 39.65,
+      "Flávio": 40.95
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "15 Out – 19 Out 2026",
+    "candidatos": {
+      "Lula": 45.16,
+      "Flávio": 47.03
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "15 Out – 19 Out 2026",
+    "candidatos": {
+      "Lula": 45.9,
+      "Flávio": 48.8
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "15 Out – 19 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "15 Out – 19 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 47.0
+    }
+  },
+  {
     "instituto": "PoderData/Aya",
     "data": "16 Out – 18 Out 2026",
     "candidatos": {
@@ -19,7 +59,7 @@
     "instituto": "AtlasIntel",
     "data": "13 Out – 18 Out 2026",
     "candidatos": {
-      "Lula": 47.7,
+      "Lula": 47.6,
       "Flávio": 49.8
     }
   },
@@ -35,8 +75,8 @@
     "instituto": "DataTrends",
     "data": "15 Out – 17 Out 2026",
     "candidatos": {
-      "Lula": 48.5,
-      "Flávio": 51.5
+      "Lula": 46.0,
+      "Flávio": 49.0
     }
   },
   {
@@ -45,6 +85,14 @@
     "candidatos": {
       "Lula": 46.4,
       "Flávio": 44.6
+    }
+  },
+  {
+    "instituto": "Ranking",
+    "data": "14 Out – 16 Out 2026",
+    "candidatos": {
+      "Lula": 50.4,
+      "Flávio": 49.6
     }
   },
   {
