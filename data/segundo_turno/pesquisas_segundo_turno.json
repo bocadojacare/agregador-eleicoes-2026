@@ -1,5 +1,29 @@
 [
   {
+    "instituto": "Futura",
+    "data": "19 Out – 20 Out 2026",
+    "candidatos": {
+      "Lula": 46.8,
+      "Flávio": 48.9
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "18 Out – 20 Out 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "17 Out – 20 Out 2026",
+    "candidatos": {
+      "Lula": 44.0,
+      "Flávio": 45.0
+    }
+  },
+  {
     "instituto": "IFP",
     "data": "16 Out – 20 Out 2026",
     "candidatos": {
@@ -8,11 +32,19 @@
     }
   },
   {
+    "instituto": "Meio/Ideia",
+    "data": "15 Out – 19 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 48.0
+    }
+  },
+  {
     "instituto": "Veritá",
     "data": "15 Out – 19 Out 2026",
     "candidatos": {
-      "Lula": 45.16,
-      "Flávio": 47.03
+      "Lula": 49.3,
+      "Flávio": 50.7
     }
   },
   {
@@ -35,8 +67,8 @@
     "instituto": "Real Time Big Data",
     "data": "15 Out – 19 Out 2026",
     "candidatos": {
-      "Lula": 44.0,
-      "Flávio": 47.0
+      "Lula": 45.0,
+      "Flávio": 48.0
     }
   },
   {
@@ -67,8 +99,8 @@
     "instituto": "Futura",
     "data": "16 Out – 17 Out 2026",
     "candidatos": {
-      "Lula": 49.6,
-      "Flávio": 50.4
+      "Lula": 47.5,
+      "Flávio": 48.3
     }
   },
   {
@@ -104,11 +136,19 @@
     }
   },
   {
+    "instituto": "Phoenix",
+    "data": "13 Out – 16 Out 2026",
+    "candidatos": {
+      "Lula": 47.59,
+      "Flávio": 45.21
+    }
+  },
+  {
     "instituto": "Veritá",
     "data": "12 Out – 16 Out 2026",
     "candidatos": {
-      "Lula": 48.9,
-      "Flávio": 51.1
+      "Lula": 47.7,
+      "Flávio": 49.7
     }
   },
   {
