@@ -1,5 +1,37 @@
 [
   {
+    "instituto": "Vox Brasil",
+    "data": "2026-10-23",
+    "candidatos": {
+      "Aprova": 47.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "PoderData",
+    "data": "2026-10-22",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 49.0
+    }
+  },
+  {
+    "instituto": "GERP",
+    "data": "2026-10-22",
+    "candidatos": {
+      "Aprova": 46.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
+    "instituto": "Datafolha",
+    "data": "2026-10-22",
+    "candidatos": {
+      "Aprova": 49.0,
+      "Desaprova": 48.0
+    }
+  },
+  {
     "instituto": "Ideia",
     "data": "2026-10-21",
     "candidatos": {

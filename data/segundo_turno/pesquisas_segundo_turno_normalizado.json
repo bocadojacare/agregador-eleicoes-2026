@@ -1,10 +1,66 @@
 [
   {
+    "instituto": "Vetor Arrow",
+    "data": "23 Out 2026",
+    "candidatos": {
+      "Lula": 44.9,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Ipespe",
+    "data": "22 Out 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 48.0
+    }
+  },
+  {
+    "instituto": "Vox",
+    "data": "22 Out 2026",
+    "candidatos": {
+      "Lula": 45.4,
+      "Flávio": 44.3
+    }
+  },
+  {
+    "instituto": "DataFolha",
+    "data": "22 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "Real Time Big Data",
+    "data": "22 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "Alfa Inteligência",
+    "data": "22 Out 2026",
+    "candidatos": {
+      "Lula": 48.0,
+      "Flávio": 52.0
+    }
+  },
+  {
     "instituto": "Indexa",
     "data": "21 Out 2026",
     "candidatos": {
       "Lula": 44.1,
       "Flávio": 45.2
+    }
+  },
+  {
+    "instituto": "DataTrends",
+    "data": "21 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 50.0
     }
   },
   {
