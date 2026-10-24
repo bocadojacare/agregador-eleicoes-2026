@@ -1,5 +1,21 @@
 [
   {
+    "instituto": "CNT/MDA",
+    "data": "21 Out – 23 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.3
+    }
+  },
+  {
+    "instituto": "França",
+    "data": "21 Out – 23 Out 2026",
+    "candidatos": {
+      "Lula": 43.1,
+      "Flávio": 45.6
+    }
+  },
+  {
     "instituto": "Vetor Arrow",
     "data": "22 Out – 23 Out 2026",
     "candidatos": {
@@ -37,6 +53,14 @@
     "candidatos": {
       "Lula": 45.0,
       "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "18 Out – 22 Out 2026",
+    "candidatos": {
+      "Lula": 47.5,
+      "Flávio": 50.2
     }
   },
   {
@@ -104,7 +128,7 @@
     }
   },
   {
-    "instituto": "IFP",
+    "instituto": "França",
     "data": "16 Out – 20 Out 2026",
     "candidatos": {
       "Lula": 39.65,
@@ -416,7 +440,7 @@
     }
   },
   {
-    "instituto": "IFP",
+    "instituto": "França",
     "data": "29 Set – 2 Out 2026",
     "candidatos": {
       "Lula": 45.88,
