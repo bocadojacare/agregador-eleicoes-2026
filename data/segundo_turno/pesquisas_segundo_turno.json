@@ -1,5 +1,61 @@
 [
   {
+    "instituto": "PoderData/Aya",
+    "data": "23 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 51.0
+    }
+  },
+  {
+    "instituto": "DataFolha",
+    "data": "23 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 47.0,
+      "Flávio": 48.0
+    }
+  },
+  {
+    "instituto": "Quaest",
+    "data": "23 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 45.0,
+      "Flávio": 46.0
+    }
+  },
+  {
+    "instituto": "Nexus/BTG",
+    "data": "23 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 47.0
+    }
+  },
+  {
+    "instituto": "Palver",
+    "data": "22 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 49.0,
+      "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Gerp",
+    "data": "22 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 46.0,
+      "Flávio": 49.0
+    }
+  },
+  {
+    "instituto": "Futura",
+    "data": "23 Out – 24 Out 2026",
+    "candidatos": {
+      "Lula": 47.9,
+      "Flávio": 48.2
+    }
+  },
+  {
     "instituto": "CNT/MDA",
     "data": "21 Out – 23 Out 2026",
     "candidatos": {
@@ -21,6 +77,22 @@
     "candidatos": {
       "Lula": 44.9,
       "Flávio": 50.0
+    }
+  },
+  {
+    "instituto": "Veritá",
+    "data": "19 Out – 23 Out 2026",
+    "candidatos": {
+      "Lula": 48.44,
+      "Flávio": 51.56
+    }
+  },
+  {
+    "instituto": "AtlasIntel",
+    "data": "18 Out – 23 Out 2026",
+    "candidatos": {
+      "Lula": 48.4,
+      "Flávio": 49.9
     }
   },
   {
